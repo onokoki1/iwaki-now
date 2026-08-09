@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T03:16:10+09:00",
+  "generatedAt": "2026-08-10T04:03:52+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 48,
   "sources": [
@@ -86,38 +86,44 @@
     {
       "name": "いわき総合ニュース",
       "group": "報道",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "13地域ニュース",
       "group": "地域",
-      "ok": true,
-      "items": 69
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわきFC",
       "group": "スポーツ",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき観光",
       "group": "観光・文化",
-      "ok": true,
-      "items": 63
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき経済",
       "group": "経済",
-      "ok": true,
-      "items": 61
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "地域団体サイト",
       "group": "地域団体",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "news": [
@@ -1300,6 +1306,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "cde6bfd81d79e87a08",
+      "title": "エネルギー地産地消へ、再エネ供給 ビーエイブルといわき市協定:地域ニュース",
+      "summary": "福島民友新聞社が「エネルギー地産地消へ、再エネ供給 ビーエイブルといわき市協定:地域ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "市政",
+      "area": "全市",
+      "publishedAt": "2026-08-07T09:00:00+09:00",
+      "source": "福島民友新聞社",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11dHB5U2lMRnlma2h5S2Y0RXVwLW1SQlNfamJKVm8tQnVRYUZkb0I2V1FwSER3V0tsdWhlQnVCa1R1Yl9Sd0hYYnRTbFJIV0U3cDM2RVRaaUE0YWdqc043Wk44WGJ2QmNx?oc=5",
+      "sourceHome": "https://www.minyu-net.com",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "cd688d290817f3fa93",
       "title": "「第38回空き家と住まいの相談会」開催のお知らせ",
       "summary": "いわき市から「「第38回空き家と住まいの相談会」開催のお知らせ」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
@@ -1337,20 +1357,6 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "cde6bfd81d79e87a08",
-      "title": "エネルギー地産地消へ、再エネ供給 ビーエイブルといわき市協定:地域ニュース",
-      "summary": "福島民友新聞社が「エネルギー地産地消へ、再エネ供給 ビーエイブルといわき市協定:地域ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "市政",
-      "area": "全市",
-      "publishedAt": "2026-08-07T09:00:00+09:00",
-      "source": "福島民友新聞社",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11dHB5U2lMRnlma2h5S2Y0RXVwLW1SQlNfamJKVm8tQnVRYUZkb0I2V1FwSER3V0tsdWhlQnVCa1R1Yl9Sd0hYYnRTbFJIV0U3cDM2RVRaaUE0YWdqc043Wk44WGJ2QmNx?oc=5",
-      "sourceHome": "https://www.minyu-net.com",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
       "id": "435492bd55a1ff3a6e",
@@ -2885,19 +2891,6 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "f2e9c4bc5cd2c9d5fa",
-      "title": "令和８年度 事務補助員（フルタイム会計年度任用職員）の募集（９月以降採用予定）",
-      "summary": "いわき市から「令和８年度 事務補助員（フルタイム会計年度任用職員）の募集（９月以降採用予定）」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-03T10:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1783903660863/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
       "id": "559482da9828386ed3",
       "title": "「スティグ・リンドベリ展」 デザインの魅力解説…いわきで講演会",
       "summary": "福島民友新聞社が「「スティグ・リンドベリ展」 デザインの魅力解説…いわきで講演会」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -2910,6 +2903,19 @@
       "sourceGroup": "観光・文化",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "f2e9c4bc5cd2c9d5fa",
+      "title": "令和８年度 事務補助員（フルタイム会計年度任用職員）の募集（９月以降採用予定）",
+      "summary": "いわき市から「令和８年度 事務補助員（フルタイム会計年度任用職員）の募集（９月以降採用予定）」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-03T10:00:00+09:00",
+      "source": "いわき市",
+      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1783903660863/index.html",
+      "sourceGroup": "行政",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     },
     {
       "id": "seed-3",
