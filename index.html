@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="いわき市のニュース、市政、防災、暮らし、イベントを短く分かりやすくまとめる地域情報サイト「いわきNOW」" />
+  <meta name="theme-color" content="#0b61d8" />
+  <title>いわきNOW｜今日のいわきを、ひと目で。</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-row wrap">
+      <a class="brand" href="./"><strong>いわき <span>NOW</span></strong><small>今日のいわきを、ひと目で。</small></a>
+      <div class="header-status">
+        <span>現在 <b id="sourceCount">複数媒体</b> から収集中</span>
+        <span class="auto"><i></i> 自動更新</span>
+        <label class="header-search"><span>⌕</span><input id="headerSearchInput" type="search" placeholder="キーワードで検索"></label>
+      </div>
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span><b class="sr-only">メニュー</b></button>
+    </div>
+    <nav class="desktop-nav" aria-label="主要メニュー"><div class="wrap nav-inner">
+      <button class="nav-chip active" data-category="すべて">⌂　すべて</button>
+      <button class="nav-chip" data-category="市政">市政</button><button class="nav-chip" data-category="防災・安全">防災・安全</button>
+      <button class="nav-chip" data-category="暮らし">暮らし</button><button class="nav-chip" data-category="経済">経済</button>
+      <button class="nav-chip" data-category="教育・子育て">教育</button><button class="nav-chip" data-category="イベント">イベント</button>
+      <button class="nav-chip" data-category="スポーツ">スポーツ</button>
+    </div></nav>
+    <nav class="mobile-nav" id="mobileNav" hidden>
+      <button data-category="すべて">すべて</button><button data-category="市政">市政</button><button data-category="防災・安全">防災・安全</button><button data-category="暮らし">暮らし</button><button data-category="経済">経済</button><button data-category="教育・子育て">教育</button><button data-category="イベント">イベント</button><button data-category="スポーツ">スポーツ</button>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap main-wrap">
+    <section class="top-news-section" aria-labelledby="topNewsTitle">
+      <aside class="top-five-card top-five-wide">
+        <div class="top-five-title"><span>▤</span><h1 id="topNewsTitle">今日の5ニュース</h1></div>
+        <div id="topFive" class="top-five-list"></div>
+        <button class="more-link" id="showAllNews" type="button">新着ニュースを見る　›</button>
+      </aside>
+    </section>
+
+    <section class="news-section" aria-labelledby="latestTitle">
+      <div class="filter-bar filter-bar-primary">
+        <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="ニュースを検索（キーワードを入力）"></label>
+        <button class="filter-all active" id="allFilter" type="button">すべて</button>
+        <select id="categoryFilter" aria-label="カテゴリーで絞り込む"><option value="すべて">カテゴリを選択</option><option>市政</option><option>防災・安全</option><option>暮らし</option><option>経済</option><option>教育・子育て</option><option>イベント</option><option>スポーツ</option></select>
+        <select id="sortFilter" aria-label="並び順"><option value="new">新しい順</option><option value="old">古い順</option></select>
+      </div>
+      <div class="section-line"><div><h2 id="latestTitle">新着ニュース</h2><span id="resultCount">0件</span></div><span id="lastUpdated">最終更新を確認中</span></div>
+      <div class="news-grid" id="newsGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><b>該当するニュースがありません</b><p>検索語や絞り込み条件を変えてみてください。</p></div>
+      <div class="center-actions"><button id="clearFilters" type="button">絞り込みを解除</button></div>
+    </section>
+
+    <section class="region-section" aria-labelledby="regionTitle">
+      <div class="region-card">
+        <div class="panel-heading region-heading"><div><span class="heading-icon">●</span><h2 id="regionTitle">地域から探す</h2></div><p>必要なときに、地域を選んでニュースを絞り込めます。</p></div>
+        <div class="region-select-row">
+          <label for="areaFilter">地域を選択</label>
+          <select id="areaFilter" aria-label="地域で絞り込む"><option value="すべて">市内全域</option><option>平</option><option>小名浜</option><option>勿来</option><option>常磐</option><option>内郷</option><option>四倉</option><option>遠野</option><option>小川</option><option>好間</option><option>三和</option><option>田人</option><option>川前</option><option>久之浜・大久</option></select>
+        </div>
+        <div class="region-nav" id="regionNav" aria-label="いわき市13地域から選択"></div>
+        <div class="region-footer"><span>旧14市町村を基準に、久之浜・大久を1地域として表示</span><button id="resetRegion" type="button">市内全域に戻す</button></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="source-strip"><div class="wrap"><span>ⓘ</span><p><b>いわきNOW</b>は、行政・地域メディア・報道機関・地域団体などの公開情報を自動収集し、出典リンクとともに掲載します。</p><a href="about.html">掲載媒体・サイト方針 ›</a></div></section>
+
+  <footer class="site-footer"><div class="wrap footer-row"><div><strong>いわきNOW</strong><p>福島県いわき市の地域情報を、短く、分かりやすく。</p></div><nav><a href="about.html">サイトについて</a><a href="editorial-policy.html">編集方針</a></nav></div></footer>
+
+  <dialog class="article-dialog" id="articleDialog"><button class="dialog-close" id="closeDialog" type="button">×</button><article id="dialogContent"></article></dialog>
+  <dialog class="search-dialog" id="searchDialog"><button class="dialog-close" id="closeSearch" type="button">×</button><div class="search-dialog-inner"><h2>ニュースを検索</h2><label class="search-field"><span>⌕</span><input id="modalSearchInput" type="search" placeholder="例：七夕、Wi-Fi、市議会"></label></div></dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
