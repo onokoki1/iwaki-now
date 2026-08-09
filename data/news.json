@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T07:49:09+09:00",
+  "generatedAt": "2026-08-10T08:46:09+09:00",
   "collectorVersion": "2.0",
-  "sourceCount": 47,
+  "sourceCount": 48,
   "sources": [
     "47NEWS",
     "AERA DIGITAL",
@@ -9,6 +9,7 @@
     "FNNプライムオンライン",
     "FTV 福島テレビ",
     "Goal.com",
+    "ITmedia",
     "Infoseek",
     "KFB福島放送",
     "Mantan Web",
@@ -16,13 +17,15 @@
     "TBS NEWS DIG",
     "TVer",
     "Yahoo!ニュース",
-    "built.itmedia.co.jp",
+    "asahi.com",
     "fcimabari.com",
     "gekisaka.jp",
     "jleague.jp",
     "kfb.co.jp",
     "prtimes.jp",
     "targma.jp",
+    "topics.smt.docomo.ne.jp",
+    "vortis.jp",
     "いわきFC",
     "いわきFC Official Site",
     "いわき市",
@@ -36,7 +39,6 @@
     "バーチャル高校野球",
     "号外NET いわき市",
     "大分トリニータオフィシャルサイト",
-    "徳島ヴォルティス",
     "政経東北",
     "日テレNEWS NNN",
     "日刊CJ Monmo Web",
@@ -48,8 +50,7 @@
     "福島民報デジタル",
     "福島県 いわき地方振興局",
     "選挙ドットコム",
-    "Ｊリーグ公式サイト",
-    "ｄメニューニュース"
+    "Ｊリーグ公式サイト"
   ],
   "collectorStatus": [
     {
@@ -68,7 +69,7 @@
       "name": "いわき市・募集情報",
       "group": "行政",
       "ok": true,
-      "items": 138
+      "items": 139
     },
     {
       "name": "福島県・いわき地方振興局",
@@ -79,8 +80,9 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": true,
-      "items": 12
+      "ok": false,
+      "items": 0,
+      "error": "<urlopen error timed out>"
     },
     {
       "name": "いわき総合ニュース",
@@ -104,7 +106,7 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 64
+      "items": 63
     },
     {
       "name": "いわき経済",
@@ -120,6 +122,19 @@
     }
   ],
   "news": [
+    {
+      "id": "048e3734623761cfac",
+      "title": "内郷・好間・三和地区保健福祉センター 事務補助（フルタイム会計年度任用職員）の募集",
+      "summary": "いわき市から「内郷・好間・三和地区保健福祉センター 事務補助（フルタイム会計年度任用職員）の募集」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
+      "category": "暮らし",
+      "area": "内郷",
+      "publishedAt": "2026-08-10T08:30:00+09:00",
+      "source": "いわき市",
+      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785994527004/index.html",
+      "sourceGroup": "行政",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
     {
       "id": "a0becc98755975697a",
       "title": "【サッカーJ２・J３開幕戦】いわきFC、５千人勝利後押し 福島U、３千人次戦に期待 ホーム開幕戦で明暗",
@@ -498,11 +513,11 @@
     {
       "id": "345827a788b4e0d03e",
       "title": "東日大昌平、白樺学園破る 地元いわき市も応援、甲子園初勝利に歓喜",
-      "summary": "朝日新聞が「東日大昌平、白樺学園破る 地元いわき市も応援、甲子園初勝利に歓喜」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "asahi.comが「東日大昌平、白樺学園破る 地元いわき市も応援、甲子園初勝利に歓喜」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-09T08:30:00+09:00",
-      "source": "朝日新聞",
+      "source": "asahi.com",
       "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNZWVCN1Z6ckNGbmN5dElrLTk1U1dLUU1DcW9kTWh1bndHaXBIUEJmTVVKREFkOHJLQ1ZUQXp6MXRodWVQSkNHUmdRVkhrd2l2MVRkWVpHb0loQUtlTjVEWURoY01IOEp0b21BSFp3?oc=5",
       "sourceHome": "https://www.asahi.com",
       "sourceGroup": "報道",
@@ -1014,11 +1029,11 @@
     {
       "id": "8369c8a69c5be9cf15",
       "title": "「活気ある場所に！」小名浜道路開通1年 新店オープンなど小名浜エリアには経済波及効果が",
-      "summary": "ｄメニューニュースが「「活気ある場所に！」小名浜道路開通1年 新店オープンなど小名浜エリアには経済波及効果が」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "topics.smt.docomo.ne.jpが「「活気ある場所に！」小名浜道路開通1年 新店オープンなど小名浜エリアには経済波及効果が」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "小名浜",
       "publishedAt": "2026-08-07T19:03:00+09:00",
-      "source": "ｄメニューニュース",
+      "source": "topics.smt.docomo.ne.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5PVFgtUUwzbkNFYWlsd0NLamw2T0pCUnlxU2hfMmNWQWhrODN3SWRtSEtSd2ZWbTJjdklaOUVwa2hENmNuMHFSdWplcnZLQTlYRkVyakszdTFSYnE2aWoxY2FhNmxEWFNrY2dFUlg0cDVaTHpBYlHSAXZBVV95cUxOT1RYLVFMM25DRWFpbHdDS2psNk9KQlJ5cVNoXzJjVkFoazgzd0lkbUhLUndmVm0yY3ZJWjlFcGtoRDZjbjBxUnVqZXJ2S0E5WEZFcmpLM3UxUmJxNmlqMWNhYTZsRFhTa2NnRVJYNHA1Wkx6QWJR?oc=5",
       "sourceHome": "https://topics.smt.docomo.ne.jp",
       "sourceGroup": "地域",
@@ -1258,11 +1273,11 @@
     {
       "id": "26f1f9d4179ba9dc78",
       "title": "下水道管路の洗浄／点検／診断をワンストップ化、奥村組らがいわき市で実証：スマートメンテナンス",
-      "summary": "built.itmedia.co.jpが「下水道管路の洗浄／点検／診断をワンストップ化、奥村組らがいわき市で実証：スマートメンテナンス」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "ITmediaが「下水道管路の洗浄／点検／診断をワンストップ化、奥村組らがいわき市で実証：スマートメンテナンス」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-07T11:00:00+09:00",
-      "source": "built.itmedia.co.jp",
+      "source": "ITmedia",
       "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3dWNEb2R2RWZVQ1ltaDhwWno3ZW1JT0M5NlcxUk91My1kZ3Zsa0o5RjZucTRMZFFEYm5xNTFGRlR2SzlXbE1ZQUNsV0JQTTRqQk8tODdhNmdSSEplTVZBd0FKTXlfSlJmM21fTw?oc=5",
       "sourceHome": "https://built.itmedia.co.jp",
       "sourceGroup": "報道",
@@ -1270,15 +1285,15 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "d579f4500c1dfa84d4",
+      "id": "dfc3f7ff4d5c50eaeb",
       "title": "ビーエイブル（広野）×いわき市 再エネ地産地消で協定",
-      "summary": "47NEWSが「ビーエイブル（広野）×いわき市 再エネ地産地消で協定」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民報デジタルが「ビーエイブル（広野）×いわき市 再エネ地産地消で協定」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "市政",
       "area": "全市",
       "publishedAt": "2026-08-07T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03RzBzS3h0WDJtQ1piTEh0QVprV2l3SkFGTHh2cDVoRDBNc0d6UFVOWExtaEd4ZlkwU1dPNVV5SU9UcmhNRlh2UU9yaw?oc=5",
-      "sourceHome": "https://www.47news.jp",
+      "source": "福島民報デジタル",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tbHgtX0Y1NmRFejQzY1lZbDFPM21JRXFacjlwOHJRbHRkZ3lvZG9pNkpfS1RwVmxZaG81ZDRCUk9vdExJYjZSSEMyemdHSms?oc=5",
+      "sourceHome": "https://www.minpo.jp",
       "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -1464,11 +1479,11 @@
     {
       "id": "7443599ca989cdd8fe",
       "title": "（福島）いわき市四倉町白岩竹ノ花でクマ出没 ８月６日",
-      "summary": "ｄメニューニュースが「（福島）いわき市四倉町白岩竹ノ花でクマ出没 ８月６日」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "topics.smt.docomo.ne.jpが「（福島）いわき市四倉町白岩竹ノ花でクマ出没 ８月６日」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "四倉",
       "publishedAt": "2026-08-07T00:45:38+09:00",
-      "source": "ｄメニューニュース",
+      "source": "topics.smt.docomo.ne.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalN4akRfTVQ2NGc3UC1yUmNyNXh6RE1vNHRnOHloYldFOVZleTZqdkh5cmVNTzlqSmpGRmNzbmkwdHluNTdRTmtJVE9lQmoyUVp3VGhGZGhHN1FmdVBTdkxUVkZTUVF0ZEpnNkFYRVJIU3c0QV8xSkg0OEJ4ZnBuOWN2XzRIVmt6UlhiVDRVb3RrWlVJc0ZYMmtFTVTSAaIBQVVfeXFMTlY1Y3RUVTR4d3RvNVNRVVZQa2JHQ3ZuNzFOVEpQMmN3bE5vOHdfZkNFQTE5OWhqSnFLaUxObUVGc3JWR2dzWXcwWnYzZXppVHZmc1J5am5JR2h0N2c1SHE4LVFRaVk5WkhWeU0xeUI1UGNPZmROZXpYVTViUjdDT0tkTVFfbXd4Q3FJNW9GNm5Ba3JWbldaVHhXUl9CN3N0T2h3?oc=5",
       "sourceHome": "https://topics.smt.docomo.ne.jp",
       "sourceGroup": "地域",
@@ -1598,11 +1613,11 @@
     {
       "id": "cbd842b3928290d295",
       "title": "【9/5(土)いわき戦】「VORTIS LIGHT SHOW」実施",
-      "summary": "徳島ヴォルティスが「【9/5(土)いわき戦】「VORTIS LIGHT SHOW」実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "vortis.jpが「【9/5(土)いわき戦】「VORTIS LIGHT SHOW」実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-06T17:04:23+09:00",
-      "source": "徳島ヴォルティス",
+      "source": "vortis.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBKTUNaTUtwM05yLU1sb1pFc19Ba3RGN21sR1k0ckc0MmhXeV9vMjFIYWx3SEM4cFQ4Z1JVMWNrOFdSdjh3NGFwNQ?oc=5",
       "sourceHome": "https://www.vortis.jp",
       "sourceGroup": "スポーツ",
@@ -2725,7 +2740,7 @@
       "source": "いわき民報社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ0MtQ21aVkRDQ2pUcU9VY05qczNLLTVRVUI3WWJrMC1oMFAxZWZHS0dBSUk4RUJEcmR0MldNenJ0SVpXTUtUcV9pWDM0Q3dTLWlCbFlHSTNXQQ?oc=5",
       "sourceHome": "https://iwaki-minpo.co.jp",
-      "sourceGroup": "報道",
+      "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -3379,20 +3394,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1aTWNrMUYzbVN1MHJkT0RScHBqMzJTR0JxYl9jeWRhUFhqY2dyMHdQakd1djQxLUE3a3dSTkNPWEttc3l0UENMdjUzWQ?oc=5",
       "sourceHome": "https://www.47news.jp",
       "sourceGroup": "地域",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "c36a9a42317baaf58f",
-      "title": "補聴器助成金受け付け いわき市 シニアサポート事業、あすから",
-      "summary": "47NEWSが「補聴器助成金受け付け いわき市 シニアサポート事業、あすから」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-02T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1iSHpzZTNnTXZEaklzcXZfb3hfN1c3MmRVUVRDSEpObU55Y1ZUMUdhRG1LX19fc2pYVmYtOXJvYjNxN3VpSzZkUUNnRQ?oc=5",
-      "sourceHome": "https://www.47news.jp",
-      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
