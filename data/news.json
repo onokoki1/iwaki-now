@@ -1,18 +1,17 @@
 {
-  "generatedAt": "2026-08-10T21:31:32+09:00",
+  "generatedAt": "2026-08-10T23:05:59+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 49,
   "sources": [
     "47NEWS",
     "AERA DIGITAL",
-    "Excite エキサイト",
+    "DAZN",
     "FNNプライムオンライン",
     "FTV 福島テレビ",
     "Goal.com",
     "ITmedia",
     "Infoseek",
     "KFB福島放送",
-    "Mantan Web",
     "NHKニュース",
     "TBS NEWS DIG",
     "TVer",
@@ -22,6 +21,7 @@
     "jleague.jp",
     "kahoku.news",
     "kfb.co.jp",
+    "mantan-web.jp",
     "news.yahoo.co.jp",
     "prtimes.jp",
     "rakumachi.jp",
@@ -81,8 +81,9 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": true,
-      "items": 12
+      "ok": false,
+      "items": 0,
+      "error": "<urlopen error timed out>"
     },
     {
       "name": "いわき総合ニュース",
@@ -106,13 +107,13 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 57
+      "items": 55
     },
     {
       "name": "いわき経済",
       "group": "経済",
       "ok": true,
-      "items": 60
+      "items": 63
     },
     {
       "name": "地域団体サイト",
@@ -122,6 +123,20 @@
     }
   ],
   "news": [
+    {
+      "id": "7ac6a8da3a8697c449",
+      "title": "企業情報【破産手続き開始決定】いわき市の不動産業",
+      "summary": "47NEWSが「企業情報【破産手続き開始決定】いわき市の不動産業」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "経済",
+      "area": "全市",
+      "publishedAt": "2026-08-10T21:40:00+09:00",
+      "source": "47NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iWUI2cUFHM0VyaWFZWW54a0dBOUdKd2lLM0ZySTRKdnFPdTNhVGppbEhaSmxGc3BHODFkVUN6S2o2NjlPeXNFSVgtQQ?oc=5",
+      "sourceHome": "https://www.47news.jp",
+      "sourceGroup": "経済",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
     {
       "id": "7c637ab12673929c7d",
       "title": "いわきFC・熊田直紀「報われてよかった」復帰戦で2得点 開幕白星へ導く《J2第1節》（福島テレビ）",
@@ -165,16 +180,16 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "ce2d8361ab58180654",
-      "title": "【台風15号】8月11日 常磐線の一部区間で運休(10日午後5時30分時点)",
-      "summary": "日テレNEWS NNNが「【台風15号】8月11日 常磐線の一部区間で運休(10日午後5時30分時点)」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "id": "b8a7638ebe6df2e662",
+      "title": "東日本国際大昌平が甲子園初勝利 いわき勢51年ぶり白星（福島中央テレビ）",
+      "summary": "Yahoo!ニュースが「東日本国際大昌平が甲子園初勝利 いわき勢51年ぶり白星（福島中央テレビ）」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
-      "area": "常磐",
-      "publishedAt": "2026-08-10T18:00:00+09:00",
-      "source": "日テレNEWS NNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNzVDeTJDV2I4U3BOSHQ2NndWVkdOa2F2LXktRGJCYWI5eDlxd2o5VGxUX0I1OUNCR2c4aDNDOFVCUHdtS1NtSUVNbzFwRWNibi1CX2tKMVUwZ2pnVG8wSUFraDMyYUhZWks1a3laOURaSHV2VjQ3b0J6dld6Wkl5UFcyTGhYVzQ?oc=5",
-      "sourceHome": "https://news.ntv.co.jp",
-      "sourceGroup": "地域",
+      "area": "全市",
+      "publishedAt": "2026-08-10T18:39:00+09:00",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xdXV3ek9kMmpxSFVjVlBDbTRtS0xETjYtSlNsb2lQZXZkRnlFVVV4Q05PaVQtV2F1a2JmWlY4LU9PTF9wNHYxSVlmYjl2Z3VFeUNmUHhORkdjVkVLZFdMd2N1NnFLcXJLZjl1UGdvM3pCSTliamxJdjBFbmNrR1E?oc=5",
+      "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -188,6 +203,20 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBqcmVNRGhiZjBaRXRtY0cxU21neGZnRm02NVVpMk5JTzRlSzYzMDFBR0daLU5HZzRwamRycGJnekRZODVoM2VkemRldzJNQTg5TU1fd0VDMU42R1FIZjVnZVhCczlVUGVNdkVzUFpoa0p1OUdqRlRkT3FwUXhvczA?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "地域",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "ce2d8361ab58180654",
+      "title": "【台風15号】8月11日 常磐線の一部区間で運休(10日午後5時30分時点)",
+      "summary": "日テレNEWS NNNが「【台風15号】8月11日 常磐線の一部区間で運休(10日午後5時30分時点)」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "常磐",
+      "publishedAt": "2026-08-10T18:00:00+09:00",
+      "source": "日テレNEWS NNN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNzVDeTJDV2I4U3BOSHQ2NndWVkdOa2F2LXktRGJCYWI5eDlxd2o5VGxUX0I1OUNCR2c4aDNDOFVCUHdtS1NtSUVNbzFwRWNibi1CX2tKMVUwZ2pnVG8wSUFraDMyYUhZWks1a3laOURaSHV2VjQ3b0J6dld6Wkl5UFcyTGhYVzQ?oc=5",
+      "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -724,6 +753,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "52f8906945f42d9d0d",
+      "title": "いわき vs 今治 : 第1節 ※中井卓大ピピ(今治) 先発 をライブ 中継 | DAZN JP",
+      "summary": "DAZNが「いわき vs 今治 : 第1節 ※中井卓大ピピ(今治) 先発 をライブ 中継 | DAZN JP」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-10T03:12:46+09:00",
+      "source": "DAZN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ1MweEFTTHY4Q2YzT3JTd1RpeEkyUnhhSzcyVXh6cmlPLVcwN0V5REQ4YzgzLXBxSVF3b3JfcTc0NzRuclBWVkY4elVLZ0tQVFQ5aW9iOHp3akpFU1BXNkVmNTUxOFFlSEFWcEVXOWZPejBkbjNUcXYzNExkLXdFbmhTZWhuVi13MnA0RA?oc=5",
+      "sourceHome": "https://www.dazn.com",
+      "sourceGroup": "スポーツ",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "aee460c9e174751479",
       "title": "【試合情報】AWAY 8/15(土) 2026/27 明治安田J2リーグ 第2節 vs 藤枝MYFC",
       "summary": "いわきFC Official Siteが「【試合情報】AWAY 8/15(土) 2026/27 明治安田J2リーグ 第2節 vs 藤枝MYFC」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -901,15 +944,15 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "d1ca8eb676a9dde074",
+      "id": "3462161b06e9320898",
       "title": "夏の夜に響く「どんわっせ」 恒例の夏祭り「いわきおどり」に約6600人の踊り手が参加 福島",
-      "summary": "Excite エキサイトが「夏の夜に響く「どんわっせ」 恒例の夏祭り「いわきおどり」に約6600人の踊り手が参加 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "日テレNEWS NNNが「夏の夜に響く「どんわっせ」 恒例の夏祭り「いわきおどり」に約6600人の踊り手が参加 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
-      "publishedAt": "2026-08-09T16:56:00+09:00",
-      "source": "Excite エキサイト",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmdWNIUHQ1OHNIVnhnUnBKdFp6TmpwWS1rdi1tNFBXRUVWcVp3eW9fb04yaWY0NFd4WFpqUUVTeVJMejY1ZTVtMTM5ZVFVZzliYm9XOTZpTmZDRDNJelBJYmxOeTVtOXY4VUUtcUxn?oc=5",
-      "sourceHome": "http://www.excite.co.jp",
+      "publishedAt": "2026-08-09T16:55:00+09:00",
+      "source": "日テレNEWS NNN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdFprOEZ6S29ZSHREdjI5VE50blZXdl9tMXFHQVIzUUR0SVM3MUR2T0o3bGwwX0U1WllQWVlMOG1wcUdadENyakZlR3NhN2lvdnBuNG5QbnoyQWdaQ3VuY2JQcGJhZWg3dDdqSXZZSkhuTGM4Wnc0MTdraVhQUGZPNDlybkI2VDQ?oc=5",
+      "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "観光・文化",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -1792,20 +1835,6 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "d1dbe89e1a5d9d8bbb",
-      "title": "【NEW ITEMS】いわきFCオリジナルグッズ 受注販売のお知らせ",
-      "summary": "いわきFC Official Siteが「【NEW ITEMS】いわきFCオリジナルグッズ 受注販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-08-07T12:37:07+09:00",
-      "source": "いわきFC Official Site",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZYi01X21URlpkejRFWlpiWHVyYzhDZUIyWFZGSmZiY1AtYXRGOTBiZ1R3akE0Zl9GNWdrbmFqUHVURUlYem9ITkZkUzB2TVFhWk02eG02ZWEtTGpsVmFMcnRR?oc=5",
-      "sourceHome": "https://iwakifc.com",
-      "sourceGroup": "地域団体",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
       "id": "51e39ccc0cd74b41c6",
       "title": "日本道路株式会社とビジネスパートナー契約締結​ - いわきFC Official Site",
       "summary": "いわきFC Official Siteが「日本道路株式会社とビジネスパートナー契約締結​ - いわきFC Official Site」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -1841,6 +1870,20 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqZGhqMDBlMDVQREwxYkwzTEhqamU3TkRlTDZfTGlYVWUyWVZtOXp4Vmk3SDRuQVk3cV9FeGlYUUZMTU42b0QxdGhPajhSUDlWSFFuOThLQVdSc0E?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "dfc3f7ff4d5c50eaeb",
+      "title": "ビーエイブル（広野）×いわき市 再エネ地産地消で協定",
+      "summary": "福島民報デジタルが「ビーエイブル（広野）×いわき市 再エネ地産地消で協定」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "市政",
+      "area": "全市",
+      "publishedAt": "2026-08-07T11:00:00+09:00",
+      "source": "福島民報デジタル",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tbHgtX0Y1NmRFejQzY1lZbDFPM21JRXFacjlwOHJRbHRkZ3lvZG9pNkpfS1RwVmxZaG81ZDRCUk9vdExJYjZSSEMyemdHSms?oc=5",
+      "sourceHome": "https://www.minpo.jp",
+      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -1883,20 +1926,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB5U2wtWDVBVlZhWERBdDR4UFFRaHR3YzZkRUkyUGkzOWVsS1laai1OZ3VLLTA3R1JZQlNSc1NsMHh0UEVhU3lxajRldw?oc=5",
       "sourceHome": "https://www.47news.jp",
       "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "d579f4500c1dfa84d4",
-      "title": "ビーエイブル（広野）×いわき市 再エネ地産地消で協定",
-      "summary": "47NEWSが「ビーエイブル（広野）×いわき市 再エネ地産地消で協定」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "市政",
-      "area": "全市",
-      "publishedAt": "2026-08-07T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03RzBzS3h0WDJtQ1piTEh0QVprV2l3SkFGTHh2cDVoRDBNc0d6UFVOWExtaEd4ZlkwU1dPNVV5SU9UcmhNRlh2UU9yaw?oc=5",
-      "sourceHome": "https://www.47news.jp",
-      "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -2462,11 +2491,11 @@
     {
       "id": "b6c58bb5ca1546e32a",
       "title": "福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン",
-      "summary": "Mantan Webが「福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "mantan-web.jpが「福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "小名浜",
       "publishedAt": "2026-08-06T03:19:49+09:00",
-      "source": "Mantan Web",
+      "source": "mantan-web.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbTF5UDdUMUNJVnZFbzVMbngyZ1VVdzcwNHFoSGdkS0U3eXlDNWZHNEphQWdKeS1NdWswd0VPQmI2RzhpM2NadEJBdFVtQTdsWjVENHRxNlVRSnZJcmZVaTcwa1VpNy0xRmxsanVsLWNQSWNjU3pLa2RBRF9vRTBQdnItSUhyY2VT?oc=5",
       "sourceHome": "https://mantan-web.jp",
       "sourceGroup": "地域",
@@ -3052,6 +3081,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "0d4efc6a7aaaa6a03c",
+      "title": "【NEW ITEMS】いわきFCオリジナルグッズ 受注販売のお知らせ",
+      "summary": "いわきFC Official Siteが「【NEW ITEMS】いわきFCオリジナルグッズ 受注販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-08-04T18:48:44+09:00",
+      "source": "いわきFC Official Site",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5vWUpWVWZvQTJIZnZHUnpLczU1emRwdGR1dzdTclN2YXlyXzNGS3pISmRRMHRNUEQxa184UnlETHdxdERJLXI4czA4ejN6WUt3UWdwMHpMeFlVd09jLUdoRFB3?oc=5",
+      "sourceHome": "https://iwakifc.com",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "e2b420861c54f093fa",
       "title": "いわき市の会社経営遠藤雄大氏、立候補を表明＜福島県知事選挙＞",
       "summary": "kahoku.newsが「いわき市の会社経営遠藤雄大氏、立候補を表明＜福島県知事選挙＞」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -3361,47 +3404,6 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "c0335bf10900c4422f",
-      "title": "「クローズ×会津坂下町」のご当地マンホールがいわき市へやってきます！！",
-      "summary": "いわき市から「「クローズ×会津坂下町」のご当地マンホールがいわき市へやってきます！！」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-04T00:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785714689559/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "34f5959432b50c0c6a",
-      "title": "市民一人ひとりの『こえ』聴く いわき市 未来ビジョン策定に向けた催し",
-      "summary": "いわき民報社が「市民一人ひとりの『こえ』聴く いわき市 未来ビジョン策定に向けた催し」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-03T23:14:38+09:00",
-      "source": "いわき民報社",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QQ0MtQ21aVkRDQ2pUcU9VY05qczNLLTVRVUI3WWJrMC1oMFAxZWZHS0dBSUk4RUJEcmR0MldNenJ0SVpXTUtUcV9pWDM0Q3dTLWlCbFlHSTNXQQ?oc=5",
-      "sourceHome": "https://iwaki-minpo.co.jp",
-      "sourceGroup": "経済",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "831052336079820844",
-      "title": "港町の夜空を彩る 小名浜の夏の風物詩「いわき花火大会」",
-      "summary": "いわき民報社が「港町の夜空を彩る 小名浜の夏の風物詩「いわき花火大会」」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "小名浜",
-      "publishedAt": "2026-08-03T23:06:03+09:00",
-      "source": "いわき民報社",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VMU8yTVlpd3NLQ3d2NGhJV2pnclhlMXZ6WTJ0amp6RFM5T0NCaU1HeGFTV1hwYUhnemtpemVNTW5zS0ljcFpxRi1jS1JTUmpQZ1o5WUtxaG92Zw?oc=5",
-      "sourceHome": "https://iwaki-minpo.co.jp",
-      "sourceGroup": "地域",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
   ]
 }
