@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T23:05:59+09:00",
+  "generatedAt": "2026-08-11T00:15:59+09:00",
   "collectorVersion": "2.0",
-  "sourceCount": 49,
+  "sourceCount": 48,
   "sources": [
     "47NEWS",
     "AERA DIGITAL",
@@ -12,6 +12,7 @@
     "ITmedia",
     "Infoseek",
     "KFB福島放送",
+    "Mantan Web",
     "NHKニュース",
     "TBS NEWS DIG",
     "TVer",
@@ -21,7 +22,6 @@
     "jleague.jp",
     "kahoku.news",
     "kfb.co.jp",
-    "mantan-web.jp",
     "news.yahoo.co.jp",
     "prtimes.jp",
     "rakumachi.jp",
@@ -39,7 +39,6 @@
     "ニコニコニュース",
     "バーチャル高校野球",
     "号外NET いわき市",
-    "大分トリニータオフィシャルサイト",
     "徳島ヴォルティス",
     "日テレNEWS NNN",
     "日刊CJ Monmo Web",
@@ -58,7 +57,7 @@
       "name": "いわき市・新着情報",
       "group": "行政",
       "ok": true,
-      "items": 77
+      "items": 76
     },
     {
       "name": "いわき市・トピックス",
@@ -81,9 +80,8 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "items": 12
     },
     {
       "name": "いわき総合ニュース",
@@ -95,7 +93,7 @@
       "name": "13地域ニュース",
       "group": "地域",
       "ok": true,
-      "items": 62
+      "items": 60
     },
     {
       "name": "いわきFC",
@@ -107,13 +105,13 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 55
+      "items": 54
     },
     {
       "name": "いわき経済",
       "group": "経済",
       "ok": true,
-      "items": 63
+      "items": 60
     },
     {
       "name": "地域団体サイト",
@@ -124,15 +122,67 @@
   ],
   "news": [
     {
-      "id": "7ac6a8da3a8697c449",
+      "id": "f0161e08314a326296",
+      "title": "いわき市医療センター・田山医師 熊本地震の被災地に派遣 現地の調整役担う",
+      "summary": "いわき民報が「いわき市医療センター・田山医師 熊本地震の被災地に派遣 現地の調整役担う」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "防災・安全",
+      "area": "全市",
+      "publishedAt": "2026-08-10T23:57:39+09:00",
+      "source": "いわき民報",
+      "sourceUrl": "https://iwaki-minpo.co.jp/news/2026/08/313900/",
+      "sourceGroup": "報道",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "a80054a5e6eea38319",
+      "title": "両市の絆をより深く継承へ いわき、秋田・由利本荘 親子都市４０周年の式典",
+      "summary": "いわき民報が「両市の絆をより深く継承へ いわき、秋田・由利本荘 親子都市４０周年の式典」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-10T23:55:58+09:00",
+      "source": "いわき民報",
+      "sourceUrl": "https://iwaki-minpo.co.jp/news/2026/08/313898/",
+      "sourceGroup": "報道",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "3be47eaec51bbf5214",
+      "title": "ドンワッセ！夏の風物詩「いわきおどり」に１３５団体・６６３８人",
+      "summary": "いわき民報が「ドンワッセ！夏の風物詩「いわきおどり」に１３５団体・６６３８人」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "イベント",
+      "area": "全市",
+      "publishedAt": "2026-08-10T23:53:55+09:00",
+      "source": "いわき民報",
+      "sourceUrl": "https://iwaki-minpo.co.jp/news/2026/08/313893/",
+      "sourceGroup": "報道",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "e82103339c4c155c23",
+      "title": "2026.08.10",
+      "summary": "いわき民報が「2026.08.10」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-10T23:52:05+09:00",
+      "source": "いわき民報",
+      "sourceUrl": "https://iwaki-minpo.co.jp/katasumisyou/2026/08/313891/",
+      "sourceGroup": "報道",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "752ec19798cae687dc",
       "title": "企業情報【破産手続き開始決定】いわき市の不動産業",
-      "summary": "47NEWSが「企業情報【破産手続き開始決定】いわき市の不動産業」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民報デジタルが「企業情報【破産手続き開始決定】いわき市の不動産業」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "経済",
       "area": "全市",
       "publishedAt": "2026-08-10T21:40:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iWUI2cUFHM0VyaWFZWW54a0dBOUdKd2lLM0ZySTRKdnFPdTNhVGppbEhaSmxGc3BHODFkVUN6S2o2NjlPeXNFSVgtQQ?oc=5",
-      "sourceHome": "https://www.47news.jp",
+      "source": "福島民報デジタル",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBJRkdKbG9jX1VjdkVUbUxLaXp1T1F3NTRhVUlSWGpxQl92QVIxS2l0WEtEdzk2OXN2cTk1N1ZwQWR1ckZ2RVZDSU91c2hzYnM?oc=5",
+      "sourceHome": "https://www.minpo.jp",
       "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -249,6 +299,20 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     },
     {
+      "id": "614acea9e7c6d50265",
+      "title": "第65回福島県芸術祭 開幕式典・開幕行事",
+      "summary": "いわき芸術文化交流館が「第65回福島県芸術祭 開幕式典・開幕行事」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "イベント",
+      "area": "全市",
+      "publishedAt": "2026-08-10T16:39:43+09:00",
+      "source": "いわき芸術文化交流館",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBDTTh1NzAtMVZZM2V1Y0doa0FuaG1rSXh4WmhyVlRXY29QbGZ5NGJCVllaWnd6N3h2VHZqR1lMYU1qYW5nN0lmczJhYWkxZ1pud05IOWVyWEQ0Y00?oc=5",
+      "sourceHome": "https://iwaki-alios.jp",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "844db4f129fc3f69af",
       "title": "劇団いわき小劇場 第58回公演 ボーイング・ボーイング - いわき芸術文化交流館",
       "summary": "いわき芸術文化交流館が「劇団いわき小劇場 第58回公演 ボーイング・ボーイング - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -357,14 +421,14 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "34250e27b8360f58e1",
-      "title": "サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（福島中央テレビ）",
-      "summary": "Yahoo!ニュースが「サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（福島中央テレビ）」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "id": "cb5934449a19d69953",
+      "title": "サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島 (福島中央テレビ)",
+      "summary": "Yahoo!ニュースが「サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島 (福島中央テレビ)」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-10T12:21:00+09:00",
       "source": "Yahoo!ニュース",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XVTZEVDJZcnJSWG5VMVNKN3VOMzkzdUU4NzZZU2EtRFpXRlNPODFsNVRDZHFRWVRqeER4eEg4ZzZyMzJfMkNYclR3NmdHRGZBbFpXUWFlay0tT2Rrb19uS19VMjNCVEN2R2lRSmJyR3VaSXMyOUVneXhBQjRDdDg?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbHJNSFZVSHJiXzlWdnROWEFkMlEtblhMUU1UU1VrTWlQelpycGdqdXQycHJ4ekk2UGo4Y21xU284SGFiQmNMVzBFVVJWUXY1TkJaXzVJc3Q1S0RfYkZDRzF1c3VnYnJvNmVOWmdDcXdGVWc0RVYwcDhuemFuZHBqUzFHRkhGLV9IODFUek9R?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
@@ -1359,20 +1423,6 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "733f133a6c8871563e",
-      "title": "いわき市Ｂ優勝 県市町村対抗ゴルフ",
-      "summary": "47NEWSが「いわき市Ｂ優勝 県市町村対抗ゴルフ」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-08T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE90c1VpX2NnZHA4Vk1Bc1pBb1NYVUs4MXFMR0draFd6SWlUaWpQb0lUVm5waVZxdE8yei1ia2RmTDBFQ3ZKaVFEQ2o3Zw?oc=5",
-      "sourceHome": "https://www.47news.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
       "id": "d92033c0b168c2758a",
       "title": "日フィルがコンサート １１日、いわき 地元中生と共演",
       "summary": "47NEWSが「日フィルがコンサート １１日、いわき 地元中生と共演」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -1381,6 +1431,20 @@
       "publishedAt": "2026-08-08T11:00:00+09:00",
       "source": "47NEWS",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9IYTRJeUFmcU0tV014R2M5SkZWSUxfbFNTdUNYMWZIZXJoMXRHZ25qRjl4ZWxaTlUxSy1PTlJ5Y1VCX0txR2hEZUxpdw?oc=5",
+      "sourceHome": "https://www.47news.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "733f133a6c8871563e",
+      "title": "いわき市Ｂ優勝 県市町村対抗ゴルフ",
+      "summary": "47NEWSが「いわき市Ｂ優勝 県市町村対抗ゴルフ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-08T11:00:00+09:00",
+      "source": "47NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE90c1VpX2NnZHA4Vk1Bc1pBb1NYVUs4MXFMR0draFd6SWlUaWpQb0lUVm5waVZxdE8yei1ia2RmTDBFQ3ZKaVFEQ2o3Zw?oc=5",
       "sourceHome": "https://www.47news.jp",
       "sourceGroup": "報道",
       "via": "google-news",
@@ -2491,11 +2555,11 @@
     {
       "id": "b6c58bb5ca1546e32a",
       "title": "福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン",
-      "summary": "mantan-web.jpが「福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "Mantan Webが「福島・小名浜の道の駅いわき・ら・ら・ミュウに、太平洋を望む炭火和食店「うえの炭や」がオープン」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "小名浜",
       "publishedAt": "2026-08-06T03:19:49+09:00",
-      "source": "mantan-web.jp",
+      "source": "Mantan Web",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbTF5UDdUMUNJVnZFbzVMbngyZ1VVdzcwNHFoSGdkS0U3eXlDNWZHNEphQWdKeS1NdWswd0VPQmI2RzhpM2NadEJBdFVtQTdsWjVENHRxNlVRSnZJcmZVaTcwa1VpNy0xRmxsanVsLWNQSWNjU3pLa2RBRF9vRTBQdnItSUhyY2VT?oc=5",
       "sourceHome": "https://mantan-web.jp",
       "sourceGroup": "地域",
@@ -2692,20 +2756,6 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     },
     {
-      "id": "e0d6ad3dbfed12b62a",
-      "title": "あすからいわき七夕まつり 会場周辺で交通規制",
-      "summary": "47NEWSが「あすからいわき七夕まつり 会場周辺で交通規制」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "イベント",
-      "area": "全市",
-      "publishedAt": "2026-08-05T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1iUGV5MzlQaF9kUDFLbzVkUU1zc0RVOTdra2JJdmgzM2R0OUduV080dW9LQjhUd2FCTkVHOHVKaDkwbGs2aG1renBTcw?oc=5",
-      "sourceHome": "https://www.47news.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
       "id": "bcb8fd68f065123b39",
       "title": "日本けん玉協会長 山木弘行さん講演 いわき地域文化研究会",
       "summary": "47NEWSが「日本けん玉協会長 山木弘行さん講演 いわき地域文化研究会」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -2714,6 +2764,20 @@
       "publishedAt": "2026-08-05T11:00:00+09:00",
       "source": "47NEWS",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0T0d6S19IV0ZmVEZqb1ZJTTh0dk56U3VDeFd3bEoxS0J0amV0ZEttN1hPVXdnemlFN3AzV3pMSFVFN283a2xXX1ZlQQ?oc=5",
+      "sourceHome": "https://www.47news.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "e0d6ad3dbfed12b62a",
+      "title": "あすからいわき七夕まつり 会場周辺で交通規制",
+      "summary": "47NEWSが「あすからいわき七夕まつり 会場周辺で交通規制」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "イベント",
+      "area": "全市",
+      "publishedAt": "2026-08-05T11:00:00+09:00",
+      "source": "47NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1iUGV5MzlQaF9kUDFLbzVkUU1zc0RVOTdra2JJdmgzM2R0OUduV080dW9LQjhUd2FCTkVHOHVKaDkwbGs2aG1renBTcw?oc=5",
       "sourceHome": "https://www.47news.jp",
       "sourceGroup": "報道",
       "via": "google-news",
@@ -3340,70 +3404,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "seed-6",
-      "title": "いわき平競輪場で夏期巡回ラジオ体操　全国放送も",
-      "summary": "8月4日早朝、いわき平競輪場で「夏期巡回ラジオ体操・みんなの体操会」が開催。全国を巡回する恒例行事で、NHKラジオでも放送されました。",
-      "category": "イベント",
-      "area": "平",
-      "publishedAt": "2026-08-04T07:00:00+09:00",
-      "source": "いわき民報",
-      "sourceUrl": "https://iwaki-minpo.co.jp/news/2026/07/313723/",
-      "note": "開催後の記録として掲載しています。"
-    },
-    {
-      "id": "85d66af86ac3a6964b",
-      "title": "【イベント】2/23いわき戦「後援会員抽選会」開催！",
-      "summary": "大分トリニータオフィシャルサイトが「【イベント】2/23いわき戦「後援会員抽選会」開催！」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "イベント",
-      "area": "全市",
-      "publishedAt": "2026-08-04T05:04:07+09:00",
-      "source": "大分トリニータオフィシャルサイト",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBSMXZpVTBoWVM4eUFULVZPaFFhMU9FYWhzY0pYMVZELTVYYnZsWllyWk1uT05yM1BBcENjaDlTTGlvLUZVa1RJNkVEZ2czYmx3RFZrSmZmalNETE0?oc=5",
-      "sourceHome": "https://www.oita-trinita.co.jp",
-      "sourceGroup": "観光・文化",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "cee8b7164412ab84e0",
-      "title": "いわき市水道局一般競争入札（令和８年８月４日公告分）",
-      "summary": "いわき市から「いわき市水道局一般競争入札（令和８年８月４日公告分）」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-04T00:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785206236858/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "e165ac7ebc45166634",
-      "title": "令和８年熊本地震に伴う支援物資の募集について",
-      "summary": "いわき市から「令和８年熊本地震に伴う支援物資の募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "防災・安全",
-      "area": "全市",
-      "publishedAt": "2026-08-04T00:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785810109253/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "9f7bf4b33f3389cbf4",
-      "title": "お試し移住体験・移住体験ツアーのお知らせ",
-      "summary": "いわき市から「お試し移住体験・移住体験ツアーのお知らせ」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-04T00:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785478196991/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     }
   ]
 }
