@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T20:29:11+09:00",
+  "generatedAt": "2026-08-13T21:32:28+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 42,
   "sources": [
@@ -22,9 +22,9 @@
     "news.tv-asahi.co.jp",
     "news.yahoo.co.jp",
     "prtimes.jp",
+    "report.iko-yo.net",
     "targma.jp",
     "tenki.jp",
-    "いこーよニュース",
     "いわきFC Official Site",
     "いわき市",
     "いわき市観光サイト",
@@ -74,9 +74,8 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "items": 12
     },
     {
       "name": "いわき総合ニュース",
@@ -106,7 +105,7 @@
       "name": "いわき経済",
       "group": "経済",
       "ok": true,
-      "items": 56
+      "items": 57
     },
     {
       "name": "地域団体サイト",
@@ -157,6 +156,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "fc09ac4c3209626d84",
+      "title": "お盆の行事『じゃんがら念仏踊り』 新盆の家を訪ね供養 伝統を守るため若い世代も奮闘 福島・いわき市：ニュース",
+      "summary": "FTV 福島テレビが「お盆の行事『じゃんがら念仏踊り』 新盆の家を訪ね供養 伝統を守るため若い世代も奮闘 福島・いわき市：ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-13T19:42:00+09:00",
+      "source": "FTV 福島テレビ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1BbFhmS3pPSzNtTGJreFJNc3otektMWUZCQjlDYTRzU3NGUUhYUlNHRHk5c2VncFMyMHlMcUVwX21XNjZCenJkY1VQZTZxVnRwenAwZWlxajdGQ1p6TWlXcDYyajJDS0lmeXlrdnkxVU5HTXZqY1F4Rm9R?oc=5",
+      "sourceHome": "https://www.fukushima-tv.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "06963a7c4dfe183b53",
       "title": "盆の入り いわき市で子どもたちが「じゃんがら念仏踊り」を披露（ふくしまNEWS -KFBデジタル-）",
       "summary": "Yahoo!ニュースが「盆の入り いわき市で子どもたちが「じゃんがら念仏踊り」を披露（ふくしまNEWS -KFBデジタル-）」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -182,6 +195,20 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "1ab0273766512f9652",
+      "title": "たかぎひろこピアノ教室発表会",
+      "summary": "いわき芸術文化交流館が「たかぎひろこピアノ教室発表会」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-13T18:15:39+09:00",
+      "source": "いわき芸術文化交流館",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE85TmRpbXRmNUlCX2RVVnVuWEtzUTRhekdZQWNHVi1Od1FRcGNnRXpNR0cwZzREekZMR3ZUdFVjUGNSWWRPVXBSeFRtV2tIMk5mQm40ZWdvTmQxYzA?oc=5",
+      "sourceHome": "https://iwaki-alios.jp",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
       "id": "b4a9df1106f0f2b442",
@@ -1441,7 +1468,7 @@
       "source": "福島民報デジタル",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rY2tfc2l0UElHMzRnY19RQmZXbmxLYlQyVlhMaldKMkRJZ0U0cXR1VHktLXE2X3RvenFuWXhyY2NPMHRBekNRY19SdXEwMkU?oc=5",
       "sourceHome": "https://www.minpo.jp",
-      "sourceGroup": "経済",
+      "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -1985,11 +2012,11 @@
     {
       "id": "261b8dd8a53ead83f8",
       "title": "トレーラーハウスのゴーゴーカレーがいわきに誕生！モバイルオーダーで並ばず受け取り",
-      "summary": "いこーよニュースが「トレーラーハウスのゴーゴーカレーがいわきに誕生！モバイルオーダーで並ばず受け取り」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "report.iko-yo.netが「トレーラーハウスのゴーゴーカレーがいわきに誕生！モバイルオーダーで並ばず受け取り」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-10T12:35:26+09:00",
-      "source": "いこーよニュース",
+      "source": "report.iko-yo.net",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNbUZGbjJRT0puZEdldnE5SHNVb1k2NjJXaXM2WVlfdEVwdjRUczg0STJYTVdWclhJMU9hMnpIVnJUYWFhdkljTHJTWG5KMXNpZ2c?oc=5",
       "sourceHome": "https://report.iko-yo.net",
       "sourceGroup": "報道",
@@ -3388,34 +3415,6 @@
       "publishedAt": "2026-08-07T21:27:15+09:00",
       "source": "トラベルボイス",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9DR1h0UGVfcS1rQmZrT3dSNXA0RVhiampCRDA3a1dBMm5faDhidzlndVpBV25vM0dKcGotZ0piWkZsOHZYdG9kUk5taklfaTY3eEVEMGdqeWtMbW9TbzdWX213?oc=5",
-      "sourceHome": "https://www.travelvoice.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "4ac4d986dd78696736",
-      "title": "【いわきFC】いわきFC、日本道路株式会社とビジネスパートナー契約締結",
-      "summary": "ニコニコニュースが「【いわきFC】いわきFC、日本道路株式会社とビジネスパートナー契約締結」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-08-07T21:21:27+09:00",
-      "source": "ニコニコニュース",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Bc1puUmRhdmw4NFlhdUhVOVRBQXl1M2VhdmxFZlVpYjByd0hMc1M0ZnIzck04ZlhqUi1RTTNIQkRSY2h4X1VPZ2YxOElmUmJpdjEteDhNV0xGb2dNQi12cVBVQk1hVXNuUlVlcVZSN29oRkotZl9DeXI5TQ?oc=5",
-      "sourceHome": "https://news.nicovideo.jp",
-      "sourceGroup": "経済",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "b301523e2846fa7b3c",
-      "title": "福島県・いわき市、4～14泊のオーダーメイド式のお試し移住体験の参加者を募集｜旅先テレワーク実践ガイド 【公式】",
-      "summary": "トラベルボイスが「福島県・いわき市、4～14泊のオーダーメイド式のお試し移住体験の参加者を募集｜旅先テレワーク実践ガイド 【公式】」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-07T20:27:21+09:00",
-      "source": "トラベルボイス",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KdjRCbzlnNXpGZzFrMVZaTFRpVWcyTmZ6VV9fazdHZEQzLVkzXy0wcjdkVnVVamtBdS1Ud095OXh6Q0tReEZNZ1RLQ05XU2dJN1BZUGpKWGpVNThPQ2RFNndB?oc=5",
       "sourceHome": "https://www.travelvoice.jp",
       "sourceGroup": "報道",
       "via": "google-news",
