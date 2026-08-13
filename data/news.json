@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T09:43:40+09:00",
+  "generatedAt": "2026-08-13T12:15:11+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 46,
   "sources": [
@@ -55,7 +55,7 @@
       "name": "いわき市・新着情報",
       "group": "行政",
       "ok": true,
-      "items": 71
+      "items": 70
     },
     {
       "name": "いわき市・トピックス",
@@ -84,41 +84,60 @@
     {
       "name": "いわき総合ニュース",
       "group": "報道",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "13地域ニュース",
       "group": "地域",
-      "ok": true,
-      "items": 75
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわきFC",
       "group": "スポーツ",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき観光",
       "group": "観光・文化",
-      "ok": true,
-      "items": 62
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき経済",
       "group": "経済",
-      "ok": true,
-      "items": 55
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "地域団体サイト",
       "group": "地域団体",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "news": [
+    {
+      "id": "52c97c217928d87029",
+      "title": "いわき市水道局一般競争入札（令和８年８月18日公告分）",
+      "summary": "いわき市から「いわき市水道局一般競争入札（令和８年８月18日公告分）」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-18T00:00:00+09:00",
+      "source": "いわき市",
+      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785206236858/index.html",
+      "sourceGroup": "行政",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
     {
       "id": "4bedd54e169bc43833",
       "title": "【いわき市】8/13 最高28℃、やや暑さを感じる場面も、朝から夜まで雨の予想【朝版】",
@@ -1820,6 +1839,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "ea9d1f0840317f96d5",
+      "title": "実行委、手話の普及に期待 いわき市条例制定 市長と懇談",
+      "summary": "福島民報デジタルが「実行委、手話の普及に期待 いわき市条例制定 市長と懇談」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "市政",
+      "area": "全市",
+      "publishedAt": "2026-08-10T11:00:00+09:00",
+      "source": "福島民報デジタル",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE94T1ZSWkRBMVVVZldrMDN6S3ROY3d2eFdRSHRqVUZ6WUV2UzMtV09RdktWNENNSHJ4UzRyQlNQYVlxbDdIbzEzcFRpWWRrTUU?oc=5",
+      "sourceHome": "https://www.minpo.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "310811301ffa6447ed",
       "title": "いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について",
       "summary": "いわき市から「いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
@@ -1844,20 +1877,6 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "ea9d1f0840317f96d5",
-      "title": "実行委、手話の普及に期待 いわき市条例制定 市長と懇談",
-      "summary": "福島民報デジタルが「実行委、手話の普及に期待 いわき市条例制定 市長と懇談」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "市政",
-      "area": "全市",
-      "publishedAt": "2026-08-10T11:00:00+09:00",
-      "source": "福島民報デジタル",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE94T1ZSWkRBMVVVZldrMDN6S3ROY3d2eFdRSHRqVUZ6WUV2UzMtV09RdktWNENNSHJ4UzRyQlNQYVlxbDdIbzEzcFRpWWRrTUU?oc=5",
-      "sourceHome": "https://www.minpo.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
       "id": "402803cdf0c59ae1e3",
@@ -3405,20 +3424,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqZGhqMDBlMDVQREwxYkwzTEhqamU3TkRlTDZfTGlYVWUyWVZtOXp4Vmk3SDRuQVk3cV9FeGlYUUZMTU42b0QxdGhPajhSUDlWSFFuOThLQVdSc0E?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "0cd060abaac3359109",
-      "title": "女声デュオ調和の響き いわきでコンサート",
-      "summary": "47NEWSが「女声デュオ調和の響き いわきでコンサート」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "イベント",
-      "area": "全市",
-      "publishedAt": "2026-08-07T11:00:00+09:00",
-      "source": "47NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB5U2wtWDVBVlZhWERBdDR4UFFRaHR3YzZkRUkyUGkzOWVsS1laai1OZ3VLLTA3R1JZQlNSc1NsMHh0UEVhU3lxajRldw?oc=5",
-      "sourceHome": "https://www.47news.jp",
-      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
