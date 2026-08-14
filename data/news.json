@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T20:28:18+09:00",
+  "generatedAt": "2026-08-14T21:28:10+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 43,
   "sources": [
@@ -34,8 +34,8 @@
     "いわき芸術文化交流館",
     "るるぶWeb",
     "イザ！",
+    "テレ朝NEWS",
     "ニコニコニュース",
-    "バーチャル高校野球",
     "ライブドアニュース",
     "大分トリニータオフィシャルサイト",
     "山陽新聞",
@@ -75,9 +75,8 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "items": 12
     },
     {
       "name": "いわき総合ニュース",
@@ -101,13 +100,13 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 59
+      "items": 60
     },
     {
       "name": "いわき経済",
       "group": "経済",
       "ok": true,
-      "items": 62
+      "items": 63
     },
     {
       "name": "地域団体サイト",
@@ -193,6 +192,20 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXTnl5VDFEU0x1alZRNWZBWm1LV1B4MFdtR3dUVDRBc09FQURRMXFtUFF6QUZFNDA4dXdoWC04X2JLendFZWl3MHFPaHBlcGxXbGZzWkt1TGpKcUxyTXphaFdpZnFQdXZnTmZLOEJyX0Ixb0FqX1FhNlh6MjAwTFk?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "9fe68f86116f62352f",
+      "title": "「みんなで集まれるのはすごくうれしい」コロナ禍でできなかった成人式を5年越しで いわき市・福島",
+      "summary": "日テレNEWS NNNが「「みんなで集まれるのはすごくうれしい」コロナ禍でできなかった成人式を5年越しで いわき市・福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-14T18:45:00+09:00",
+      "source": "日テレNEWS NNN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ2diVlZTSjdwQkJlRFlGSGdzYWFYUFQ5ZFNkWk5YeEduLWlobHdRaEdTbWU1U2ltYzVEVDY0QkJXN3k2Vy1SRGxCaVA5QnZYQTBudG45eVhaUFhSM2lldmU4WDBXTU9fWGVTUlNTQjNralIwYkgwM2U1SkJIWGtfaXYtV1c0ZFE?oc=5",
+      "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -1891,11 +1904,11 @@
     {
       "id": "13c2f746629d6b9b9a",
       "title": "台風15号 福島・いわき市 強風域に入った海岸の様子は 果樹園では対策進める",
-      "summary": "news.tv-asahi.co.jpが「台風15号 福島・いわき市 強風域に入った海岸の様子は 果樹園では対策進める」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "テレ朝NEWSが「台風15号 福島・いわき市 強風域に入った海岸の様子は 果樹園では対策進める」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-11T12:02:14+09:00",
-      "source": "news.tv-asahi.co.jp",
+      "source": "テレ朝NEWS",
       "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBiakpwdEItZmpIZnhybUlGMUdCRnhQczhUNlRRS2xqQ3JYdWFEZ0ctUm9UUnJvYV9TT2E4ZGRnMzJKTU9tYWZIRkNnSnhVaUE3RlBWS2U1b0FWTGhqNDlQU0JrUUtub080TGxDdjliTHpKdw?oc=5",
       "sourceHome": "https://news.tv-asahi.co.jp",
       "sourceGroup": "地域",
@@ -3404,20 +3417,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjNDE4X20yT1ZoMFpUSy0zUGEtdWljWUlIUEd2aGpfS0QwRExLZk14WFN2bFJnRkpWYjc5blB0WGROOVRHeFk3UEdrMk8tMkU?oc=5",
       "sourceHome": "https://www.minpo.jp",
       "sourceGroup": "経済",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "67feab642870f60018",
-      "title": "東日大昌平、白樺学園破る 地元いわき市も応援、甲子園初勝利に歓喜(画像 1/2)",
-      "summary": "バーチャル高校野球が「東日大昌平、白樺学園破る 地元いわき市も応援、甲子園初勝利に歓喜(画像 1/2)」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "教育・子育て",
-      "area": "全市",
-      "publishedAt": "2026-08-09T10:49:10+09:00",
-      "source": "バーチャル高校野球",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mTnVHbU9yVGhVOGg4S3pHV0VMb3dpYnF3ZUN4X0ZMZHNYX3VWZmFzcFl1RExSYk5VeEJodWlCV3l0clQtMGl1X0lucUhhcWJVWnJiTkVYVDREZ3Rpamt6N1F5U0lONE8yWWFQRlpUX2JJVXZZOVprVQ?oc=5",
-      "sourceHome": "https://vk.sportsbull.jp",
-      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
