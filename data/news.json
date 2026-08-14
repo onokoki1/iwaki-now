@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:59:01+09:00",
+  "generatedAt": "2026-08-15T08:36:44+09:00",
   "collectorVersion": "2.0",
   "sourceCount": 47,
   "sources": [
@@ -56,7 +56,7 @@
       "name": "いわき市・新着情報",
       "group": "行政",
       "ok": true,
-      "items": 68
+      "items": 64
     },
     {
       "name": "いわき市・トピックス",
@@ -85,38 +85,44 @@
     {
       "name": "いわき総合ニュース",
       "group": "報道",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "13地域ニュース",
       "group": "地域",
-      "ok": true,
-      "items": 70
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわきFC",
       "group": "スポーツ",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき観光",
       "group": "観光・文化",
-      "ok": true,
-      "items": 60
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "いわき経済",
       "group": "経済",
-      "ok": true,
-      "items": 62
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "地域団体サイト",
       "group": "地域団体",
-      "ok": true,
-      "items": 100
+      "ok": false,
+      "items": 0,
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "news": [
@@ -2720,32 +2726,6 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "310811301ffa6447ed",
-      "title": "いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について",
-      "summary": "いわき市から「いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "勿来",
-      "publishedAt": "2026-08-10T11:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785457774425/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "bf49b912283f1665ac",
-      "title": "いわき市制施行60周年記念事業「奥州三古関サミットin勿来」 における歴史講演会の参加者募集について",
-      "summary": "いわき市から「いわき市制施行60周年記念事業「奥州三古関サミットin勿来」 における歴史講演会の参加者募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "勿来",
-      "publishedAt": "2026-08-10T11:00:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785457774425/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
       "id": "06aa59da774ef3703e",
       "title": "実行委、手話の普及に期待 いわき市条例制定 市長と懇談",
       "summary": "47news.jpが「実行委、手話の普及に期待 いわき市条例制定 市長と懇談」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -2772,6 +2752,32 @@
       "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "310811301ffa6447ed",
+      "title": "いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について",
+      "summary": "いわき市から「いわき市制施行60周年記念事業「奥州三古関サミットin勿来関」における歴史講演会の参加者募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
+      "category": "暮らし",
+      "area": "勿来",
+      "publishedAt": "2026-08-10T11:00:00+09:00",
+      "source": "いわき市",
+      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785457774425/index.html",
+      "sourceGroup": "行政",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "bf49b912283f1665ac",
+      "title": "いわき市制施行60周年記念事業「奥州三古関サミットin勿来」 における歴史講演会の参加者募集について",
+      "summary": "いわき市から「いわき市制施行60周年記念事業「奥州三古関サミットin勿来」 における歴史講演会の参加者募集について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
+      "category": "暮らし",
+      "area": "勿来",
+      "publishedAt": "2026-08-10T11:00:00+09:00",
+      "source": "いわき市",
+      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785457774425/index.html",
+      "sourceGroup": "行政",
+      "via": "direct-rss",
+      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     },
     {
       "id": "402803cdf0c59ae1e3",
