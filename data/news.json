@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-16T07:58:21+09:00",
+  "generatedAt": "2026-08-16T08:33:41+09:00",
   "collectorVersion": "2.0",
-  "sourceCount": 45,
+  "sourceCount": 43,
   "sources": [
     "010-sports.jp",
     "47NEWS",
@@ -19,8 +19,6 @@
     "Yahoo!ニュース",
     "au Webポータル",
     "iwaki-alios.jp",
-    "iwakifc.com",
-    "minyu-net.com",
     "news.tv-asahi.co.jp",
     "news.yahoo.co.jp",
     "nippon.com",
@@ -77,9 +75,8 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "items": 12
     },
     {
       "name": "いわき総合ニュース",
@@ -91,7 +88,7 @@
       "name": "13地域ニュース",
       "group": "地域",
       "ok": true,
-      "items": 66
+      "items": 69
     },
     {
       "name": "いわきFC",
@@ -103,7 +100,7 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 57
+      "items": 58
     },
     {
       "name": "いわき経済",
@@ -144,6 +141,20 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "f12bd2a56e7168dac1",
+      "title": "【いわき市】毎年盛り上がる。「いわき湯本温泉夏まつり 観音山仮装盆踊り＆花火大会」が開かれます！",
+      "summary": "号外NET いわき市が「【いわき市】毎年盛り上がる。「いわき湯本温泉夏まつり 観音山仮装盆踊り＆花火大会」が開かれます！」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "常磐",
+      "publishedAt": "2026-08-16T08:00:04+09:00",
+      "source": "号外NET いわき市",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZT1JjNGR0aVFvaDJqcFNmbmZJa1JBaTdlZEkzMnFiRHFxb2pKbVlfRTExejk0ZThPSjNyRXBXN0F5Y0RGYjgyblRfbGRQaV9vVEM1STNZWjh4LVVfNnpQdmRJSE5XYkE?oc=5",
+      "sourceHome": "https://iwaki.goguynet.jp",
+      "sourceGroup": "地域",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
       "id": "a43cc4b334c848ca77",
@@ -325,11 +336,11 @@
     {
       "id": "75ef87d29f0440fbe2",
       "title": "いわきFC、藤枝に敗れる サッカーJ2:速報",
-      "summary": "minyu-net.comが「いわきFC、藤枝に敗れる サッカーJ2:速報」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきFC、藤枝に敗れる サッカーJ2:速報」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-15T20:28:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WSWN2WE5ZNWttZkJfc0lUV0ZNSEx5RHpUTkE5OGVnRDg0RkNGMlNjbnNHdHhBMm4zMHBDNjdBbzZaUk0tSklWWGk5M2hUZlREYTRxdktBZVZXS3JjM3V0dUw4QUw3U29S?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -465,11 +476,11 @@
     {
       "id": "d69b79a6e8adc03f1c",
       "title": "やぐら囲んでゆるりと踊る いわき回転櫓盆踊り:イベント・レジャー",
-      "summary": "minyu-net.comが「やぐら囲んでゆるりと踊る いわき回転櫓盆踊り:イベント・レジャー」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「やぐら囲んでゆるりと踊る いわき回転櫓盆踊り:イベント・レジャー」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-08-15T08:25:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qNTZmSXAxU05nS2RMSXBOSi0tbldNbm1HbEhkd3MwcmVnUmlnWmkwSVZCRmVOODdPaGtXU0wyZWR1NXltdkVTSHBTWTloNGIzYWFnZTR6UDBrcjhwWmNBeFFUTUpLTDNl?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "観光・文化",
@@ -479,11 +490,11 @@
     {
       "id": "637251c8e56d2177bf",
       "title": "いわきで「約束の成人式」 新型コロナで中止の代替、市内外から500人参加:地域ニュース",
-      "summary": "minyu-net.comが「いわきで「約束の成人式」 新型コロナで中止の代替、市内外から500人参加:地域ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきで「約束の成人式」 新型コロナで中止の代替、市内外から500人参加:地域ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-15T08:00:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1kX1VMNUY4NS1HbUdmMm84OG1TZk9mWDdISVdyZGp0Wnd1dFRScGZOb2VDcjJ3MFNBN0YzQlZ0bXo5YmFiX0dyVWhOcHhScV9zWHU1NWcwWW80X1FmWmtnQ0dyR1A1TDhi?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "報道",
@@ -649,7 +660,7 @@
       "source": "るるぶWeb",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1iMHoyMHdwTjZKVHAwa09fcWtJU0tBXzZ1TkFVMkdBVzR6aHFTenN1RGtiY3JYdVRka0F2b3QzSFBETkU2MTJaUWd6akVSODkt?oc=5",
       "sourceHome": "https://rurubu.jp",
-      "sourceGroup": "報道",
+      "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -738,11 +749,11 @@
     {
       "id": "2affdec21951687214",
       "title": "いわきFC応援キャンペーン、アウェー戦もポイントゲット:いわきFC:情報",
-      "summary": "minyu-net.comが「いわきFC応援キャンペーン、アウェー戦もポイントゲット:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきFC応援キャンペーン、アウェー戦もポイントゲット:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-14T13:37:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YVzE1WVh1eVZValFHSWZSSnBpRHZWa21mNmgzVzFDektCallHX0w1Y2ZaMFVqU1k3cEplWDhiSHlDWWZTRkphbWdZMHVHUWlhajQ0d2NzWms2cUkzYmthaC1lQ082UzJw?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -898,11 +909,11 @@
     {
       "id": "501d31ebe98c68d441",
       "title": "いわきFC、開幕連勝へ 15日、アウェーで藤枝戦:いわきFC:情報",
-      "summary": "minyu-net.comが「いわきFC、開幕連勝へ 15日、アウェーで藤枝戦:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきFC、開幕連勝へ 15日、アウェーで藤枝戦:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-14T07:50:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoUEkzMldOOEJkTU9RZnY4XzhMczlaZkhXTzFCLXkxYjd3bmFFdUhrbUdkWkdDNkZwVUZoQ1FHTDcyTThNTU1FcHBpc3ItRkpjOU14a1liVENKYXBtRmRoY2dlWVhOcERn?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -937,6 +948,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "a9b1c78efe1a910f0e",
+      "title": "福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町",
+      "summary": "Yahoo!ニュースが「福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "防災・安全",
+      "area": "全市",
+      "publishedAt": "2026-08-14T04:27:22+09:00",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4YlZSRUVuazRwV1FudnNkdWFFYUF1a1dxeWNFTGhfNFc1WFVBYmhBcE9vOTFHbnFkYVlYbXRoTVVzQlVESnRRemVMaFdJcDlGc3ZXNkJtTW1XMzdkUHpUQVE0MVdoNGQzQURia2FnQjVMdW1mdnROUll5NGkzNGc?oc=5",
+      "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "ff90ad35a038fea22e",
       "title": "福島県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町、茨城県・日立市、高萩市",
       "summary": "Yahoo!ニュースが「福島県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町、茨城県・日立市、高萩市」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -946,20 +971,6 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjdBWTg3WGE4OTdnM3cyNEdkeXVZMHZINFNSdzB6R1lPWXFkV3VCaFU5d0tjU28ycWNORjBzSXpmWnVKSjBvaXA3SUJUeFJ2al9FQnkydWJrS3ExUnpPS0psaldHN3hCLUhuRzljOGs2SDJBcXFhaS12dHVEUjA0QllBSm1kR3pCSjM4d1RB?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "4d4d9fa3614c06097f",
-      "title": "福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町",
-      "summary": "TBS NEWS DIGが「福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "防災・安全",
-      "area": "全市",
-      "publishedAt": "2026-08-14T04:25:00+09:00",
-      "source": "TBS NEWS DIG",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE91dW96WGlUZlNCWnFiVU1ZSTBydkJ1ME5ua0JES0xkS1dBeHA3dkp2bGlQbDExWEFRYjQzTEF2dXJzRFBTU3JFaUxHcDZ4N2RJcW1JVmlpN0RZTXd4c0JpRTgtWnc?oc=5",
-      "sourceHome": "https://newsdig.tbs.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -1128,11 +1139,11 @@
     {
       "id": "b4a9df1106f0f2b442",
       "title": "8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施",
-      "summary": "iwakifc.comが「8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
+      "summary": "いわきFC Official Siteが「8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-13T17:59:52+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zRzloWGhNSXR3ZlNtRVY5WkhCMGMtRi1Xdl9xWjZUaWJvY3FqaHVPRndPanBNVy1UVlpZNUpCY3BXa2xHM2xjRVcxa3ZnZnZveU9pRGUtbGdTUQ?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -1897,6 +1908,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "c1da67c9df48e920bb",
+      "title": "【台風15号】いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊",
+      "summary": "47NEWSが「【台風15号】いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-11T20:45:00+09:00",
+      "source": "47NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBQQllwd2VnTDFLRnhKSkZRQWR6akNub1A3SFYwSGNvTUFCSmJfSVQ1UjRzNG5obTF5RFRtakNTbUFzcUpRdmRiQWNTQQ?oc=5",
+      "sourceHome": "https://www.47news.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "c1854bcb6244adf653",
       "title": "＜速報＞台風15号接近 いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊",
       "summary": "福島民報デジタルが「＜速報＞台風15号接近 いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -1907,20 +1932,6 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3SjZCTm5SSW5FVFpaR0ZGMWtjSkRFS3FYNktJQnpPSXZNaTFCV2hMc0Nwa1FkWTJrVl8zRk10ZU5ZRGQwd2JwbzNCdGIyRDQ?oc=5",
       "sourceHome": "https://www.minpo.jp",
       "sourceGroup": "経済",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "fab745136b8803651c",
-      "title": "【台風15号】いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊",
-      "summary": "福島民報デジタルが「【台風15号】いわきで被害相次ぐ 公園で倒木 海水浴場の監視塔倒壊」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-11T20:24:10+09:00",
-      "source": "福島民報デジタル",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3SjZCTm5SSW5FVFpaR0ZGMWtjSkRFS3FYNktJQnpPSXZNaTFCV2hMc0Nwa1FkWTJrVl8zRk10ZU5ZRGQwd2JwbzNCdGIyRDQ?oc=5",
-      "sourceHome": "https://www.minpo.jp",
-      "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
@@ -2263,11 +2274,11 @@
     {
       "id": "fab55f829e2340c27f",
       "title": "8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ",
-      "summary": "iwakifc.comが「8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-11T15:44:26+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPN0VCOXM2SF9zNmVCX01xa2JyaXBiZEk4R192cU1yMGdvT3U5VFR6cTlIZGdBaE41SjExbm5BOEh4a1hocnl0aHNOZzVYRWJyLUJWMWxWTjhqbXVkZW5NSlhGeFJIMDJBR0RhXzljOVhqdWlzVXlSOG5sTF8yVnEtNGZBVGNsX2NfaDdUYzNGMmFLaWhRb1pFZGVJMWQwbkRGZll2RnVXSl90cUhCaXhqSTN2VUU5cVhwdTFXMUhaSjlTbVhtSXJTWnljcE5TOUxKRkw5Rjk3aWRtVEk1QzVhU2xxX2R5RWdYY2lOQVhGaTVnWHJ3RDhpczZRbXhXcGFuWmtJQXA0YkZUWUs5djZ0d0JKTk5GeXpRdEVnTXgwMUNvV0hXcTN4aGNDNUVuTGJ5NG4yWS1Id1ZMV1hwbVZPTDZPLXU3dVh6?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -2275,15 +2286,15 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "e2238a5164832c5082",
+      "id": "12b97491ae779db304",
       "title": "【台風15号】空の便や鉄道など交通機関に影響 JR常磐線は水戸駅～いわき駅間で一部列車が運休",
-      "summary": "日テレNEWS NNNが「【台風15号】空の便や鉄道など交通機関に影響 JR常磐線は水戸駅～いわき駅間で一部列車が運休」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "Excite エキサイトが「【台風15号】空の便や鉄道など交通機関に影響 JR常磐線は水戸駅～いわき駅間で一部列車が運休」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "常磐",
-      "publishedAt": "2026-08-11T14:17:00+09:00",
-      "source": "日テレNEWS NNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZcVBmcndLeWJJNWN1ZXMtZHNSdnhnZGhPaVdYSm5pWEViSU1pUmRyVEhFZW5FbUxGVm42SlM1dnI2VVB1RHd2VDUyNml4RlNxRE9CbkE5TlVZZkxLR0w2djZmang3blJJejIwUmo0T0NuNHBHVU5rUFh6SzY?oc=5",
-      "sourceHome": "https://news.ntv.co.jp",
+      "publishedAt": "2026-08-11T14:19:00+09:00",
+      "source": "Excite エキサイト",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4OGNxNEdXalEzWk1wYWF1Rk5wWllSRGprQk5nZlhIdDJTSF92ajBfMHJieGExZUx6bU1EOHh2U2VkRk95Q3oyTnlQUGNQNmJEand5V2lzenJVdGYyc3RlMlYtMEJzNm9OdHdTY1N3?oc=5",
+      "sourceHome": "http://www.excite.co.jp",
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -3092,20 +3103,6 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
-      "id": "af14536206d5cf41d2",
-      "title": "サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（2026年8月9日掲載）｜中テレNEWS NNN",
-      "summary": "日テレNEWS NNNが「サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（2026年8月9日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-08-10T12:21:00+09:00",
-      "source": "日テレNEWS NNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUDg3TGxDQ3hWSXRlVkplVU9sOVg0TzhMaG55OWp2b0x1ckZTU3BsRWVtN2dtemtIYVFIX2l1RjhZNEFBdkhQdVlTZ2I5MkxTdF9LU1Q2N3FGbFVnRHpZanhMX2RMa1p6eFRXZVVpNGY2RUNXVDhYZDFlcHctWXNhbFBwVHo0QQ?oc=5",
-      "sourceHome": "https://news.ntv.co.jp",
-      "sourceGroup": "スポーツ",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
       "id": "cb5934449a19d69953",
       "title": "サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島 (福島中央テレビ)",
       "summary": "Yahoo!ニュースが「サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島 (福島中央テレビ)」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -3115,6 +3112,20 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbHJNSFZVSHJiXzlWdnROWEFkMlEtblhMUU1UU1VrTWlQelpycGdqdXQycHJ4ekk2UGo4Y21xU284SGFiQmNMVzBFVVJWUXY1TkJaXzVJc3Q1S0RfYkZDRzF1c3VnYnJvNmVOWmdDcXdGVWc0RVYwcDhuemFuZHBqUzFHRkhGLV9IODFUek9R?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "スポーツ",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "af14536206d5cf41d2",
+      "title": "サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（2026年8月9日掲載）｜中テレNEWS NNN",
+      "summary": "日テレNEWS NNNが「サッカー明治安田Jリーグが開幕 J2いわきFCは白星スタート J3福島は惜敗 福島（2026年8月9日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-08-10T12:21:00+09:00",
+      "source": "日テレNEWS NNN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUDg3TGxDQ3hWSXRlVkplVU9sOVg0TzhMaG55OWp2b0x1ckZTU3BsRWVtN2dtemtIYVFIX2l1RjhZNEFBdkhQdVlTZ2I5MkxTdF9LU1Q2N3FGbFVnRHpZanhMX2RMa1p6eFRXZVVpNGY2RUNXVDhYZDFlcHctWXNhbFBwVHo0QQ?oc=5",
+      "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -3301,11 +3312,11 @@
     {
       "id": "34e1507b40a1bb3fdf",
       "title": "８月29日「いわき―新潟戦」観戦チケット、福島民友新聞購読者に限定販売:いわきFC:情報",
-      "summary": "minyu-net.comが「８月29日「いわき―新潟戦」観戦チケット、福島民友新聞購読者に限定販売:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「８月29日「いわき―新潟戦」観戦チケット、福島民友新聞購読者に限定販売:いわきFC:情報」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-10T09:00:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ZcE5QdEtaZ2N5Vi1JclcyRllUZmc4WGEydWJZXzNidVpoc2J0X29qY0Y3bS1Sd2UyRFRSQ2VKcFdvNFA5V2RUQWRjU1lhdVNxTHV1WXRnRUc5aW9PREkzcENxYXdNeWpp?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -3315,11 +3326,11 @@
     {
       "id": "82ce903908bb6dc284",
       "title": "いわきFC田村監督「道脇と熊田の2トップはJ2屈指」 開幕戦振り返る:いわきFC:試合結果",
-      "summary": "minyu-net.comが「いわきFC田村監督「道脇と熊田の2トップはJ2屈指」 開幕戦振り返る:いわきFC:試合結果」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきFC田村監督「道脇と熊田の2トップはJ2屈指」 開幕戦振り返る:いわきFC:試合結果」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-08-10T08:50:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VSUNYbHFqdVRsaldEUExLUUg4VXVJZFBCRUJQVWNCQXhZSEh5MDNLZDJramYtVnZmendYbEFBUzZjdlVWZ0pFekc1WGEzem9QRTNael9Qa2pPYnB0SjNRRkFtWlBONjJm?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -3383,11 +3394,11 @@
     {
       "id": "830096cbbe705c3ee9",
       "title": "「いわきFC応援キャンペーン」ポイント受け取り 福島民友がブース",
-      "summary": "minyu-net.comが「「いわきFC応援キャンペーン」ポイント受け取り 福島民友がブース」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「「いわきFC応援キャンペーン」ポイント受け取り 福島民友がブース」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-10T08:35:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40UlJYTnJ4cU1Zc1JBUHZhLUEyU2FhQlFBVUtScFRGeDdQazkzY0VnUExLZXZ4T2lfMVpCVjhVUE52TXI5T1JDWnR4dWZqSnYxMXJUeHBTMElUX09TdXFub3RxR0dIeHpa?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
@@ -3397,29 +3408,16 @@
     {
       "id": "e1e0eb25a2353a93ee",
       "title": "いわきFC熊田直紀、復活2発 けが乗り越え「涙出た」:いわきFC:試合結果",
-      "summary": "minyu-net.comが「いわきFC熊田直紀、復活2発 けが乗り越え「涙出た」:いわきFC:試合結果」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "福島民友新聞社が「いわきFC熊田直紀、復活2発 けが乗り越え「涙出た」:いわきFC:試合結果」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-08-10T08:35:00+09:00",
-      "source": "minyu-net.com",
+      "source": "福島民友新聞社",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNWGZ5bXo3ZmdJU0JoQ2VsT0x5aHFVdUhWTGFZLVgzcHUzeHhxS09aSFBqUzdEalhhSlBoNzVtZExnZTJwLVpBeDZ5eW5GZ0FsbWh3V2U2bnF0QUJQRHYxQk56Uk9Pd0dG?oc=5",
       "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "048e3734623761cfac",
-      "title": "内郷・好間・三和地区保健福祉センター 事務補助（フルタイム会計年度任用職員）の募集",
-      "summary": "いわき市から「内郷・好間・三和地区保健福祉センター 事務補助（フルタイム会計年度任用職員）の募集」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "暮らし",
-      "area": "内郷",
-      "publishedAt": "2026-08-10T08:30:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1785994527004/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     }
   ]
 }
