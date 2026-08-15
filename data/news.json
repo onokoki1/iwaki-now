@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-16T07:36:23+09:00",
+  "generatedAt": "2026-08-16T07:58:21+09:00",
   "collectorVersion": "2.0",
-  "sourceCount": 46,
+  "sourceCount": 45,
   "sources": [
     "010-sports.jp",
     "47NEWS",
@@ -24,7 +24,6 @@
     "news.tv-asahi.co.jp",
     "news.yahoo.co.jp",
     "nippon.com",
-    "prtimes.jp",
     "targma.jp",
     "tenki.jp",
     "topics.smt.docomo.ne.jp",
@@ -78,8 +77,9 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": true,
-      "items": 12
+      "ok": false,
+      "items": 0,
+      "error": "<urlopen error timed out>"
     },
     {
       "name": "いわき総合ニュース",
@@ -318,6 +318,20 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTi13dXNWeXZZZ2Z4Q3ZnLUlSWlRrOVZuYjNQSkpvc011RGJTSWwtdXdvalNZa0k2bXBOV2FtaGVZNUVFOE5xWTRVRmtTT1hzeGY0ci1xb3dpa0JEMEUwVWlVNGkxdnREWnJ1bDRJNjZucjBkNXRKdVVoWWVYdmxVaFoyQ3RrdzBYeWw3bTlR?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "スポーツ",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "75ef87d29f0440fbe2",
+      "title": "いわきFC、藤枝に敗れる サッカーJ2:速報",
+      "summary": "minyu-net.comが「いわきFC、藤枝に敗れる サッカーJ2:速報」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-08-15T20:28:00+09:00",
+      "source": "minyu-net.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WSWN2WE5ZNWttZkJfc0lUV0ZNSEx5RHpUTkE5OGVnRDg0RkNGMlNjbnNHdHhBMm4zMHBDNjdBbzZaUk0tSklWWGk5M2hUZlREYTRxdktBZVZXS3JjM3V0dUw4QUw3U29S?oc=5",
+      "sourceHome": "https://www.minyu-net.com",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -3406,20 +3420,6 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "e808ccb1febfe80acf",
-      "title": "「カレーで世界に元気を届ける」新たな一歩。いわきにゴーゴーカレー初、店内で飲食可能なトレーラーハウス店舗が誕生",
-      "summary": "prtimes.jpが「「カレーで世界に元気を届ける」新たな一歩。いわきにゴーゴーカレー初、店内で飲食可能なトレーラーハウス店舗が誕生」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-08-10T07:30:02+09:00",
-      "source": "prtimes.jp",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xckpYQXg4Q2xZYXFGdG0xWkdtaTI1SUk4Z2lIWXJqcHRzS2JwY1I5UlNCLURHNGQ0Z2tqZ3gxLXYzZGQ1dDUyb2FJdmF5NW03ZU9NR0tKS1R3M0JXRVRhZFJrS3dGNHRnV0E?oc=5",
-      "sourceHome": "https://prtimes.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
   ]
 }
