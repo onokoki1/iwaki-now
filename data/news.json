@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-15T14:40:18+09:00",
+  "generatedAt": "2026-08-15T14:59:49+09:00",
   "collectorVersion": "2.0",
-  "sourceCount": 45,
+  "sourceCount": 43,
   "sources": [
     "010-sports.jp",
     "47NEWS",
@@ -10,6 +10,7 @@
     "FTV 福島テレビ",
     "Goal.com",
     "Infoseek",
+    "LOGISTICS TODAY",
     "Mshale",
     "NHKニュース",
     "QAB 琉球朝日放送",
@@ -18,9 +19,6 @@
     "Yahoo!ニュース",
     "au Webポータル",
     "fcimabari.com",
-    "iwaki-alios.jp",
-    "iwakifc.com",
-    "logi-today.com",
     "news.tv-asahi.co.jp",
     "news.yahoo.co.jp",
     "nippon.com",
@@ -77,9 +75,8 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "items": 12
     },
     {
       "name": "いわき総合ニュース",
@@ -91,7 +88,7 @@
       "name": "13地域ニュース",
       "group": "地域",
       "ok": true,
-      "items": 71
+      "items": 72
     },
     {
       "name": "いわきFC",
@@ -103,7 +100,7 @@
       "name": "いわき観光",
       "group": "観光・文化",
       "ok": true,
-      "items": 60
+      "items": 61
     },
     {
       "name": "いわき経済",
@@ -144,6 +141,20 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
+    },
+    {
+      "id": "9a9ec6410abde5375a",
+      "title": "松本陽子 宵の明星を見た日",
+      "summary": "いわき市観光サイトが「松本陽子 宵の明星を見た日」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-15T12:17:50+09:00",
+      "source": "いわき市観光サイト",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53Q1JqUzVvOFhXc0U2MTZHNDhHWnBjVmZDZ2tkRDNPTzdVZDlxcmZydmNJbUU5bGI1cmh2YWxwRGdUaUh2aUZBeE5jcHlfQ3c?oc=5",
+      "sourceHome": "https://kankou-iwaki.or.jp",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
       "id": "ecc2b87b07815c82b5",
@@ -676,6 +687,20 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     },
     {
+      "id": "a9b1c78efe1a910f0e",
+      "title": "福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町",
+      "summary": "Yahoo!ニュースが「福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "防災・安全",
+      "area": "全市",
+      "publishedAt": "2026-08-14T04:27:22+09:00",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4YlZSRUVuazRwV1FudnNkdWFFYUF1a1dxeWNFTGhfNFc1WFVBYmhBcE9vOTFHbnFkYVlYbXRoTVVzQlVESnRRemVMaFdJcDlGc3ZXNkJtTW1XMzdkUHpUQVE0MVdoNGQzQURia2FnQjVMdW1mdnROUll5NGkzNGc?oc=5",
+      "sourceHome": "https://news.yahoo.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
       "id": "ff90ad35a038fea22e",
       "title": "福島県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町、茨城県・日立市、高萩市",
       "summary": "Yahoo!ニュースが「福島県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町、茨城県・日立市、高萩市」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -685,20 +710,6 @@
       "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjdBWTg3WGE4OTdnM3cyNEdkeXVZMHZINFNSdzB6R1lPWXFkV3VCaFU5d0tjU28ycWNORjBzSXpmWnVKSjBvaXA3SUJUeFJ2al9FQnkydWJrS3ExUnpPS0psaldHN3hCLUhuRzljOGs2SDJBcXFhaS12dHVEUjA0QllBSm1kR3pCSjM4d1RB?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "4d4d9fa3614c06097f",
-      "title": "福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町",
-      "summary": "TBS NEWS DIGが「福島県、茨城県、栃木県で最大震度1の地震 福島県・いわき市、福島広野町、楢葉町、大熊町、双葉町、浪江町」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "防災・安全",
-      "area": "全市",
-      "publishedAt": "2026-08-14T04:25:00+09:00",
-      "source": "TBS NEWS DIG",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE91dW96WGlUZlNCWnFiVU1ZSTBydkJ1ME5ua0JES0xkS1dBeHA3dkp2bGlQbDExWEFRYjQzTEF2dXJzRFBTU3JFaUxHcDZ4N2RJcW1JVmlpN0RZTXd4c0JpRTgtWnc?oc=5",
-      "sourceHome": "https://newsdig.tbs.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
@@ -881,11 +892,11 @@
     {
       "id": "b4a9df1106f0f2b442",
       "title": "8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施",
-      "summary": "iwakifc.comが「8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
+      "summary": "いわきFC Official Siteが「8/29(土) 新潟戦にて、いわき市水道局との連携施策を実施」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-13T17:59:52+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zRzloWGhNSXR3ZlNtRVY5WkhCMGMtRi1Xdl9xWjZUaWJvY3FqaHVPRndPanBNVy1UVlpZNUpCY3BXa2xHM2xjRVcxa3ZnZnZveU9pRGUtbGdTUQ?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -1045,14 +1056,14 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
     },
     {
-      "id": "4bedd54e169bc43833",
+      "id": "9450d1416c79556817",
       "title": "【いわき市】8/13 最高28℃、やや暑さを感じる場面も、朝から夜まで雨の予想【朝版】",
       "summary": "Yahoo!ニュースが「【いわき市】8/13 最高28℃、やや暑さを感じる場面も、朝から夜まで雨の予想【朝版】」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-13T05:11:08+09:00",
       "source": "Yahoo!ニュース",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfR3RiRThqUTJJVDlBbGFmcHZ0YlRYajZUcjh0c3JjWkdYVnR4clFoZ2x1bUJXNklmRkxDNkVJeDl4RE1LM0FNMEZLaHhxWmdxMUZ1UEJoTHZNYWRJSGtZM0JYdTdfMnBBWGxKLXY3SlFGUHFDTXpDUUp3MXNQREU?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTWpEb29FMWdQaTMwMzAzLVZzMFgwS1A1bDc4N0RZYktJaThGanBpaUNKOXI1T2JHd0dzTHRXZ1N1Z1ZFcmNPZ3E4RE4wNGhwdlpLWXFyODBKcnBsd2RrUHplXzEwempxbkdxS0p2T21PWkozUmcwT081NndEdzYwOVhMQnd2QXBmUGxuSXdR?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
@@ -1061,11 +1072,11 @@
     {
       "id": "490a97a237089fb549",
       "title": "ネツレン、いわき工場に1億5000万円投資",
-      "summary": "logi-today.comが「ネツレン、いわき工場に1億5000万円投資」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "LOGISTICS TODAYが「ネツレン、いわき工場に1億5000万円投資」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "経済",
       "area": "全市",
       "publishedAt": "2026-08-13T05:00:55+09:00",
-      "source": "logi-today.com",
+      "source": "LOGISTICS TODAY",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1NYmdnaXFsWDgydFZRTlFqd3RzajRhMDhXLUJiLW5DWXdyVUJsTUtFaU1aMGZxcEZIdjN5aGp2bjRaZnBnU3ZTOQ?oc=5",
       "sourceHome": "https://www.logi-today.com",
       "sourceGroup": "経済",
@@ -1121,6 +1132,20 @@
       "publishedAt": "2026-08-12T23:12:00+09:00",
       "source": "Ｊリーグ公式サイト",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12MUlDM2piMGJDb1ZGVW9oaXZJUllWWWJqdE5PWmw5YWlkRGNKalFPSHhEOVRsOUFVUFFRTVBPWVJXc1h4NDJHbmhMZEFmWUE?oc=5",
+      "sourceHome": "https://www.jleague.jp",
+      "sourceGroup": "スポーツ",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
+    },
+    {
+      "id": "4a46082ecffa276d75",
+      "title": "【公式】岡庭 愁人 | いわきＦＣ",
+      "summary": "Ｊリーグ公式サイトが「【公式】岡庭 愁人 | いわきＦＣ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-08-12T23:12:00+09:00",
+      "source": "Ｊリーグ公式サイト",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBuMlYwSWdkYkhMNW5RR0REZ3ZwYk9sR0ltRGFaVXRuSkpzOWMtSmRrMk9SY0lUVlZVcFJZdlRWMTJhbnpTSGgzcmFVM2VmQUk?oc=5",
       "sourceHome": "https://www.jleague.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
@@ -1960,11 +1985,11 @@
     {
       "id": "fab55f829e2340c27f",
       "title": "8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ",
-      "summary": "iwakifc.comが「8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「8/14(金)「いわき回転やぐら盆踊り大会」ハーマー&ドリー参加のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-08-11T15:44:26+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPN0VCOXM2SF9zNmVCX01xa2JyaXBiZEk4R192cU1yMGdvT3U5VFR6cTlIZGdBaE41SjExbm5BOEh4a1hocnl0aHNOZzVYRWJyLUJWMWxWTjhqbXVkZW5NSlhGeFJIMDJBR0RhXzljOVhqdWlzVXlSOG5sTF8yVnEtNGZBVGNsX2NfaDdUYzNGMmFLaWhRb1pFZGVJMWQwbkRGZll2RnVXSl90cUhCaXhqSTN2VUU5cVhwdTFXMUhaSjlTbVhtSXJTWnljcE5TOUxKRkw5Rjk3aWRtVEk1QzVhU2xxX2R5RWdYY2lOQVhGaTVnWHJ3RDhpczZRbXhXcGFuWmtJQXA0YkZUWUs5djZ0d0JKTk5GeXpRdEVnTXgwMUNvV0hXcTN4aGNDNUVuTGJ5NG4yWS1Id1ZMV1hwbVZPTDZPLXU3dVh6?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -2393,11 +2418,11 @@
     {
       "id": "844db4f129fc3f69af",
       "title": "劇団いわき小劇場 第58回公演 ボーイング・ボーイング - いわき芸術文化交流館",
-      "summary": "iwaki-alios.jpが「劇団いわき小劇場 第58回公演 ボーイング・ボーイング - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「劇団いわき小劇場 第58回公演 ボーイング・ボーイング - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-08-11T02:52:46+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MTkh5TlFCR0ZyVFE5WnJrNnhlMkkxTy1LaWQ1MjZIYzk1Q2stS1ZKVTZWZ1kta0w5alVBNDVfQzllN0wzUG5GQlFfQ1NreUhPS0t2UjNRRjdUdUE?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -2915,11 +2940,11 @@
     {
       "id": "402803cdf0c59ae1e3",
       "title": "令和９年度 ４月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します",
-      "summary": "iwaki-alios.jpが「令和９年度 ４月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「令和９年度 ４月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-08-10T10:57:43+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tbW8xandtQXYwcHU2cEpIQUEtUFhnZ3V2aDk2RUJXVkpCUG1veWE5LVQtdHVjYl9QT2gySDczckllZVlJRV9HZ1cwb2lYQQ?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -2929,11 +2954,11 @@
     {
       "id": "417b675015516b920c",
       "title": "令和8年度 10月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します",
-      "summary": "iwaki-alios.jpが「令和8年度 10月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「令和8年度 10月採用いわき芸術文化交流館アリオス会計年度任用職員（テクニカルスタッフ 舞台）を募集します」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-08-10T10:57:42+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5wUzJLN2FaWTdfMU5Gd0hwaDVrN1dNTGpTZlhIdzA4UHlRZ2gyUng0WVhhOHBvZ0M3Ny14R01oVTQ5dmstSE5WY1dFZWEzQQ?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -3391,34 +3416,6 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。"
-    },
-    {
-      "id": "b6ea2d444a9bde97a2",
-      "title": "いわきFC、FC今治に勝利 サッカーJ2:速報",
-      "summary": "福島民友新聞社が「いわきFC、FC今治に勝利 サッカーJ2:速報」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-08-09T21:48:11+09:00",
-      "source": "福島民友新聞社",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFbmcxY2Mxb3NIZzhYUGRjSFp2RVp2U0hqeVlPU0Rna3ZNRjhnY2dJbDN4SUJCeHhnLXpBR09sZW5IeWQwMUFvY29mNUZyYkVhcmpMUTdOYnU1SnQtRVVWMVc4d0dUUXgw?oc=5",
-      "sourceHome": "https://www.minyu-net.com",
-      "sourceGroup": "スポーツ",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
-    },
-    {
-      "id": "fa5e39dab875d65c2b",
-      "title": "【速報】いわきFC、FC今治に勝利 サッカーJ2 (福島民友新聞)",
-      "summary": "news.yahoo.co.jpが「【速報】いわきFC、FC今治に勝利 サッカーJ2 (福島民友新聞)」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-08-09T20:10:20+09:00",
-      "source": "news.yahoo.co.jp",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVjNPaEFfUC1kMy1MX3JBMUtCekltSXlTSndaZUdSZHotRTQ1amdTX20tLUIzcXM5RGhqNmVmU2pVX2JjbElla01reC1LZmxjR0VuY0VlZS1KOFBPWDNoN0NsVWpPUGtHM1R6enQ4UnQyWnQxT1NQTHpzbTgzcHU3UXFLNTdHVV9uZmhSU0Vn?oc=5",
-      "sourceHome": "https://news.yahoo.co.jp",
-      "sourceGroup": "スポーツ",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。"
     }
   ]
 }
