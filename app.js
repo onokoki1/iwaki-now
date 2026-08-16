@@ -26,7 +26,15 @@ function sortedNews(){return [...news].sort((a,b)=>(state.sort==='old'?1:-1)*(ne
 function rankedNews(){return [...news].sort((a,b)=>score(b)-score(a)||new Date(b.publishedAt)-new Date(a.publishedAt))}
 function isOpeningClosing(n){return Boolean(n.isOpeningClosing)||openingClosingFallback(n)}
 function isWeekendEvent(n){return Boolean(n.isWeekendEvent)}
-function filteredNews(){return sortedNews().filter(n=>(!state.special||(state.special==='openingClosing'?isOpeningClosing(n):isWeekendEvent(n)))&&(state.category==='すべて'||n.category===state.category)&&(state.area==='すべて'||n.area===state.area||n.area==='全市')&&(!state.query||`${n.title} ${n.summary||''} ${n.category} ${n.area} ${n.source}`.toLowerCase().includes(state.query.toLowerCase())))}
+function eventRanges(n){return Array.isArray(n.eventDates)?n.eventDates.filter(r=>r&&r.start&&r.end):[]}
+function eventDurationDays(n){const rs=eventRanges(n);if(!rs.length)return 999;const starts=rs.map(r=>new Date(`${r.start}T00:00:00+09:00`));const ends=rs.map(r=>new Date(`${r.end}T00:00:00+09:00`));return Math.round((Math.max(...ends)-Math.min(...starts))/86400000)+1}
+function isLongRunningWeekendEvent(n){if(typeof n.isLongRunningEvent==='boolean')return n.isLongRunningEvent;const t=`${n.title||''} ${n.summary||''}`;return eventDurationDays(n)>=14&&/(企画展|特別展|展覧会|展示会|展示|美術館|博物館|文学館|資料館|記念館|伝承郷|考古資料館|アンモナイトセンター)/.test(t)}
+function weekendRank(n){if(Number.isFinite(Number(n.weekendRankScore)))return Number(n.weekendRankScore);let s=50;const days=eventDurationDays(n);const t=`${n.title||''} ${n.summary||''}`;if(days===1)s+=30;else if(days<=2)s+=22;if(days>=14)s-=14;if(days>=30)s-=10;if(isLongRunningWeekendEvent(n))s-=28;if(/祭|まつり|花火|盆踊り|マルシェ|コンサート|公演|フェス|ワークショップ|体験|観察|教室|講習|大会|ツアー|上映/.test(t))s+=10;if(Number(n.eventDateConfidence||0)>=95)s+=8;return s}
+function filteredNews(){
+  let items=sortedNews().filter(n=>(!state.special||(state.special==='openingClosing'?isOpeningClosing(n):isWeekendEvent(n)))&&(state.category==='すべて'||n.category===state.category)&&(state.area==='すべて'||n.area===state.area||n.area==='全市')&&(!state.query||`${n.title} ${n.summary||''} ${n.category} ${n.area} ${n.source}`.toLowerCase().includes(state.query.toLowerCase())));
+  if(state.special==='weekendEvents')items.sort((a,b)=>Number(isLongRunningWeekendEvent(a))-Number(isLongRunningWeekendEvent(b))||weekendRank(b)-weekendRank(a)||new Date(b.publishedAt)-new Date(a.publishedAt));
+  return items;
+}
 
 function renderBreaking(){
   const box=$('#breakingNews'); if(!box)return;
@@ -48,8 +56,7 @@ function renderTopFive(){
 
 function eventDateLabel(n){
   if(n.eventDateLabel)return String(n.eventDateLabel);
-  const ranges=Array.isArray(n.eventDates)?n.eventDates:[];
-  if(!ranges.length)return '';
+  const ranges=eventRanges(n);if(!ranges.length)return '';
   const fmtDate=s=>{const d=new Date(`${s}T00:00:00+09:00`);return `${d.getMonth()+1}月${d.getDate()}日`};
   return ranges.map(r=>r.start===r.end?fmtDate(r.start):`${fmtDate(r.start)}〜${fmtDate(r.end)}`).join('・');
 }
@@ -57,15 +64,19 @@ function eventDateLabel(n){
 function specialStoryMarkup(n,kind){
   const chip=kind==='openingClosing'?'開店・閉店':esc(n.area||'全市');
   const date=kind==='weekend'&&eventDateLabel(n)?`<span class="special-story-date">${esc(eventDateLabel(n))}</span>`:'';
+  const rankLabel=kind==='weekend'&&n.weekendRankLabel?`<span class="weekend-rank-label ${isLongRunningWeekendEvent(n)?'long':''}">${esc(n.weekendRankLabel)}</span>`:'';
   const sourceNote=kind==='weekend'&&n.eventDateSource?`<span class="special-story-source">日程：${esc(n.eventDateSource)}</span>`:'';
-  return `<a class="special-story" href="${detailUrl(n)}"><div class="special-story-copy"><div class="special-story-topline"><span class="special-story-chip">${chip}</span>${date}</div><strong>${esc(n.title)}</strong><small>${esc(n.source)}　${timeAgo(n.publishedAt)} ${sourceNote}</small></div><span class="special-story-arrow">›</span></a>`;
+  return `<a class="special-story ${isLongRunningWeekendEvent(n)?'long-running-story':''}" href="${detailUrl(n)}"><div class="special-story-copy"><div class="special-story-topline"><span class="special-story-chip">${chip}</span>${rankLabel}${date}</div><strong>${esc(n.title)}</strong><small>${esc(n.source)}　${timeAgo(n.publishedAt)} ${sourceNote}</small></div><span class="special-story-arrow">›</span></a>`;
 }
 
 function renderSpecialSections(){
   const openingsAll=sortedNews().filter(isOpeningClosing);
-  const eventsAll=[...news].filter(isWeekendEvent).sort((a,b)=>score(b)-score(a)||new Date(b.publishedAt)-new Date(a.publishedAt));
+  const eventsAll=[...news].filter(isWeekendEvent);
+  const weekendPicks=eventsAll.filter(n=>!isLongRunningWeekendEvent(n)).sort((a,b)=>weekendRank(b)-weekendRank(a)||score(b)-score(a)||new Date(b.publishedAt)-new Date(a.publishedAt));
+  const longRunning=eventsAll.filter(isLongRunningWeekendEvent).sort((a,b)=>weekendRank(b)-weekendRank(a)||new Date(b.publishedAt)-new Date(a.publishedAt));
   const openings=openingsAll.slice(0,5);
-  const events=eventsAll.slice(0,5);
+  const picks=weekendPicks.slice(0,5);
+  const longItems=longRunning.slice(0,3);
   const openingList=$('#openingClosingList'), weekendList=$('#weekendEventList');
   if(openingList){
     openingList.innerHTML=openings.length?openings.map(n=>specialStoryMarkup(n,'openingClosing')).join(''):'<div class="special-empty"><b>現在、該当情報はありません</b><span>新しい開店・閉店情報を自動収集中です。</span></div>';
@@ -73,8 +84,14 @@ function renderSpecialSections(){
     $('#showOpeningClosing').hidden=openingsAll.length===0;
   }
   if(weekendList){
-    weekendList.innerHTML=events.length?events.map(n=>specialStoryMarkup(n,'weekend')).join(''):'<div class="special-empty"><b>今週末の該当イベントは未検出です</b><span>記事本文・公式ページ・市イベントカレンダー・観光サイトから開催日を確認しています。</span></div>';
-    $('#weekendEventCount').textContent=`${eventsAll.length}件`;
+    if(!eventsAll.length){
+      weekendList.innerHTML='<div class="special-empty"><b>今週末の該当イベントは未検出です</b><span>記事本文・公式ページ・市イベントカレンダー・観光サイトから開催日を確認しています。</span></div>';
+    }else{
+      const pickHtml=picks.length?`<div class="weekend-group-head"><b>今週末におすすめ</b><span>単日・終了間近・体験イベントを優先</span></div>${picks.map(n=>specialStoryMarkup(n,'weekend')).join('')}`:'';
+      const longHtml=longItems.length?`<div class="weekend-group-head long"><b>長期開催・企画展</b><span>会期が長い展示・企画は別枠で掲載</span></div>${longItems.map(n=>specialStoryMarkup(n,'weekend')).join('')}`:'';
+      weekendList.innerHTML=pickHtml+longHtml;
+    }
+    $('#weekendEventCount').textContent=longRunning.length?`${weekendPicks.length}件＋長期${longRunning.length}件`:`${weekendPicks.length}件`;
     $('#showWeekendEvents').hidden=eventsAll.length===0;
   }
   if($('#weekendLabel'))$('#weekendLabel').textContent=weekendInfo?.label||'今週末';
@@ -84,12 +101,12 @@ function cardMarkup(n){
   const cov=coverage(n)>1?`<span class="coverage-badge">${coverage(n)}媒体が掲載</span>`:'';
   const breaking=n.isBreaking?'<span class="breaking-card-badge">速報</span>':'';
   const shop=isOpeningClosing(n)?'<span class="feature-badge shop-feature-badge">開店・閉店</span>':'';
-  const weekend=isWeekendEvent(n)?'<span class="feature-badge weekend-feature-badge">今週末</span>':'';
+  const weekend=isWeekendEvent(n)?`<span class="feature-badge weekend-feature-badge">${isLongRunningWeekendEvent(n)?'長期開催':'今週末'}</span>`:'';
   return `<article class="news-card"><div class="news-thumb" data-category="${esc(n.category)}"><span class="thumb-badge">${esc(n.category)}</span>${breaking}</div><div class="news-card-body"><div class="card-badges">${shop}${weekend}${cov}</div><h3><a href="${detailUrl(n)}">${esc(n.title)}</a></h3><p>${esc(n.summary||'')}</p><div class="news-card-footer"><div class="source"><b>${esc(n.area)}</b>${esc(n.source)}　${timeAgo(n.publishedAt)}</div><a class="read-button" href="${detailUrl(n)}" aria-label="記事詳細を開く">→</a></div></div></article>`
 }
 function renderNews(){const items=filteredNews();$('#newsGrid').innerHTML=items.map(cardMarkup).join('');$('#resultCount').textContent=`${items.length}件`;$('#emptyState').hidden=items.length!==0;updateRegionStates();renderFilterMode()}
 function renderMeta(){if($('#sourceCount'))$('#sourceCount').textContent=sourceCount?`${sourceCount}媒体`:'複数媒体';if($('#lastUpdated'))$('#lastUpdated').textContent=generatedAt?`最終更新 ${fmt(generatedAt)}`:'デモデータ表示中'}
-function renderFilterMode(){const el=$('#activeSpecialFilter');if(!el)return;if(!state.special){el.hidden=true;el.textContent='';return}el.hidden=false;el.textContent=state.special==='openingClosing'?'「開店・閉店」だけ表示中':'「今週末のイベント」だけ表示中'}
+function renderFilterMode(){const el=$('#activeSpecialFilter');if(!el)return;if(!state.special){el.hidden=true;el.textContent='';return}el.hidden=false;el.textContent=state.special==='openingClosing'?'「開店・閉店」だけ表示中':'「今週末のイベント」おすすめ順で表示中'}
 function regionCount(area){return news.filter(n=>n.area===area).length}
 function regionButtonHtml(area){return `<button class="region-button" data-area="${esc(area)}" type="button" aria-label="${esc(area)}のニュースを見る"><span class="region-button-name">${esc(area)}</span><span class="region-button-count">${regionCount(area)}件</span></button>`}
 function initRegionNav(){const nav=$('#regionNav');if(!nav)return;nav.innerHTML=`<button class="region-button region-all" data-area="すべて" type="button"><span class="region-button-name">市内全域</span><span class="region-button-count">${news.length}件</span></button>`+regionAreas.map(regionButtonHtml).join('');nav.addEventListener('click',e=>{const btn=e.target.closest('.region-button');if(btn)selectArea(btn.dataset.area)})}
