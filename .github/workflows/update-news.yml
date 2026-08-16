@@ -53,6 +53,9 @@ jobs:
       - name: Fetch news and event dates
         run: python scripts/update_news.py
 
+      - name: Remove stale navigation items
+        run: python scripts/clean_news.py
+
       - name: Commit changed news data and article pages
         run: |
           git add -A data/news.json news
