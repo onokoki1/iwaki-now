@@ -46,24 +46,36 @@ function renderTopFive(){
   }).join('')
 }
 
+function eventDateLabel(n){
+  if(n.eventDateLabel)return String(n.eventDateLabel);
+  const ranges=Array.isArray(n.eventDates)?n.eventDates:[];
+  if(!ranges.length)return '';
+  const fmtDate=s=>{const d=new Date(`${s}T00:00:00+09:00`);return `${d.getMonth()+1}月${d.getDate()}日`};
+  return ranges.map(r=>r.start===r.end?fmtDate(r.start):`${fmtDate(r.start)}〜${fmtDate(r.end)}`).join('・');
+}
+
 function specialStoryMarkup(n,kind){
   const chip=kind==='openingClosing'?'開店・閉店':esc(n.area||'全市');
-  return `<a class="special-story" href="${detailUrl(n)}"><div class="special-story-copy"><span class="special-story-chip">${chip}</span><strong>${esc(n.title)}</strong><small>${esc(n.source)}　${timeAgo(n.publishedAt)}</small></div><span class="special-story-arrow">›</span></a>`;
+  const date=kind==='weekend'&&eventDateLabel(n)?`<span class="special-story-date">${esc(eventDateLabel(n))}</span>`:'';
+  const sourceNote=kind==='weekend'&&n.eventDateSource?`<span class="special-story-source">日程：${esc(n.eventDateSource)}</span>`:'';
+  return `<a class="special-story" href="${detailUrl(n)}"><div class="special-story-copy"><div class="special-story-topline"><span class="special-story-chip">${chip}</span>${date}</div><strong>${esc(n.title)}</strong><small>${esc(n.source)}　${timeAgo(n.publishedAt)} ${sourceNote}</small></div><span class="special-story-arrow">›</span></a>`;
 }
 
 function renderSpecialSections(){
-  const openings=sortedNews().filter(isOpeningClosing).slice(0,5);
-  const events=[...news].filter(isWeekendEvent).sort((a,b)=>score(b)-score(a)||new Date(b.publishedAt)-new Date(a.publishedAt)).slice(0,5);
+  const openingsAll=sortedNews().filter(isOpeningClosing);
+  const eventsAll=[...news].filter(isWeekendEvent).sort((a,b)=>score(b)-score(a)||new Date(b.publishedAt)-new Date(a.publishedAt));
+  const openings=openingsAll.slice(0,5);
+  const events=eventsAll.slice(0,5);
   const openingList=$('#openingClosingList'), weekendList=$('#weekendEventList');
   if(openingList){
     openingList.innerHTML=openings.length?openings.map(n=>specialStoryMarkup(n,'openingClosing')).join(''):'<div class="special-empty"><b>現在、該当情報はありません</b><span>新しい開店・閉店情報を自動収集中です。</span></div>';
-    $('#openingClosingCount').textContent=`${openings.length}件`;
-    $('#showOpeningClosing').hidden=openings.length===0;
+    $('#openingClosingCount').textContent=`${openingsAll.length}件`;
+    $('#showOpeningClosing').hidden=openingsAll.length===0;
   }
   if(weekendList){
-    weekendList.innerHTML=events.length?events.map(n=>specialStoryMarkup(n,'weekend')).join(''):'<div class="special-empty"><b>今週末の該当イベントは未検出です</b><span>公開情報から開催日を自動判定しています。</span></div>';
-    $('#weekendEventCount').textContent=`${events.length}件`;
-    $('#showWeekendEvents').hidden=events.length===0;
+    weekendList.innerHTML=events.length?events.map(n=>specialStoryMarkup(n,'weekend')).join(''):'<div class="special-empty"><b>今週末の該当イベントは未検出です</b><span>記事本文・公式ページ・市イベントカレンダー・観光サイトから開催日を確認しています。</span></div>';
+    $('#weekendEventCount').textContent=`${eventsAll.length}件`;
+    $('#showWeekendEvents').hidden=eventsAll.length===0;
   }
   if($('#weekendLabel'))$('#weekendLabel').textContent=weekendInfo?.label||'今週末';
 }

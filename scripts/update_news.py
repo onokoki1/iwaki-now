@@ -5,9 +5,10 @@ Collection strategy
 -------------------
 1. Direct RSS/RDF from public institutions and local media.
 2. Google News search RSS for publishers that do not expose a stable public feed.
-3. No article-body scraping. We store headline, source, link and a short neutral notice.
-4. Exact/near-exact duplicates are collapsed before publishing.
-5. Failure of any source never wipes the existing dataset.
+3. Event dates are enriched from public article/official pages without republishing body text.
+4. Iwaki City event calendars and the official tourism event listing are collected directly.
+5. Exact/near-exact duplicates are collapsed before publishing.
+6. Failure of any source never wipes the existing dataset.
 
 The collector intentionally favors source links over copied text. Always confirm
 important information at the original source.
@@ -22,10 +23,13 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "data" / "news.json"
@@ -33,7 +37,16 @@ NEWS_DIR = ROOT / "news"
 JST = timezone(timedelta(hours=9))
 MAX_ITEMS = 240
 MAX_AGE_DAYS = 45
-USER_AGENT = "IwakiNow/4.0 (+public headline aggregator; contact site operator)"
+USER_AGENT = "IwakiNow/5.0 (+public headline/event-date aggregator; contact site operator)"
+EVENT_PAGE_FETCH_LIMIT = 36
+EVENT_DATE_RECHECK_HOURS = 24
+MAX_HTML_BYTES = 2_500_000
+CITY_CALENDAR_BASE = "https://www.city.iwaki.lg.jp/www/genre/1000100000345/"
+CITY_EVENT_GENRE_URL = "https://www.city.iwaki.lg.jp/www/genre/1452741939257/index.html"
+TOURISM_EVENT_LIST_URL = "https://kankou-iwaki.or.jp/event"
+CITY_CALENDAR_ALLOWED_TYPES = ("イベント・祭り", "講座・講演", "スポーツ・健康", "文化・芸術", "子育て", "その他")
+DATE_CUES = ("開催日", "開催期間", "イベント開催期間", "開催日時", "日時", "日程", "会期", "期間")
+DATE_META_EXCLUDES = ("登録日", "更新日", "掲載日", "公開日", "投稿日", "記事公開", "最終更新")
 
 # Stable public feeds whose URLs have been verified from the sites themselves.
 DIRECT_FEEDS = [
@@ -238,6 +251,27 @@ def fetch_xml(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/rdf+xml, application/xml, text/xml;q=0.9, */*;q=0.5"})
     with urllib.request.urlopen(req, timeout=25) as res:
         return res.read()
+
+
+def fetch_html(url: str) -> tuple[str, str]:
+    """Fetch a public HTML page, returning decoded HTML and the final URL.
+
+    Only a bounded prefix is read. The collector extracts dates/links and never
+    republishes the fetched article body.
+    """
+    req = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
+        "Accept-Language": "ja,en;q=0.5",
+    })
+    with urllib.request.urlopen(req, timeout=25) as res:
+        raw = res.read(MAX_HTML_BYTES)
+        charset = res.headers.get_content_charset() or "utf-8"
+        try:
+            text = raw.decode(charset, errors="replace")
+        except LookupError:
+            text = raw.decode("utf-8", errors="replace")
+        return text, res.geturl()
 
 
 def google_news_url(query: str) -> str:
@@ -446,6 +480,289 @@ def collect_google_news(existing: dict[str, dict], statuses: list[dict]) -> int:
     return successes
 
 
+
+def _stable_published_at(existing: dict[str, dict], item_id: str) -> str:
+    prior = existing.get(item_id) or {}
+    return str(prior.get("publishedAt") or datetime.now(JST).isoformat(timespec="seconds"))
+
+
+def _event_item(existing: dict[str, dict], *, title: str, url: str, source: str, via: str,
+                ranges: list[tuple[datetime.date, datetime.date]], confidence: int,
+                date_source: str, evidence: str, source_group: str = "イベント") -> dict:
+    item_id = make_id(url, title)
+    label = format_event_ranges(ranges)
+    summary = f"{date_source}に掲載されたイベント情報です。開催日：{label}。詳細は公式ページでご確認ください。"
+    return {
+        "id": item_id,
+        "title": title,
+        "summary": summary,
+        "category": "イベント",
+        "area": classify_area(title, summary),
+        "publishedAt": _stable_published_at(existing, item_id),
+        "source": source,
+        "sourceUrl": url,
+        "sourceGroup": source_group,
+        "via": via,
+        "note": "公式イベント情報から開催日・開催期間を自動取得。内容は公式ページで確認してください。",
+        "eventDates": serialize_event_ranges(ranges),
+        "eventStart": ranges[0][0].isoformat() if ranges else None,
+        "eventEnd": ranges[-1][1].isoformat() if ranges else None,
+        "eventDateConfidence": confidence,
+        "eventDateSource": date_source,
+        "eventDateSourceUrl": url,
+        "eventDateEvidence": evidence[:180],
+        "eventDateMethod": via,
+        "eventDateCheckedAt": datetime.now(JST).isoformat(timespec="seconds"),
+    }
+
+
+def _city_calendar_url(year: int, month: int) -> str:
+    current = datetime.now(JST).date()
+    if current.year == year and current.month == month:
+        return urllib.parse.urljoin(CITY_CALENDAR_BASE, "index.html")
+    return urllib.parse.urljoin(CITY_CALENDAR_BASE, f"{year:04d}{month:02d}.html")
+
+
+def parse_city_calendar_page(page_html: str, page_url: str, fallback_year: int, fallback_month: int) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
+    """Return (title, url, ranges, evidence) from an Iwaki City calendar page."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    page_text = clean(soup.get_text(" ", strip=True))
+    hm = re.search(r"(20\d{2})年\s*(\d{1,2})月の情報", page_text)
+    year, month = (int(hm.group(1)), int(hm.group(2))) if hm else (fallback_year, fallback_month)
+    grouped: dict[str, dict] = {}
+    for row in soup.find_all("tr"):
+        cells = row.find_all(["th", "td"], recursive=False)
+        if len(cells) < 2:
+            continue
+        dm = re.search(r"(\d{1,2})日", clean(cells[0].get_text(" ", strip=True)))
+        if not dm:
+            continue
+        day = int(dm.group(1))
+        date = _safe_date(year, month, day)
+        if not date:
+            continue
+        for a in cells[1].find_all("a", href=True):
+            title = clean(a.get_text(" ", strip=True))
+            href = urllib.parse.urljoin(page_url, a["href"])
+            if len(title) < 3 or not href.startswith(("http://", "https://")):
+                continue
+            # Associate the event link with the closest preceding calendar icon.
+            # This matters on dates containing both an event and a consultation.
+            prev_img = a.find_previous("img")
+            kind = ""
+            if prev_img is not None and prev_img.find_parent(["td", "th"]) is cells[1]:
+                kind = clean(prev_img.get("alt", ""))
+            if kind and kind not in CITY_CALENDAR_ALLOWED_TYPES:
+                continue
+            # Ignore icon-only/navigation anchors.
+            if title in CITY_CALENDAR_ALLOWED_TYPES or title in {"イベント", "イベント・祭り"}:
+                continue
+            rec = grouped.setdefault(href, {"title": title, "dates": []})
+            if len(title) > len(rec["title"]):
+                rec["title"] = title
+            rec["dates"].append(date)
+    out = []
+    for href, rec in grouped.items():
+        dates = sorted(set(rec["dates"]))
+        ranges = _merge_date_ranges([(d, d) for d in dates])
+        out.append((rec["title"], href, ranges, f"いわき市イベントカレンダー {format_event_ranges(ranges)}"))
+    return out
+
+
+def _nearest_schedule_block(anchor, markers: tuple[str, ...]) -> str:
+    node = anchor
+    best = ""
+    for _ in range(7):
+        node = getattr(node, "parent", None)
+        if node is None:
+            break
+        text = clean(node.get_text(" ", strip=True))
+        if len(text) > 3000:
+            continue
+        if any(marker in text for marker in markers):
+            best = text
+            if len(text) <= 900:
+                break
+    return best
+
+
+def parse_event_listing_page(page_html: str, page_url: str, *, site_kind: str) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
+    soup = BeautifulSoup(page_html, "html.parser")
+    results: dict[str, tuple[str, str, list[tuple[datetime.date, datetime.date]], str]] = {}
+    now_year = datetime.now(JST).year
+    for a in soup.find_all("a", href=True):
+        href = urllib.parse.urljoin(page_url, a["href"])
+        title = clean(a.get_text(" ", strip=True))
+        if len(title) < 4:
+            continue
+        if site_kind == "tourism":
+            if not re.search(r"/event/\d+/?(?:$|[?#])", href):
+                continue
+            markers = ("開催期間", "イベント開催期間")
+        else:
+            if "city.iwaki.lg.jp" not in urllib.parse.urlparse(href).netloc or "/www/contents/" not in href:
+                continue
+            markers = ("開催日", "開催期間")
+        block = _nearest_schedule_block(a, markers)
+        if not block:
+            continue
+        ranges = extract_event_ranges(block, now_year)
+        if not ranges:
+            continue
+        evidence = next((part for part in re.split(r"[。\n]", block) if any(m in part for m in markers) and re.search(r"\d", part)), block)
+        prev = results.get(href)
+        current = (title, href, ranges, clean(evidence)[:180])
+        if prev is None or len(title) > len(prev[0]):
+            results[href] = current
+    return list(results.values())
+
+
+def collect_official_events(existing: dict[str, dict], statuses: list[dict]) -> int:
+    """Collect structured event schedules from the city calendar and tourism site."""
+    successes = 0
+    weekend_start, weekend_end = weekend_bounds()
+    month_keys = {(weekend_start.year, weekend_start.month), (weekend_end.year, weekend_end.month)}
+    # Also scan the current month so ongoing events spanning into the weekend are found.
+    today = datetime.now(JST).date()
+    month_keys.add((today.year, today.month))
+
+    for year, month in sorted(month_keys):
+        url = _city_calendar_url(year, month)
+        try:
+            body, final_url = fetch_html(url)
+            events = parse_city_calendar_page(body, final_url, year, month)
+            successes += 1
+            statuses.append({"name": f"いわき市イベントカレンダー {year}/{month:02d}", "group": "イベント", "ok": True, "items": len(events)})
+            print(f"City calendar {year}/{month:02d}: {len(events)} events")
+            for title, href, ranges, evidence in events:
+                item = _event_item(existing, title=title, url=href, source="いわき市イベントカレンダー", via="city-calendar", ranges=ranges, confidence=100, date_source="いわき市イベントカレンダー", evidence=evidence)
+                upsert(existing, item, prefer=True)
+        except Exception as exc:
+            statuses.append({"name": f"いわき市イベントカレンダー {year}/{month:02d}", "group": "イベント", "ok": False, "items": 0, "error": str(exc)[:140]})
+            print(f"WARN city calendar {year}/{month:02d}: {exc}")
+
+    official_lists = [
+        ("いわき市・イベント祭り", CITY_EVENT_GENRE_URL, "city", "いわき市", "city-event-list", 98),
+        ("いわき市観光サイト・イベント", TOURISM_EVENT_LIST_URL, "tourism", "いわき市観光サイト", "tourism-event-list", 98),
+    ]
+    for name, url, site_kind, source, via, confidence in official_lists:
+        try:
+            body, final_url = fetch_html(url)
+            events = parse_event_listing_page(body, final_url, site_kind=site_kind)
+            successes += 1
+            statuses.append({"name": name, "group": "イベント", "ok": True, "items": len(events)})
+            print(f"{name}: {len(events)} events")
+            for title, href, ranges, evidence in events:
+                item = _event_item(existing, title=title, url=href, source=source, via=via, ranges=ranges, confidence=confidence, date_source=name, evidence=evidence)
+                upsert(existing, item, prefer=True)
+        except Exception as exc:
+            statuses.append({"name": name, "group": "イベント", "ok": False, "items": 0, "error": str(exc)[:140]})
+            print(f"WARN {name}: {exc}")
+    return successes
+
+
+def _event_candidate(item: dict) -> bool:
+    hay = f"{item.get('title','')} {item.get('summary','')}"
+    return str(item.get("category")) == "イベント" or str(item.get("sourceGroup")) in {"イベント", "観光・文化"} or any(term in hay for term in EVENT_TERMS)
+
+
+def _recently_checked(item: dict) -> bool:
+    value = item.get("eventDateCheckedAt")
+    if not value:
+        return False
+    try:
+        checked = parse_date(str(value))
+        return datetime.now(JST) - checked < timedelta(hours=EVENT_DATE_RECHECK_HOURS)
+    except Exception:
+        return False
+
+
+def _schedule_segments_from_html(page_html: str) -> list[tuple[int, str]]:
+    soup = BeautifulSoup(page_html, "html.parser")
+    for bad in soup(["script", "style", "noscript", "svg"]):
+        bad.decompose()
+    segments: list[tuple[int, str]] = []
+    for node in soup.find_all(["p", "li", "tr", "dl", "dd", "dt", "h1", "h2", "h3", "h4", "div"]):
+        text = clean(node.get_text(" ", strip=True))
+        if not text or len(text) > 1600 or not re.search(r"\d|令和", text):
+            continue
+        if any(x in text for x in DATE_META_EXCLUDES) and not any(cue in text for cue in DATE_CUES):
+            continue
+        score = 0
+        if any(cue in text for cue in DATE_CUES):
+            score += 8
+        if any(term in text for term in EVENT_TERMS):
+            score += 3
+        if re.search(r"(?:20\d{2}年|令和\s*\d+年)?\s*\d{1,2}月\s*\d{1,2}日|\d{1,2}/\d{1,2}", text):
+            score += 2
+        if score >= 5:
+            segments.append((score, text))
+    # Highest-signal, shortest snippets first; dedupe identical text.
+    seen = set()
+    out = []
+    for score, text in sorted(segments, key=lambda x: (-x[0], len(x[1]))):
+        if text in seen:
+            continue
+        seen.add(text)
+        out.append((score, text))
+        if len(out) >= 24:
+            break
+    return out
+
+
+def extract_schedule_from_article(page_html: str, final_url: str, reference_year: int) -> tuple[list[tuple[datetime.date, datetime.date]], str, int]:
+    segments = _schedule_segments_from_html(page_html)
+    candidates: list[tuple[int, list[tuple[datetime.date, datetime.date]], str]] = []
+    for score, text in segments:
+        ranges = extract_event_ranges(text, reference_year)
+        if ranges:
+            candidates.append((score, ranges, text))
+    if not candidates:
+        return [], "", 0
+    weekend_start, weekend_end = weekend_bounds()
+    candidates.sort(key=lambda c: (ranges_intersect(c[1], weekend_start, weekend_end), c[0], -len(c[2])), reverse=True)
+    best_score, best_ranges, evidence = candidates[0]
+    host = urllib.parse.urlparse(final_url).netloc.lower()
+    official = host.endswith("city.iwaki.lg.jp") or host.endswith("kankou-iwaki.or.jp")
+    confidence = 95 if official else min(82, 62 + best_score)
+    return best_ranges, evidence[:180], confidence
+
+
+def enrich_event_article_bodies(existing: dict[str, dict], statuses: list[dict]) -> int:
+    """Read event article pages only to extract schedule dates; never republish bodies."""
+    candidates = [x for x in existing.values() if _event_candidate(x) and not deserialize_event_ranges(x) and not _recently_checked(x)]
+    candidates.sort(key=lambda x: parse_date(str(x.get("publishedAt", ""))), reverse=True)
+    checked = found = 0
+    for item in candidates[:EVENT_PAGE_FETCH_LIMIT]:
+        url = str(item.get("sourceUrl", ""))
+        host = urllib.parse.urlparse(url).netloc.lower()
+        if not url.startswith(("http://", "https://")) or host.endswith("news.google.com"):
+            continue
+        checked += 1
+        try:
+            body, final_url = fetch_html(url)
+            ranges, evidence, confidence = extract_schedule_from_article(body, final_url, weekend_bounds()[0].year)
+            item["eventDateCheckedAt"] = datetime.now(JST).isoformat(timespec="seconds")
+            item["eventDateCheckOk"] = True
+            if ranges:
+                found += 1
+                item["eventDates"] = serialize_event_ranges(ranges)
+                item["eventStart"] = ranges[0][0].isoformat()
+                item["eventEnd"] = ranges[-1][1].isoformat()
+                item["eventDateConfidence"] = confidence
+                item["eventDateSource"] = f"{item.get('source','出典')}の記事・公式ページ"
+                item["eventDateSourceUrl"] = final_url
+                item["eventDateEvidence"] = evidence
+                item["eventDateMethod"] = "article-body"
+        except Exception as exc:
+            item["eventDateCheckedAt"] = datetime.now(JST).isoformat(timespec="seconds")
+            item["eventDateCheckOk"] = False
+            item["eventDateCheckError"] = str(exc)[:120]
+    statuses.append({"name": "イベント記事本文の日程確認", "group": "イベント", "ok": True, "items": found, "checked": checked})
+    print(f"Event page schedule enrichment: checked {checked}, found {found}")
+    return checked
+
+
 def weekend_bounds(now: datetime | None = None) -> tuple[datetime.date, datetime.date]:
     """Return the Saturday/Sunday that should be presented as "this weekend" in JST.
 
@@ -468,41 +785,172 @@ def weekend_label(start, end) -> str:
     return f"{start.month}月{start.day}日({weekdays[start.weekday()]})〜{end.month}月{end.day}日({weekdays[end.weekday()]})"
 
 
-def extract_event_dates(text: str, reference_year: int) -> set[datetime.date]:
-    """Extract common Japanese month/day forms from a headline/summary.
+def _safe_date(year: int, month: int, day: int):
+    try:
+        return datetime(year, month, day).date()
+    except ValueError:
+        return None
 
-    This is deliberately conservative. It is used only to decide whether an event
-    belongs in the weekend shortcut, never as the authoritative event schedule.
+
+def _normalize_date_text(text: str) -> str:
+    text = unicodedata.normalize("NFKC", html.unescape(text or ""))
+    # Japanese era years commonly used by the city site.
+    def repl_reiwa(m):
+        n = 1 if m.group(1) == "元" else int(m.group(1))
+        return f"{2018+n}年"
+    text = re.sub(r"令和\s*(元|\d{1,2})\s*年", repl_reiwa, text)
+    text = re.sub(r"[（(](?:月|火|水|木|金|土|日)(?:曜日)?(?:・?祝)?[）)]", "", text)
+    text = text.replace("から", "~").replace("〜", "~").replace("～", "~").replace("－", "~").replace("—", "~").replace("‐", "~")
+    return SPACE_RE.sub(" ", text).strip()
+
+
+def _merge_date_ranges(ranges: list[tuple[datetime.date, datetime.date]]) -> list[tuple[datetime.date, datetime.date]]:
+    valid = sorted((min(a, b), max(a, b)) for a, b in ranges if a and b)
+    if not valid:
+        return []
+    merged = [valid[0]]
+    for start, end in valid[1:]:
+        last_start, last_end = merged[-1]
+        if start <= last_end + timedelta(days=1):
+            merged[-1] = (last_start, max(last_end, end))
+        else:
+            merged.append((start, end))
+    return merged
+
+
+def extract_event_ranges(text: str, reference_year: int) -> list[tuple[datetime.date, datetime.date]]:
+    """Extract Japanese event dates/ranges from a short piece of schedule text.
+
+    Supported examples include:
+      2026年8月11日～16日
+      8月30日～9月1日
+      令和8年8月16日
+      2026/08/15 - 2026/08/16
+      8月15日・16日
     """
-    dates: set[datetime.date] = set()
-    text = html.unescape(text or "")
+    t = _normalize_date_text(text)
+    ranges: list[tuple[datetime.date, datetime.date]] = []
 
-    # 2026年8月16日 / 8月16日
-    for m in re.finditer(r"(?:(\d{4})年)?\s*(\d{1,2})月\s*(\d{1,2})日", text):
+    # YYYY年M月D日 ~ YYYY年M月D日 (year on either side may be omitted)
+    for m in re.finditer(r"(?:(\d{4})年\s*)?(\d{1,2})月\s*(\d{1,2})日\s*~\s*(?:(\d{4})年\s*)?(?:(\d{1,2})月\s*)?(\d{1,2})日", t):
+        y1 = int(m.group(1) or reference_year)
+        mo1, d1 = int(m.group(2)), int(m.group(3))
+        y2 = int(m.group(4) or y1)
+        mo2 = int(m.group(5) or mo1)
+        d2 = int(m.group(6))
+        a, b = _safe_date(y1, mo1, d1), _safe_date(y2, mo2, d2)
+        if a and b:
+            # Handle year rollover when the end month wraps into January.
+            if b < a and not m.group(4) and mo2 < mo1:
+                b = _safe_date(y1 + 1, mo2, d2)
+            if b:
+                ranges.append((a, b))
+
+    # YYYY/M/D ~ YYYY/M/D
+    for m in re.finditer(r"(?<!\d)(\d{4})/(\d{1,2})/(\d{1,2})\s*~\s*(\d{4})/(\d{1,2})/(\d{1,2})(?!\d)", t):
+        a = _safe_date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        b = _safe_date(int(m.group(4)), int(m.group(5)), int(m.group(6)))
+        if a and b:
+            ranges.append((a, b))
+
+    # M月D日・D日 / M月D日、D日 (explicit multiple days, not continuous)
+    for m in re.finditer(r"(?:(\d{4})年\s*)?(\d{1,2})月\s*(\d{1,2})日\s*[・、,]\s*(\d{1,2})日", t):
         year = int(m.group(1) or reference_year)
-        month, day = int(m.group(2)), int(m.group(3))
-        try:
-            dates.add(datetime(year, month, day).date())
-        except ValueError:
-            pass
+        month = int(m.group(2))
+        for day in (int(m.group(3)), int(m.group(4))):
+            d = _safe_date(year, month, day)
+            if d:
+                ranges.append((d, d))
 
-    # 8/16 or 8.16 (avoid years such as 2026/08/16 by requiring no digit before)
-    for m in re.finditer(r"(?<!\d)(\d{1,2})[/.](\d{1,2})(?![/.]\d)", text):
-        month, day = int(m.group(1)), int(m.group(2))
-        try:
-            dates.add(datetime(reference_year, month, day).date())
-        except ValueError:
-            pass
+    # Single YYYY年M月D日 / M月D日. These may duplicate range endpoints; dedupe later.
+    for m in re.finditer(r"(?:(\d{4})年\s*)?(\d{1,2})月\s*(\d{1,2})日", t):
+        year = int(m.group(1) or reference_year)
+        d = _safe_date(year, int(m.group(2)), int(m.group(3)))
+        if d:
+            ranges.append((d, d))
 
-    # 8月15日・16日 / 8月15日〜16日
-    for m in re.finditer(r"(\d{1,2})月\s*(\d{1,2})日\s*(?:[・、,〜～\-‐－—]|から)\s*(\d{1,2})日", text):
-        month, first, second = map(int, m.groups())
-        for day in (first, second):
-            try:
-                dates.add(datetime(reference_year, month, day).date())
-            except ValueError:
-                pass
+    # M/D or M.D, excluding the components of YYYY/M/D.
+    for m in re.finditer(r"(?<![\d/])(\d{1,2})[/.](\d{1,2})(?![/.]\d)", t):
+        d = _safe_date(reference_year, int(m.group(1)), int(m.group(2)))
+        if d:
+            ranges.append((d, d))
+
+    return _merge_date_ranges(ranges)
+
+
+def extract_event_dates(text: str, reference_year: int) -> set[datetime.date]:
+    dates: set[datetime.date] = set()
+    for start, end in extract_event_ranges(text, reference_year):
+        cur = start
+        # Expand only modest ranges; callers use this mainly for compatibility/tests.
+        while cur <= end and (cur - start).days <= 62:
+            dates.add(cur)
+            cur += timedelta(days=1)
     return dates
+
+
+def serialize_event_ranges(ranges: list[tuple[datetime.date, datetime.date]]) -> list[dict]:
+    return [{"start": a.isoformat(), "end": b.isoformat()} for a, b in _merge_date_ranges(ranges)]
+
+
+def deserialize_event_ranges(item: dict) -> list[tuple[datetime.date, datetime.date]]:
+    out: list[tuple[datetime.date, datetime.date]] = []
+    for r in item.get("eventDates", []) or []:
+        try:
+            a = datetime.fromisoformat(str(r.get("start"))).date()
+            b = datetime.fromisoformat(str(r.get("end"))).date()
+            out.append((a, b))
+        except Exception:
+            continue
+    if not out and item.get("eventStart"):
+        try:
+            a = datetime.fromisoformat(str(item["eventStart"])).date()
+            b = datetime.fromisoformat(str(item.get("eventEnd") or item["eventStart"])).date()
+            out.append((a, b))
+        except Exception:
+            pass
+    return _merge_date_ranges(out)
+
+
+def format_event_ranges(ranges: list[tuple[datetime.date, datetime.date]]) -> str:
+    pieces: list[str] = []
+    for a, b in _merge_date_ranges(ranges):
+        if a == b:
+            pieces.append(f"{a.month}月{a.day}日")
+        elif a.year == b.year and a.month == b.month:
+            pieces.append(f"{a.month}月{a.day}日〜{b.day}日")
+        elif a.year == b.year:
+            pieces.append(f"{a.month}月{a.day}日〜{b.month}月{b.day}日")
+        else:
+            pieces.append(f"{a.year}年{a.month}月{a.day}日〜{b.year}年{b.month}月{b.day}日")
+    return "・".join(pieces)
+
+
+def ranges_intersect(ranges: list[tuple[datetime.date, datetime.date]], start: datetime.date, end: datetime.date) -> bool:
+    return any(a <= end and b >= start for a, b in ranges)
+
+
+def event_date_priority(item: dict) -> int:
+    try:
+        return int(item.get("eventDateConfidence") or 0)
+    except Exception:
+        return 0
+
+
+def choose_cluster_event_schedule(cluster: list[dict], weekend_start: datetime.date, weekend_end: datetime.date) -> tuple[list[tuple[datetime.date, datetime.date]], dict | None]:
+    candidates = [(event_date_priority(x), x, deserialize_event_ranges(x)) for x in cluster]
+    candidates = [c for c in candidates if c[2]]
+    if not candidates:
+        combined = " ".join(f"{x.get('title','')} {x.get('summary','')}" for x in cluster)
+        fallback = extract_event_ranges(combined, weekend_start.year)
+        return fallback, None
+    best_conf = max(c[0] for c in candidates)
+    # Trust the strongest evidence tier; merge equally authoritative sources.
+    strongest = [c for c in candidates if c[0] == best_conf]
+    merged = _merge_date_ranges([r for _, _, ranges in strongest for r in ranges])
+    # Prefer a source whose schedule actually overlaps this weekend for attribution.
+    strongest.sort(key=lambda c: (ranges_intersect(c[2], weekend_start, weekend_end), c[0]), reverse=True)
+    return merged, strongest[0][1]
 
 
 def is_opening_closing_text(text: str) -> bool:
@@ -514,15 +962,12 @@ def is_opening_closing_text(text: str) -> bool:
 
 def is_weekend_event_cluster(cluster: list[dict], start, end) -> bool:
     combined = " ".join(f"{x.get('title','')} {x.get('summary','')}" for x in cluster)
-    if not any(term in combined for term in EVENT_TERMS):
+    if not any(term in combined for term in EVENT_TERMS) and not any(deserialize_event_ranges(x) for x in cluster):
         return False
-    if "今週末" in combined or "週末開催" in combined:
-        return True
-    years = {start.year, end.year}
-    dates: set[datetime.date] = set()
-    for year in years:
-        dates |= extract_event_dates(combined, year)
-    return start in dates or end in dates
+    ranges, _ = choose_cluster_event_schedule(cluster, start, end)
+    if ranges:
+        return ranges_intersect(ranges, start, end)
+    return "今週末" in combined or "週末開催" in combined
 
 
 def compact_title(title: str) -> str:
@@ -557,15 +1002,24 @@ def title_similarity(a: str, b: str) -> float:
 
 def same_story(a: dict, b: dict) -> bool:
     da, db = parse_date(str(a.get("publishedAt", ""))), parse_date(str(b.get("publishedAt", "")))
-    if abs((da-db).total_seconds()) > 72 * 3600:
-        return False
     ca, cb = str(a.get("category", "")), str(b.get("category", ""))
     if ca != cb and "暮らし" not in (ca, cb):
         return False
     aa, ab = str(a.get("area", "全市")), str(b.get("area", "全市"))
     if aa != ab and "全市" not in (aa, ab):
         return False
-    return title_similarity(str(a.get("title", "")), str(b.get("title", ""))) >= 0.72
+    similarity = title_similarity(str(a.get("title", "")), str(b.get("title", "")))
+    if similarity < 0.72:
+        return False
+    gap_hours = abs((da-db).total_seconds()) / 3600
+    if gap_hours <= 72:
+        return True
+    # Official calendars may discover an event days after the original article.
+    # For event stories, allow a wider window when at least one side carries a
+    # parsed event schedule, so the official entry can merge with earlier media.
+    eventish = ca == "イベント" or cb == "イベント"
+    has_schedule = bool(deserialize_event_ranges(a) or deserialize_event_ranges(b))
+    return eventish and has_schedule and gap_hours <= MAX_AGE_DAYS * 24
 
 
 def representative_rank(item: dict) -> tuple:
@@ -647,7 +1101,17 @@ def cluster_items(items: list[dict]) -> list[dict]:
         hay = " ".join(f"{x.get('title','')} {x.get('summary','')}" for x in cluster)
         rep["isBreaking"] = age_h <= 24 and any(k in hay for k in BREAKING_TERMS) and rep["priorityScore"] >= 85
         rep["isOpeningClosing"] = is_opening_closing_text(hay)
-        rep["isWeekendEvent"] = is_weekend_event_cluster(cluster, weekend_start, weekend_end)
+        event_ranges, schedule_source = choose_cluster_event_schedule(cluster, weekend_start, weekend_end)
+        if event_ranges:
+            rep["eventDates"] = serialize_event_ranges(event_ranges)
+            rep["eventStart"] = event_ranges[0][0].isoformat()
+            rep["eventEnd"] = event_ranges[-1][1].isoformat()
+            rep["eventDateLabel"] = format_event_ranges(event_ranges)
+            if schedule_source:
+                for key in ("eventDateConfidence", "eventDateSource", "eventDateSourceUrl", "eventDateEvidence", "eventDateMethod", "eventDateCheckedAt"):
+                    if schedule_source.get(key) is not None:
+                        rep[key] = schedule_source.get(key)
+        rep["isWeekendEvent"] = bool(event_ranges and ranges_intersect(event_ranges, weekend_start, weekend_end)) or is_weekend_event_cluster(cluster, weekend_start, weekend_end)
         rep["detailPath"] = f"news/{rep['id']}.html"
         merged.append(rep)
     return sorted(merged, key=lambda x: parse_date(str(x.get("publishedAt", ""))), reverse=True)
@@ -672,6 +1136,13 @@ def article_page_html(item: dict, generated_at: str) -> str:
     breaking_html = '<span class="breaking-chip">速報・重要</span>' if item.get("isBreaking") else ''
     shop_html = '<span class="shop-chip">開店・閉店</span>' if item.get("isOpeningClosing") else ''
     weekend_html = '<span class="weekend-chip">今週末イベント</span>' if item.get("isWeekendEvent") else ''
+    event_ranges = deserialize_event_ranges(item)
+    event_label = html.escape(str(item.get("eventDateLabel") or format_event_ranges(event_ranges))) if event_ranges else ""
+    event_source_name = html.escape(str(item.get("eventDateSource") or ""))
+    event_source_url = html.escape(str(item.get("eventDateSourceUrl") or item.get("sourceUrl", "")), quote=True)
+    event_schedule_html = ""
+    if event_label:
+        event_schedule_html = f'<section class="detail-event-schedule"><h2>開催日・開催期間</h2><p class="detail-event-date">{event_label}</p><p class="detail-event-source">日程確認：<a href="{event_source_url}" target="_blank" rel="noopener noreferrer">{event_source_name or source}</a></p></section>'
     jsonld = json.dumps({
         "@context": "https://schema.org",
         "@type": "NewsArticle",
@@ -691,6 +1162,7 @@ def article_page_html(item: dict, generated_at: str) -> str:
 <main class="wrap article-page-main"><nav class="breadcrumb"><a href="../">トップ</a><span>›</span><span>{category}</span></nav>
 <article class="detail-article"><div class="detail-badges"><span class="category-chip">{category}</span><span class="area-chip">{area}</span>{breaking_html}{shop_html}{weekend_html}{coverage_html}</div>
 <h1>{title}</h1><div class="detail-meta"><time>{published}</time><span>主な出典：{source}</span></div>
+{event_schedule_html}
 <section class="detail-summary"><h2>概要</h2><p>{summary}</p></section>
 <section class="detail-sources"><h2>このニュースの出典</h2><p>同じ出来事を複数媒体が掲載している場合は、まとめて表示しています。</p><ul>{''.join(sources_html)}</ul></section>
 <div class="detail-actions"><a class="source-button" href="{source_url}" target="_blank" rel="noopener noreferrer">主な出典で確認する ↗</a><a class="back-button" href="../">いわきNOWへ戻る</a></div>
@@ -719,7 +1191,9 @@ def enrich_and_write(raw_items: list[dict], statuses: list[dict] | None = None) 
             dt = parse_date(str(n.get("publishedAt", "")))
         except Exception:
             dt = datetime.now(JST)
-        if dt >= cutoff:
+        event_ranges = deserialize_event_ranges(n)
+        event_still_relevant = bool(event_ranges and max(b for _, b in event_ranges) >= datetime.now(JST).date() - timedelta(days=1))
+        if dt >= cutoff or event_still_relevant:
             n = dict(n)
             n["category"] = n.get("category") or classify_category(str(n.get("title", "")), str(n.get("summary", "")))
             n["area"] = n.get("area") or classify_area(str(n.get("title", "")), str(n.get("summary", "")))
@@ -730,7 +1204,7 @@ def enrich_and_write(raw_items: list[dict], statuses: list[dict] | None = None) 
     weekend_start, weekend_end = weekend_bounds()
     payload = {
         "generatedAt": generated_at,
-        "collectorVersion": "4.0",
+        "collectorVersion": "5.0",
         "weekend": {
             "start": weekend_start.isoformat(),
             "end": weekend_end.isoformat(),
@@ -759,6 +1233,49 @@ def render_only() -> int:
     return 0
 
 
+def self_test() -> int:
+    start = datetime(2026, 8, 15, 12, tzinfo=JST).date()
+    end = datetime(2026, 8, 16, 12, tzinfo=JST).date()
+
+    r = extract_event_ranges("開催期間：2026年8月11日(火祝)～16日(日)", 2026)
+    assert r == [(_safe_date(2026, 8, 11), _safe_date(2026, 8, 16))], r
+    assert ranges_intersect(r, start, end)
+
+    r2 = extract_event_ranges("開催日：令和8年8月29日（土）", 2026)
+    assert r2 == [(_safe_date(2026, 8, 29), _safe_date(2026, 8, 29))], r2
+
+    city_fixture = '''<html><body><h2>2026年8月の情報</h2><table>
+    <tr><th>15日(土曜日)</th><td><img alt="イベント・祭り"><a href="/event/a">海辺の夏イベント</a></td></tr>
+    <tr><th>16日(日曜日)</th><td><img alt="イベント・祭り"><a href="/event/a">海辺の夏イベント</a><a href="/event/b">日曜マルシェ</a></td></tr>
+    <tr><th>16日(日曜日)</th><td><img alt="相談"><a href="/consult/c">法律相談</a></td></tr>
+    </table></body></html>'''
+    parsed = parse_city_calendar_page(city_fixture, "https://www.city.iwaki.lg.jp/calendar", 2026, 8)
+    by_title = {x[0]: x for x in parsed}
+    assert format_event_ranges(by_title["海辺の夏イベント"][2]) == "8月15日〜16日", parsed
+    assert "法律相談" not in by_title, parsed
+
+    tourism_fixture = '''<html><body><article><h3><a href="/event/12345">ほるる de 夏休みイベント2026</a></h3>
+    <p>開催期間：2026年8月11日(火祝)～16日(日)</p></article></body></html>'''
+    tourism = parse_event_listing_page(tourism_fixture, "https://kankou-iwaki.or.jp/event", site_kind="tourism")
+    assert tourism and format_event_ranges(tourism[0][2]) == "8月11日〜16日", tourism
+
+    article_fixture = '''<html><body><p>登録日：2026年8月5日</p><main><h1>夏のイベント</h1>
+    <section><h2>開催概要</h2><p>イベント開催期間 2026年8月11日(火祝)～8月16日(日)</p></section></main></body></html>'''
+    aranges, evidence, confidence = extract_schedule_from_article(article_fixture, "https://kankou-iwaki.or.jp/event/1", 2026)
+    assert ranges_intersect(aranges, start, end), (aranges, evidence)
+    assert confidence >= 90
+
+    cluster = [{
+        "title": "夏休みイベント", "summary": "開催します", "category": "イベント", "area": "常磐",
+        "publishedAt": "2026-08-14T10:00:00+09:00", "eventDates": serialize_event_ranges(aranges),
+        "eventDateConfidence": 95, "eventDateSource": "公式ページ"
+    }]
+    assert is_weekend_event_cluster(cluster, start, end)
+    print("Self-test OK: weekend event date parsing, city calendar, tourism listing, article body")
+    return 0
+
+
+
 def main() -> int:
     old = load_existing()
     existing = expand_existing_news(old.get("news", []))
@@ -766,6 +1283,8 @@ def main() -> int:
 
     successful_sources = collect_direct(existing, statuses)
     successful_sources += collect_google_news(existing, statuses)
+    successful_sources += collect_official_events(existing, statuses)
+    enrich_event_article_bodies(existing, statuses)
 
     if not successful_sources:
         print("No sources fetched successfully; keeping existing stories and regenerating pages.")
@@ -776,6 +1295,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    if "--self-test" in sys.argv:
+        raise SystemExit(self_test())
     if "--render-only" in sys.argv:
         raise SystemExit(render_only())
     raise SystemExit(main())
