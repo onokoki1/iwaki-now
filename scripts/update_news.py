@@ -37,7 +37,7 @@ NEWS_DIR = ROOT / "news"
 JST = timezone(timedelta(hours=9))
 MAX_ITEMS = 240
 MAX_AGE_DAYS = 45
-USER_AGENT = "IwakiNow/5.0 (+public headline/event-date aggregator; contact site operator)"
+USER_AGENT = "IwakiNow/5.1 (+public headline/event-date aggregator; contact site operator)"
 EVENT_PAGE_FETCH_LIMIT = 36
 EVENT_DATE_RECHECK_HOURS = 24
 MAX_HTML_BYTES = 2_500_000
@@ -586,35 +586,177 @@ def _nearest_schedule_block(anchor, markers: tuple[str, ...]) -> str:
     return best
 
 
-def parse_event_listing_page(page_html: str, page_url: str, *, site_kind: str) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
+CITY_EVENT_NAV_EXCLUDE_TITLES = {
+    "市役所へのアクセス", "サイトマップ", "組織一覧・各部署連絡先", "このサイトについて",
+    "情報提供指針", "著作権・リンクについて", "ウェブアクセシビリティについて",
+    "セキュリティーポリシー", "ページトップへ戻る", "AIチャットボットに質問する",
+    "前の月", "次の月", "イベント・祭り", "講座・講演", "相談", "スポーツ・健康",
+    "文化・芸術", "子育て", "その他",
+}
+CITY_EVENT_NAV_EXCLUDE_FRAGMENTS = (
+    "アクセス", "サイトマップ", "組織一覧", "このサイトについて", "情報提供指針",
+    "著作権", "アクセシビリティ", "セキュリティーポリシー", "チャットボット",
+    "ページトップ", "ジャンルで絞り込む",
+)
+
+
+def _is_city_event_content_url(href: str) -> bool:
+    parsed = urllib.parse.urlparse(href)
+    host = parsed.netloc.lower()
+    return host.endswith("city.iwaki.lg.jp") and "/www/contents/" in parsed.path
+
+
+def _is_tourism_event_url(href: str) -> bool:
+    parsed = urllib.parse.urlparse(href)
+    host = parsed.netloc.lower()
+    return host.endswith("kankou-iwaki.or.jp") and bool(re.search(r"^/event/\d+/?$", parsed.path))
+
+
+def _reject_city_event_title(title: str) -> bool:
+    title = clean(title)
+    if len(title) < 4:
+        return True
+    if title in CITY_EVENT_NAV_EXCLUDE_TITLES:
+        return True
+    return any(fragment in title for fragment in CITY_EVENT_NAV_EXCLUDE_FRAGMENTS)
+
+
+def _marker_event_container(marker_node, page_url: str):
+    """Find the smallest DOM block that looks like one event entry.
+
+    This is intentionally marker-first rather than anchor-first. The previous
+    collector started from every /www/contents/ link and climbed upward until it
+    found *any* schedule text. That allowed footer/navigation links to inherit a
+    date from an unrelated event elsewhere on the page. Here we start at the
+    actual '開催日/開催期間' text and only accept a nearby compact block.
+    """
+    node = getattr(marker_node, "parent", None)
+    fallback = None
+    for _ in range(8):
+        if node is None:
+            break
+        if getattr(node, "name", None) in {"nav", "footer", "aside"}:
+            return None
+        text = clean(node.get_text(" ", strip=True))
+        if len(text) > 2600:
+            break
+        anchors = []
+        for a in node.find_all("a", href=True):
+            href = urllib.parse.urljoin(page_url, a.get("href", ""))
+            title = clean(a.get_text(" ", strip=True))
+            if _is_city_event_content_url(href) and not _reject_city_event_title(title):
+                anchors.append(a)
+        if anchors and ("開催日" in text or "開催期間" in text):
+            fallback = node
+            if getattr(node, "name", None) in {"li", "article", "section", "tr", "dl"} or len(anchors) == 1:
+                return node
+        node = getattr(node, "parent", None)
+    return fallback
+
+
+def _pick_event_title_anchor(container, marker_node, page_url: str):
+    candidates = []
+    for a in container.find_all("a", href=True):
+        href = urllib.parse.urljoin(page_url, a.get("href", ""))
+        title = clean(a.get_text(" ", strip=True))
+        if not _is_city_event_content_url(href) or _reject_city_event_title(title):
+            continue
+        candidates.append((a, title, href))
+    if not candidates:
+        return None
+
+    # Prefer the candidate closest to, and before, the date marker in DOM order.
+    descendants = list(container.descendants)
+    try:
+        marker_index = descendants.index(marker_node)
+    except ValueError:
+        marker_index = len(descendants)
+    ranked = []
+    for a, title, href in candidates:
+        try:
+            idx = descendants.index(a)
+        except ValueError:
+            idx = marker_index + 9999
+        before = idx <= marker_index
+        distance = abs(marker_index - idx)
+        ranked.append((0 if before else 1, distance, -len(title), a, title, href))
+    ranked.sort(key=lambda x: x[:3])
+    _, _, _, a, title, href = ranked[0]
+    return a, title, href
+
+
+def _parse_city_event_listing(page_html: str, page_url: str) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
     soup = BeautifulSoup(page_html, "html.parser")
+    # Remove structural navigation first. This is defense-in-depth; the
+    # marker-first extractor below is the primary protection.
+    for tag in soup.find_all(["nav", "footer", "aside"]):
+        tag.decompose()
+
+    now_year = datetime.now(JST).year
+    results: dict[str, tuple[str, str, list[tuple[datetime.date, datetime.date]], str]] = {}
+    marker_re = re.compile(r"(?:開催日|開催期間)\s*[:：]")
+    marker_nodes = soup.find_all(string=marker_re)
+    for marker in marker_nodes:
+        container = _marker_event_container(marker, page_url)
+        if container is None:
+            continue
+        picked = _pick_event_title_anchor(container, marker, page_url)
+        if not picked:
+            continue
+        _, title, href = picked
+        block = clean(container.get_text(" ", strip=True))
+        if not re.search(r"(?:開催日|開催期間)\s*[:：]", block):
+            continue
+        ranges = extract_event_ranges(block, now_year)
+        if not ranges:
+            continue
+        evidence = next((part for part in re.split(r"[。\n]", block) if ("開催日" in part or "開催期間" in part) and re.search(r"\d|令和", part)), block)
+        current = (title, href, ranges, clean(evidence)[:180])
+        prev = results.get(href)
+        if prev is None or len(title) > len(prev[0]):
+            results[href] = current
+    return list(results.values())
+
+
+def _parse_tourism_event_listing(page_html: str, page_url: str) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
+    soup = BeautifulSoup(page_html, "html.parser")
+    for tag in soup.find_all(["nav", "footer", "aside"]):
+        tag.decompose()
     results: dict[str, tuple[str, str, list[tuple[datetime.date, datetime.date]], str]] = {}
     now_year = datetime.now(JST).year
+    markers = ("開催期間", "イベント開催期間")
     for a in soup.find_all("a", href=True):
-        href = urllib.parse.urljoin(page_url, a["href"])
+        href = urllib.parse.urljoin(page_url, a.get("href", ""))
         title = clean(a.get_text(" ", strip=True))
-        if len(title) < 4:
+        if len(title) < 4 or not _is_tourism_event_url(href):
             continue
-        if site_kind == "tourism":
-            if not re.search(r"/event/\d+/?(?:$|[?#])", href):
-                continue
-            markers = ("開催期間", "イベント開催期間")
-        else:
-            if "city.iwaki.lg.jp" not in urllib.parse.urlparse(href).netloc or "/www/contents/" not in href:
-                continue
-            markers = ("開催日", "開催期間")
         block = _nearest_schedule_block(a, markers)
         if not block:
             continue
         ranges = extract_event_ranges(block, now_year)
         if not ranges:
             continue
-        evidence = next((part for part in re.split(r"[。\n]", block) if any(m in part for m in markers) and re.search(r"\d", part)), block)
-        prev = results.get(href)
+        evidence = next((part for part in re.split(r"[。\n]", block) if any(m in part for m in markers) and re.search(r"\d|令和", part)), block)
         current = (title, href, ranges, clean(evidence)[:180])
+        prev = results.get(href)
         if prev is None or len(title) > len(prev[0]):
             results[href] = current
     return list(results.values())
+
+
+def parse_event_listing_page(page_html: str, page_url: str, *, site_kind: str) -> list[tuple[str, str, list[tuple[datetime.date, datetime.date]], str]]:
+    """Extract event links only from genuine event entries.
+
+    City pages use a dedicated date-marker-first extractor to prevent footer,
+    navigation and policy links from being mistaken for event pages. Tourism
+    pages use their strict /event/<numeric-id> URL pattern plus local schedule
+    context.
+    """
+    if site_kind == "city":
+        return _parse_city_event_listing(page_html, page_url)
+    if site_kind == "tourism":
+        return _parse_tourism_event_listing(page_html, page_url)
+    raise ValueError(f"Unsupported event listing site kind: {site_kind}")
 
 
 def collect_official_events(existing: dict[str, dict], statuses: list[dict]) -> int:
@@ -1204,7 +1346,7 @@ def enrich_and_write(raw_items: list[dict], statuses: list[dict] | None = None) 
     weekend_start, weekend_end = weekend_bounds()
     payload = {
         "generatedAt": generated_at,
-        "collectorVersion": "5.0",
+        "collectorVersion": "5.1",
         "weekend": {
             "start": weekend_start.isoformat(),
             "end": weekend_end.isoformat(),
@@ -1259,6 +1401,18 @@ def self_test() -> int:
     tourism = parse_event_listing_page(tourism_fixture, "https://kankou-iwaki.or.jp/event", site_kind="tourism")
     assert tourism and format_event_ranges(tourism[0][2]) == "8月11日〜16日", tourism
 
+    city_list_fixture = '''<html><body>
+    <main><ul class="event-list"><li><h3><a href="/www/contents/1780000000001/index.html">本物の夏イベント</a></h3>
+    <p>開催日：2026年8月16日</p><p>会場：平地区</p></li></ul></main>
+    <footer><a href="/www/contents/1000000000001/index.html">市役所へのアクセス</a>
+    <a href="/www/contents/1000000000002/index.html">このサイトについて</a>
+    <a href="/www/contents/1000000000003/index.html">ウェブアクセシビリティについて</a></footer>
+    </body></html>'''
+    city_list = parse_event_listing_page(city_list_fixture, "https://www.city.iwaki.lg.jp/www/genre/1452741939257/index.html", site_kind="city")
+    assert len(city_list) == 1, city_list
+    assert city_list[0][0] == "本物の夏イベント", city_list
+    assert "市役所へのアクセス" not in {x[0] for x in city_list}, city_list
+
     article_fixture = '''<html><body><p>登録日：2026年8月5日</p><main><h1>夏のイベント</h1>
     <section><h2>開催概要</h2><p>イベント開催期間 2026年8月11日(火祝)～8月16日(日)</p></section></main></body></html>'''
     aranges, evidence, confidence = extract_schedule_from_article(article_fixture, "https://kankou-iwaki.or.jp/event/1", 2026)
@@ -1271,7 +1425,7 @@ def self_test() -> int:
         "eventDateConfidence": 95, "eventDateSource": "公式ページ"
     }]
     assert is_weekend_event_cluster(cluster, start, end)
-    print("Self-test OK: weekend event date parsing, city calendar, tourism listing, article body")
+    print("Self-test OK: weekend date parsing, city calendar, navigation-safe city event listing, tourism listing, article body")
     return 0
 
 
