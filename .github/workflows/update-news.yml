@@ -13,50 +13,41 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
-
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
-
-      - name: Update news
+      - name: Fetch RSS feeds
         run: python scripts/update_news.py
-
-      - name: Commit updated news
+      - name: Commit changed news data and article pages
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add data/news.json
-
+          git add -A data/news.json news
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No news changes"
           else
-            git commit -m "Update news"
+            git config user.name "iwaki-now-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: update news and article pages [skip ci]"
             git push
           fi
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload site
+      - name: Upload refreshed site
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
-
-      - name: Deploy site
+      - name: Deploy refreshed site
         id: deployment
         uses: actions/deploy-pages@v4
