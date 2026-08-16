@@ -56,6 +56,9 @@ jobs:
       - name: Remove stale navigation items
         run: python scripts/clean_news.py
 
+      - name: Rank weekend-friendly events
+        run: python scripts/rank_weekend_events.py
+
       - name: Commit changed news data and article pages
         run: |
           git add -A data/news.json news
