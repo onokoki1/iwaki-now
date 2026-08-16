@@ -22,15 +22,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
-      - name: Fetch RSS feeds
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install beautifulsoup4
+
+      - name: Validate weekend event collector
+        run: python scripts/update_news.py --self-test
+
+      - name: Fetch news and event dates
         run: python scripts/update_news.py
+
       - name: Commit changed news data and article pages
         run: |
           git add -A data/news.json news
@@ -42,12 +54,15 @@ jobs:
             git commit -m "chore: update news and article pages [skip ci]"
             git push
           fi
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
+
       - name: Upload refreshed site
         uses: actions/upload-pages-artifact@v4
         with:
           path: "."
+
       - name: Deploy refreshed site
         id: deployment
         uses: actions/deploy-pages@v4
