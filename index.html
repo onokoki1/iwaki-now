@@ -44,6 +44,32 @@
       </aside>
     </section>
 
+    <section class="special-sections" aria-label="注目の地域情報">
+      <article class="special-panel special-panel-shops">
+        <div class="special-panel-head">
+          <div>
+            <span class="special-icon">店</span>
+            <div><h2>開店・閉店</h2><p>新店舗、閉店、移転、リニューアルを自動収集</p></div>
+          </div>
+          <span class="special-count" id="openingClosingCount">0件</span>
+        </div>
+        <div class="special-list" id="openingClosingList" aria-live="polite"></div>
+        <button class="special-more" id="showOpeningClosing" type="button">開店・閉店を一覧で見る　›</button>
+      </article>
+
+      <article class="special-panel special-panel-weekend">
+        <div class="special-panel-head">
+          <div>
+            <span class="special-icon">週</span>
+            <div><h2>今週末のイベント</h2><p id="weekendLabel">今週末</p></div>
+          </div>
+          <span class="special-count" id="weekendEventCount">0件</span>
+        </div>
+        <div class="special-list" id="weekendEventList" aria-live="polite"></div>
+        <button class="special-more" id="showWeekendEvents" type="button">今週末のイベントを一覧で見る　›</button>
+      </article>
+    </section>
+
     <section class="news-section" aria-labelledby="latestTitle">
       <div class="filter-bar filter-bar-primary">
         <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="ニュースを検索（キーワードを入力）"></label>
@@ -51,7 +77,7 @@
         <select id="categoryFilter" aria-label="カテゴリーで絞り込む"><option value="すべて">カテゴリを選択</option><option>市政</option><option>防災・安全</option><option>暮らし</option><option>経済</option><option>教育・子育て</option><option>イベント</option><option>スポーツ</option></select>
         <select id="sortFilter" aria-label="並び順"><option value="new">新しい順</option><option value="old">古い順</option></select>
       </div>
-      <div class="section-line"><div><h2 id="latestTitle">新着ニュース</h2><span id="resultCount">0件</span></div><span id="lastUpdated">最終更新を確認中</span></div>
+      <div class="section-line"><div><h2 id="latestTitle">新着ニュース</h2><span id="resultCount">0件</span><span id="activeSpecialFilter" class="active-special-filter" hidden></span></div><span id="lastUpdated">最終更新を確認中</span></div>
       <div class="news-grid" id="newsGrid"></div>
       <div class="empty-state" id="emptyState" hidden><b>該当するニュースがありません</b><p>検索語や絞り込み条件を変えてみてください。</p></div>
       <div class="center-actions"><button id="clearFilters" type="button">絞り込みを解除</button></div>

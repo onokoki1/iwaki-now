@@ -33,7 +33,7 @@ NEWS_DIR = ROOT / "news"
 JST = timezone(timedelta(hours=9))
 MAX_ITEMS = 240
 MAX_AGE_DAYS = 45
-USER_AGENT = "IwakiNow/2.0 (+public headline aggregator; contact site operator)"
+USER_AGENT = "IwakiNow/4.0 (+public headline aggregator; contact site operator)"
 
 # Stable public feeds whose URLs have been verified from the sites themselves.
 DIRECT_FEEDS = [
@@ -108,6 +108,16 @@ GOOGLE_NEWS_QUERIES = [
         "query": 'いわき (site:iwakifc.com OR site:kankou-iwaki.or.jp OR site:iwaki-alios.jp OR site:iwakicci.or.jp) when:45d',
         "group": "地域団体",
     },
+    {
+        "name": "いわき開店・閉店",
+        "query": 'いわき (開店 OR 閉店 OR オープン OR 新店舗 OR 新店 OR 移転 OR リニューアル) when:45d',
+        "group": "開店・閉店",
+    },
+    {
+        "name": "いわき週末イベント",
+        "query": 'いわき (イベント OR 祭り OR まつり OR 花火 OR フェス OR コンサート OR マルシェ OR 展示 OR 公演 OR 盆踊り) when:30d',
+        "group": "イベント",
+    },
 ]
 
 BLOCK_TERMS = ("お悔やみ", "訃報", "葬儀", "死亡広告")
@@ -149,6 +159,19 @@ BREAKING_TERMS = (
 IMPORTANT_TERMS = (
     "市長", "市議会", "選挙", "予算", "条例", "医療", "病院", "学校", "休校",
     "道路", "水道", "給付", "補助", "開店", "閉店", "いわきFC",
+)
+
+OPENING_CLOSING_TERMS = (
+    "開店", "閉店", "オープン", "OPEN", "新店舗", "新店", "新規出店", "移転オープン",
+    "リニューアルオープン", "営業終了", "閉館", "閉鎖",
+)
+OPENING_CLOSING_EXCLUDE_TERMS = (
+    "オープンキャンパス", "オープンデータ", "オープンイノベーション", "オープン戦",
+    "オープン大会", "オープン講座",
+)
+EVENT_TERMS = (
+    "イベント", "祭", "まつり", "花火", "フェス", "コンサート", "マルシェ", "展示",
+    "展覧会", "公演", "盆踊り", "七夕", "おどり", "ワークショップ", "開催",
 )
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -423,6 +446,85 @@ def collect_google_news(existing: dict[str, dict], statuses: list[dict]) -> int:
     return successes
 
 
+def weekend_bounds(now: datetime | None = None) -> tuple[datetime.date, datetime.date]:
+    """Return the Saturday/Sunday that should be presented as "this weekend" in JST.
+
+    On Saturday or Sunday, the current weekend is used. Monday-Friday points to
+    the upcoming Saturday/Sunday.
+    """
+    current = (now or datetime.now(JST)).astimezone(JST).date()
+    weekday = current.weekday()
+    if weekday == 5:  # Saturday
+        start = current
+    elif weekday == 6:  # Sunday
+        start = current - timedelta(days=1)
+    else:
+        start = current + timedelta(days=5 - weekday)
+    return start, start + timedelta(days=1)
+
+
+def weekend_label(start, end) -> str:
+    weekdays = "月火水木金土日"
+    return f"{start.month}月{start.day}日({weekdays[start.weekday()]})〜{end.month}月{end.day}日({weekdays[end.weekday()]})"
+
+
+def extract_event_dates(text: str, reference_year: int) -> set[datetime.date]:
+    """Extract common Japanese month/day forms from a headline/summary.
+
+    This is deliberately conservative. It is used only to decide whether an event
+    belongs in the weekend shortcut, never as the authoritative event schedule.
+    """
+    dates: set[datetime.date] = set()
+    text = html.unescape(text or "")
+
+    # 2026年8月16日 / 8月16日
+    for m in re.finditer(r"(?:(\d{4})年)?\s*(\d{1,2})月\s*(\d{1,2})日", text):
+        year = int(m.group(1) or reference_year)
+        month, day = int(m.group(2)), int(m.group(3))
+        try:
+            dates.add(datetime(year, month, day).date())
+        except ValueError:
+            pass
+
+    # 8/16 or 8.16 (avoid years such as 2026/08/16 by requiring no digit before)
+    for m in re.finditer(r"(?<!\d)(\d{1,2})[/.](\d{1,2})(?![/.]\d)", text):
+        month, day = int(m.group(1)), int(m.group(2))
+        try:
+            dates.add(datetime(reference_year, month, day).date())
+        except ValueError:
+            pass
+
+    # 8月15日・16日 / 8月15日〜16日
+    for m in re.finditer(r"(\d{1,2})月\s*(\d{1,2})日\s*(?:[・、,〜～\-‐－—]|から)\s*(\d{1,2})日", text):
+        month, first, second = map(int, m.groups())
+        for day in (first, second):
+            try:
+                dates.add(datetime(reference_year, month, day).date())
+            except ValueError:
+                pass
+    return dates
+
+
+def is_opening_closing_text(text: str) -> bool:
+    hay = text or ""
+    if any(term in hay for term in OPENING_CLOSING_EXCLUDE_TERMS):
+        return False
+    return any(term in hay for term in OPENING_CLOSING_TERMS)
+
+
+def is_weekend_event_cluster(cluster: list[dict], start, end) -> bool:
+    combined = " ".join(f"{x.get('title','')} {x.get('summary','')}" for x in cluster)
+    if not any(term in combined for term in EVENT_TERMS):
+        return False
+    if "今週末" in combined or "週末開催" in combined:
+        return True
+    years = {start.year, end.year}
+    dates: set[datetime.date] = set()
+    for year in years:
+        dates |= extract_event_dates(combined, year)
+    return start in dates or end in dates
+
+
 def compact_title(title: str) -> str:
     s = html.unescape(title).lower()
     s = re.sub(r"[【】〖〗「」『』\[\]()（）〈〉《》]", "", s)
@@ -504,6 +606,7 @@ def priority_score(item: dict, coverage_count: int) -> int:
 
 
 def cluster_items(items: list[dict]) -> list[dict]:
+    weekend_start, weekend_end = weekend_bounds()
     clusters: list[list[dict]] = []
     for item in sorted(items, key=lambda x: parse_date(str(x.get("publishedAt", ""))), reverse=True):
         target = None
@@ -541,8 +644,10 @@ def cluster_items(items: list[dict]) -> list[dict]:
         rep["coverageCount"] = coverage_count
         rep["priorityScore"] = priority_score(rep, coverage_count)
         age_h = max(0.0, (datetime.now(JST) - parse_date(str(rep.get("publishedAt", "")))).total_seconds() / 3600)
-        hay = f"{rep.get('title','')} {rep.get('summary','')}"
+        hay = " ".join(f"{x.get('title','')} {x.get('summary','')}" for x in cluster)
         rep["isBreaking"] = age_h <= 24 and any(k in hay for k in BREAKING_TERMS) and rep["priorityScore"] >= 85
+        rep["isOpeningClosing"] = is_opening_closing_text(hay)
+        rep["isWeekendEvent"] = is_weekend_event_cluster(cluster, weekend_start, weekend_end)
         rep["detailPath"] = f"news/{rep['id']}.html"
         merged.append(rep)
     return sorted(merged, key=lambda x: parse_date(str(x.get("publishedAt", ""))), reverse=True)
@@ -565,6 +670,8 @@ def article_page_html(item: dict, generated_at: str) -> str:
     coverage = int(item.get("coverageCount", 1) or 1)
     coverage_html = f'<span class="coverage-chip">{coverage}媒体が掲載</span>' if coverage > 1 else ''
     breaking_html = '<span class="breaking-chip">速報・重要</span>' if item.get("isBreaking") else ''
+    shop_html = '<span class="shop-chip">開店・閉店</span>' if item.get("isOpeningClosing") else ''
+    weekend_html = '<span class="weekend-chip">今週末イベント</span>' if item.get("isWeekendEvent") else ''
     jsonld = json.dumps({
         "@context": "https://schema.org",
         "@type": "NewsArticle",
@@ -582,7 +689,7 @@ def article_page_html(item: dict, generated_at: str) -> str:
 <script type="application/ld+json">{jsonld}</script></head>
 <body><header class="article-page-header"><div class="wrap"><a class="brand" href="../"><strong>いわき <span>NOW</span></strong><small>今日のいわきを、ひと目で。</small></a></div></header>
 <main class="wrap article-page-main"><nav class="breadcrumb"><a href="../">トップ</a><span>›</span><span>{category}</span></nav>
-<article class="detail-article"><div class="detail-badges"><span class="category-chip">{category}</span><span class="area-chip">{area}</span>{breaking_html}{coverage_html}</div>
+<article class="detail-article"><div class="detail-badges"><span class="category-chip">{category}</span><span class="area-chip">{area}</span>{breaking_html}{shop_html}{weekend_html}{coverage_html}</div>
 <h1>{title}</h1><div class="detail-meta"><time>{published}</time><span>主な出典：{source}</span></div>
 <section class="detail-summary"><h2>概要</h2><p>{summary}</p></section>
 <section class="detail-sources"><h2>このニュースの出典</h2><p>同じ出来事を複数媒体が掲載している場合は、まとめて表示しています。</p><ul>{''.join(sources_html)}</ul></section>
@@ -620,9 +727,19 @@ def enrich_and_write(raw_items: list[dict], statuses: list[dict] | None = None) 
     items = cluster_items(eligible)[:MAX_ITEMS]
     active_sources = sorted({str(n.get("source", "")) for n in items if n.get("source")} | {str(src.get("source", "")) for n in items for src in (n.get("relatedSources", []) or []) if src.get("source")})
     generated_at = datetime.now(JST).isoformat(timespec="seconds")
+    weekend_start, weekend_end = weekend_bounds()
     payload = {
         "generatedAt": generated_at,
-        "collectorVersion": "3.0",
+        "collectorVersion": "4.0",
+        "weekend": {
+            "start": weekend_start.isoformat(),
+            "end": weekend_end.isoformat(),
+            "label": weekend_label(weekend_start, weekend_end),
+        },
+        "featureCounts": {
+            "openingClosing": sum(1 for n in items if n.get("isOpeningClosing")),
+            "weekendEvents": sum(1 for n in items if n.get("isWeekendEvent")),
+        },
         "sourceCount": len(active_sources),
         "sources": active_sources,
         "collectorStatus": statuses or [],
