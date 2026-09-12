@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T04:20:46+09:00",
+  "generatedAt": "2026-09-13T06:40:31+09:00",
   "collectorVersion": "5.1",
   "weekend": {
     "start": "2026-09-12",
@@ -12,7 +12,7 @@
     "weekendPicks": 20,
     "longRunningWeekendEvents": 9
   },
-  "sourceCount": 55,
+  "sourceCount": 52,
   "sources": [
     "47NEWS",
     "47news.jp",
@@ -26,9 +26,10 @@
     "Yahoo!ニュース",
     "asahi.com",
     "au Webポータル",
+    "gekirock.com",
     "goo-net.com",
     "iwaki.goguynet.jp",
-    "iwakifc.com",
+    "jleague.jp",
     "kfb.co.jp",
     "khb東日本放送",
     "ktv.jp",
@@ -39,7 +40,6 @@
     "nikkei.com",
     "prtimes.jp",
     "skream.jp",
-    "t.co",
     "いわきFC Official Site",
     "いわき商工会議所",
     "いわき市",
@@ -54,7 +54,6 @@
     "テレ朝NEWS",
     "ニコニコニュース",
     "リアルエコノミー",
-    "レッツエンジョイ東京",
     "号外NET いわき市",
     "日テレNEWS NNN",
     "日刊CJ Monmo Web",
@@ -63,11 +62,9 @@
     "横浜FCオフィシャルウェブサイト",
     "毎日新聞",
     "沖縄タイムス社",
-    "激ロック",
     "福島民友新聞社",
     "福島民報デジタル",
     "福島県 いわき地方振興局",
-    "Ｊリーグ公式サイト",
     "ｄメニューニュース"
   ],
   "collectorStatus": [
@@ -104,58 +101,50 @@
     {
       "name": "いわき総合ニュース",
       "group": "報道",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 100
     },
     {
       "name": "13地域ニュース",
       "group": "地域",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 77
     },
     {
       "name": "いわきFC",
       "group": "スポーツ",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 100
     },
     {
       "name": "いわき観光",
       "group": "観光・文化",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 68
     },
     {
       "name": "いわき経済",
       "group": "経済",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 56
     },
     {
       "name": "地域団体サイト",
       "group": "地域団体",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 100
     },
     {
       "name": "いわき開店・閉店",
       "group": "開店・閉店",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 50
     },
     {
       "name": "いわき週末イベント",
       "group": "イベント",
-      "ok": false,
-      "items": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "items": 69
     },
     {
       "name": "いわき市イベントカレンダー 2026/09",
@@ -179,8 +168,8 @@
       "name": "イベント記事本文の日程確認",
       "group": "イベント",
       "ok": true,
-      "items": 17,
-      "checked": 19
+      "items": 6,
+      "checked": 7
     }
   ],
   "news": [
@@ -290,6 +279,27 @@
       "detailPath": "news/6d2f8a1a845b8d18e5.html"
     },
     {
+      "id": "d0e54c78b978d72979",
+      "title": "マルトがいわき市のスマートタウンに出店へ！【今週の大店立地法速報】",
+      "summary": "ダイヤモンド・チェーンストアオンラインが「マルトがいわき市のスマートタウンに出店へ！【今週の大店立地法速報】」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "経済",
+      "area": "全市",
+      "publishedAt": "2026-09-13T04:41:54+09:00",
+      "source": "ダイヤモンド・チェーンストアオンライン",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9MWElyV2hFcHBJMnRhLVVoME92ZUg4LTZYaUs0NjRjTUxqNWdJVFU4amMydEdkYmJCMzlwNjZPR2VwbEdzTGtWWnlBY0lwRlNZM2ZUVkl0Qkc5TVdRVDRLVENtTEs3UjZMejFUM2t4VQ?oc=5",
+      "sourceHome": "https://diamond-rm.net",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 42,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/d0e54c78b978d72979.html"
+    },
+    {
       "id": "eaf703a3a504aadde5",
       "title": "開催期間：6月～9月の毎週水曜日(9月23日は除く) 心平の涼み処オープン 草野心平記念文学館は、ふくしま涼み処協力施設になっています。 6月～9月までの毎週水曜日(９月23日は除く)に小講堂が開放されます。 小講堂開放日は、世界遺産等の映画の上映もありますので、お気軽にお立ち寄りく…",
       "summary": "いわき市観光サイト・イベントに掲載されたイベント情報です。開催日：9月23日。詳細は公式ページでご確認ください。",
@@ -314,7 +324,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52342",
       "eventDateEvidence": "いわき市立草野心平記念文学館 心平の涼み処オープン 開催期間：6月～9月の毎週水曜日(9月23日は除く) 心平の涼み処オープン 草野心平記念文学館は、ふくしま涼み処協力施設になっています",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 41,
@@ -325,25 +335,34 @@
       "detailPath": "news/eaf703a3a504aadde5.html"
     },
     {
-      "id": "d0e54c78b978d72979",
-      "title": "マルトがいわき市のスマートタウンに出店へ！【今週の大店立地法速報】",
-      "summary": "ダイヤモンド・チェーンストアオンラインが「マルトがいわき市のスマートタウンに出店へ！【今週の大店立地法速報】」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "経済",
+      "id": "b174bf5737bf592ddd",
+      "title": "2026/27 明治安田J2リーグ 第7節 vs サガン鳥栖",
+      "summary": "いわきFC Official Siteが「2026/27 明治安田J2リーグ 第7節 vs サガン鳥栖」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
       "area": "全市",
-      "publishedAt": "2026-09-13T01:41:30+09:00",
-      "source": "ダイヤモンド・チェーンストアオンライン",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9MWElyV2hFcHBJMnRhLVVoME92ZUg4LTZYaUs0NjRjTUxqNWdJVFU4amMydEdkYmJCMzlwNjZPR2VwbEdzTGtWWnlBY0lwRlNZM2ZUVkl0Qkc5TVdRVDRLVENtTEs3UjZMejFUM2t4VQ?oc=5",
-      "sourceHome": "https://diamond-rm.net",
-      "sourceGroup": "報道",
+      "publishedAt": "2026-09-13T00:03:04+09:00",
+      "source": "いわきFC Official Site",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNbm1PSkZHSGtUUXZBZVZxRWFvWHJ2UjMtSW4wM0dKZEpaNzk2Nmh6YUJGdXRsWnhpemRZN294Vm1xV1FHS2pDY2RIVGIwT1VVdURkYzZwWUo3Zll0RlZWTnhVaHBZNi1UUDV3NWtlYmN0aDViUE1ycE41WVk1Y2NNNE1weVhJaElCM0JVSmRJZVFXdG5DNjd2LWYtcWNvYWFTRkJnd001OGw5UXVrMDVGc2hPNXByc204OVcwMnp0Vl9jSlpVaU9TUmQydndaVnZJR1ZFVnltWjJ0bUJwN0ZVblRDbjV3R2FzbGwxakExejVmekNuNlVpQ2R6SGVVRlVD?oc=5",
+      "sourceHome": "https://iwakifc.com",
+      "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 42,
+      "priorityScore": 36,
       "isBreaking": false,
-      "detailPath": "news/d0e54c78b978d72979.html"
+      "isOpeningClosing": false,
+      "eventDates": [
+        {
+          "start": "2026-09-19",
+          "end": "2026-09-19"
+        }
+      ],
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-09-19",
+      "eventDateLabel": "9月19日",
+      "isWeekendEvent": false,
+      "detailPath": "news/b174bf5737bf592ddd.html"
     },
     {
       "id": "745a9785372724e5e9",
@@ -358,6 +377,10 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 36,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -369,6 +392,7 @@
       "eventEnd": "2026-09-12",
       "eventDateLabel": "9月12日",
       "isWeekendEvent": true,
+      "detailPath": "news/745a9785372724e5e9.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -377,32 +401,27 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 44,
-      "isBreaking": false,
-      "detailPath": "news/745a9785372724e5e9.html"
+      "isLongRunningEvent": false
     },
     {
       "id": "d1e7968fc15a6fecee",
       "title": "2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」",
-      "summary": "iwakifc.comが「2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-12T22:13:56+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaUJnNTF5eEdPV21jbHk3cjlXaF9rd29iQWNsT05uN2piNFpZT19uYXJBLTUyZTdkMllQQkJ0UTYtdHhUdEZRdDdGMW9PV3l1VXdsOUtUX2RrblYyYnpJbi1IV3I0TVJId2thNzhDVE1hSmdMUEJPbUVqT3M3ZFhxZFgtVkZ3OXZrd08wZ2VyaE94MW5xSEs2ckpYWTN2cHdhTTRkR1JqOTVWQmdKWlhqVGNMQ3JyRHpfN2N3T2VsQ0pDTmh5NjNOZUxzMnpzemctS3VpdWdKdGRWdzZHMWs0?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 26,
+      "priorityScore": 36,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/d1e7968fc15a6fecee.html"
     },
     {
@@ -464,7 +483,7 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-13T04:20:26+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:11+09:00",
       "eventDateCheckOk": true,
       "relatedSources": [
         {
@@ -556,36 +575,6 @@
       "isLongRunningEvent": false
     },
     {
-      "id": "983020d44a9f7e76af",
-      "title": "【試合情報】AWAY 9/19(土) 2026/27 明治安田J2リーグ 第7節 vs サガン鳥栖",
-      "summary": "いわきFC Official Siteが「【試合情報】AWAY 9/19(土) 2026/27 明治安田J2リーグ 第7節 vs サガン鳥栖」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-09-12T21:02:41+09:00",
-      "source": "いわきFC Official Site",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNU0FqbzVOQ09yaGlOVl9IcnNOMENsQWF0WGpOTFEweUgxWUhNazF5dzYxQUI3aWJzaFV3S0tzVzJUSTJCRXVBNG9qNnVZUW5ISXc?oc=5",
-      "sourceHome": "https://iwakifc.com",
-      "sourceGroup": "地域団体",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-19",
-          "end": "2026-09-19"
-        }
-      ],
-      "eventStart": "2026-09-19",
-      "eventEnd": "2026-09-19",
-      "eventDateLabel": "9月19日",
-      "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 36,
-      "isBreaking": false,
-      "detailPath": "news/983020d44a9f7e76af.html"
-    },
-    {
       "id": "ce632f64d6bce5023a",
       "title": "田坂新体制のいわきFC「白星発進」 サッカーJ2、横浜FCに勝利:速報",
       "summary": "福島民友新聞社が「田坂新体制のいわきFC「白星発進」 サッカーJ2、横浜FCに勝利:速報」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -598,27 +587,31 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 36,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ce632f64d6bce5023a.html"
     },
     {
       "id": "76086a5ea07872c033",
       "title": "【公式】いわき vs 横浜FCの試合結果・データ（明治安田Ｊ２リーグ：2026年9月12日）",
-      "summary": "Ｊリーグ公式サイトが「【公式】いわき vs 横浜FCの試合結果・データ（明治安田Ｊ２リーグ：2026年9月12日）」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "jleague.jpが「【公式】いわき vs 横浜FCの試合結果・データ（明治安田Ｊ２リーグ：2026年9月12日）」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-09-12T19:29:12+09:00",
-      "source": "Ｊリーグ公式サイト",
+      "source": "jleague.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPV2Z1ZWZEc1BLbF9MSklta2p1NkR1QlB1dkFPYjEtbUROdkFJU1lIUy1YWG1uNGJodmhwRm5Nbm1QNWh5b1ZFS1JDSzM0TXhLb2JCaUlSdEFWTmJTMW1sRE9CclRSUVE1aFNGVg?oc=5",
       "sourceHome": "https://www.jleague.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 40,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -630,6 +623,7 @@
       "eventEnd": "2026-09-12",
       "eventDateLabel": "9月12日",
       "isWeekendEvent": true,
+      "detailPath": "news/76086a5ea07872c033.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -638,26 +632,46 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
+      "isLongRunningEvent": false
+    },
+    {
+      "id": "136c41d9137fe5b1ff",
+      "title": "2026/27 明治安田J2リーグ 第8節 vs ベガルタ仙台「北電子presents ハーマー&ドリースペシャルDAY」",
+      "summary": "いわきFC Official Siteが「2026/27 明治安田J2リーグ 第8節 vs ベガルタ仙台「北電子presents ハーマー&ドリースペシャルDAY」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-09-12T19:00:46+09:00",
+      "source": "いわきFC Official Site",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNNjBINmtFX1pNRVVwMVFPclZwWU1kaGZWTHZPWDF2dUZYTUVicGtKcEJaV2E1V0dtakEzRnl3eFdrZTlQM2ZOalV5TUw2TngwRUgtOWZIQmllN0lFUHZ2b01tVDl0bDltSEhKOGhxclNlekF6aHp6dkJCWFhKWlRseV9QaUkxa2x0TVdWUl9fQkRielY4X296dlhzSDRkR1VfSmFWRXhza1F5VnpuVGgwMzN3NkJKb1Fma3hiaDlUT3NYdzdRd0o4VFpYdjFvamoyY3pObmRLeWhXRU9KeUpkQWRjMHBTVXhKN1ltTlllRlUwRkRHUjJuYU1UWXZRa2tERDRTY290NUsxblF5?oc=5",
+      "sourceHome": "https://iwakifc.com",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 40,
+      "priorityScore": 36,
       "isBreaking": false,
-      "detailPath": "news/76086a5ea07872c033.html"
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/136c41d9137fe5b1ff.html"
     },
     {
       "id": "5df860792620b4a540",
       "title": "福島県いわき市発3ピース・ロック・バンド urei、1stミニ・アルバム『HOME』10/21リリース決定！11月より全国ツアー開催、ファイナルは新宿ACB HALLワンマン！",
-      "summary": "激ロックが「福島県いわき市発3ピース・ロック・バンド urei、1stミニ・アルバム『HOME』10/21リリース決定！11月より全国ツアー開催、ファイナルは新宿ACB HALLワンマン！」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "gekirock.comが「福島県いわき市発3ピース・ロック・バンド urei、1stミニ・アルバム『HOME』10/21リリース決定！11月より全国ツアー開催、ファイナルは新宿ACB HALLワンマン！」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-12T19:00:00+09:00",
-      "source": "激ロック",
+      "source": "gekirock.com",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oa0NlRnAyQ2t1aWhBd1BIZXRjVzhZQVliMkZGSEpkb2F1N18yejFHb0haWHJsbGR0aWxDdFBZLWlEMDBrX2FvRlRvRERvNVJQVnpEWlRKYTVZbVE?oc=5",
       "sourceHome": "https://gekirock.com",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 26,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -669,10 +683,6 @@
       "eventEnd": "2026-10-21",
       "eventDateLabel": "10月21日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 26,
-      "isBreaking": false,
       "detailPath": "news/5df860792620b4a540.html"
     },
     {
@@ -709,12 +719,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 47,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/3e58c754a5590db8f7.html"
     },
     {
@@ -730,12 +740,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ef7b4f394682fca36b.html"
     },
     {
@@ -772,17 +782,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-10-27",
-          "end": "2026-10-27"
-        }
-      ],
-      "eventStart": "2026-10-27",
-      "eventEnd": "2026-10-27",
-      "eventDateLabel": "10月27日",
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "福島民報デジタル",
@@ -794,6 +793,17 @@
       "coverageCount": 2,
       "priorityScore": 45,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "eventDates": [
+        {
+          "start": "2026-10-27",
+          "end": "2026-10-27"
+        }
+      ],
+      "eventStart": "2026-10-27",
+      "eventEnd": "2026-10-27",
+      "eventDateLabel": "10月27日",
+      "isWeekendEvent": false,
       "detailPath": "news/e4897e1a449ea2c36d.html"
     },
     {
@@ -829,12 +839,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/0a4429d44c7a1e4a9b.html"
     },
     {
@@ -862,7 +872,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1783060725490/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月24日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:07+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -932,12 +942,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/b91a8fec5c87e7f090.html"
     },
     {
@@ -953,12 +963,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/f9c65d1a9218cdc0b0.html"
     },
     {
@@ -974,12 +984,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/0a6bd825c3d4580ec9.html"
     },
     {
@@ -1015,9 +1025,13 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
+        {
+          "source": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZZXFJR1pzZEFTdHhxWXM1Q3NwNmdraER6ckRhS1VYZGpSQkozMk1qODZBNUdMUHpDVl9VU002Nk42ckhEUFg2Qm4tcC1YRFZZTVB6T21PUEZOUQ?oc=5",
+          "publishedAt": "2026-09-11T15:14:00+09:00",
+          "via": "google-news"
+        },
         {
           "source": "newsdig.tbs.co.jp",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IR2RCZUtJR1YzTS1pb3J0VTdBcUllQ05KeDJNbU1wcWh3cnBoMXVqLWRtcWxhdWtjc2tYS3psbXRvb2xOSEdVWXJqa2RqUEEyc202YzZJV1pOdw?oc=5",
@@ -1031,9 +1045,11 @@
           "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 108,
+      "coverageCount": 4,
+      "priorityScore": 113,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/f425a4c820a40866dc.html"
     },
     {
@@ -1082,7 +1098,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51701",
       "eventDateEvidence": "江名の町マリンフェスティバル2026 開催期間：2026年9月12日(土)・13日(日) ※小雨決行、荒天中止 港町・江名ならではのイベントを楽しもう！ 9月12日(土)・13日(日)の2日間、江名港にて「江名の町マリンフェスティバル2026」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -1126,7 +1142,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52217",
       "eventDateEvidence": "第5回 遠野和紙あかり展《要事前申込》 開催期間：2026年9月12日(土)～10月3日(土)遠野和紙あかり展 ※期間中の土・日曜日等、指定日に開催 2026年10月4日(日)遠野和紙あかり展 プレミアムコンサート 遠野和紙の灯りに包まれる「あかり展」と音楽が響くプレミアムコンサート 9月12日(土)から10月3日(土)の指定日に、旧いわき市立入遠野中学校に",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 36,
@@ -1170,7 +1186,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/50785",
       "eventDateEvidence": "飯野八幡宮例大祭 開催期間：2026年9月13日(日) 勇壮な流鏑馬神事が執り行われます！ 飯野八幡宮は、平安時代の康平6年（1063年）、源頼義が奥州討伐の際に、源氏が深く信仰していた石清水八幡宮を磐城の地に勧請し、戦勝を祈願したことが始まりと伝えられています",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -1202,12 +1218,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 33,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/d7028780164089a7f1.html"
     },
     {
@@ -1223,12 +1239,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 19,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/4cdc8a98fe75f6e586.html"
     },
     {
@@ -1290,7 +1306,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-13T04:20:26+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:12+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -1338,6 +1354,10 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 29,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1349,10 +1369,6 @@
       "eventEnd": "2026-09-14",
       "eventDateLabel": "9月14日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 29,
-      "isBreaking": false,
       "detailPath": "news/66ea57b28ae618d4b8.html"
     },
     {
@@ -1368,6 +1384,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 19,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1379,10 +1399,6 @@
       "eventEnd": "2026-09-10",
       "eventDateLabel": "9月10日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 19,
-      "isBreaking": false,
       "detailPath": "news/d4de00bb58d384a5b7.html"
     },
     {
@@ -1398,8 +1414,6 @@
       "sourceGroup": "開店・閉店",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": true,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "Yahoo!ニュース",
@@ -1417,6 +1431,8 @@
       "coverageCount": 3,
       "priorityScore": 43,
       "isBreaking": false,
+      "isOpeningClosing": true,
+      "isWeekendEvent": false,
       "detailPath": "news/1f42e5e21f77283718.html"
     },
     {
@@ -1432,6 +1448,10 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 19,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1443,10 +1463,6 @@
       "eventEnd": "2026-09-11",
       "eventDateLabel": "9月11日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 19,
-      "isBreaking": false,
       "detailPath": "news/bc5f78569ffd708243.html"
     },
     {
@@ -1462,6 +1478,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 98,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1473,31 +1493,27 @@
       "eventEnd": "2026-09-10",
       "eventDateLabel": "9月10日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 98,
-      "isBreaking": false,
       "detailPath": "news/3da0ec0c4c749a8392.html"
     },
     {
       "id": "c8776fe167adc4bfab",
       "title": "株式会社大和田測量設計とビジネスパートナー契約締結​ - いわきFC Official Site",
-      "summary": "iwakifc.comが「株式会社大和田測量設計とビジネスパートナー契約締結​ - いわきFC Official Site」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「株式会社大和田測量設計とビジネスパートナー契約締結​ - いわきFC Official Site」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-11T11:00:35+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tNHhSbXRvbGIwLWU1cndmWVJpbEdHSTl3djlPd2xzSy12enl6MEo1cUtXaURwbk15Ym44dHZnVXV2WUM5cGhLVUJIQi1QckZvekVfTVVPZVdodw?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/c8776fe167adc4bfab.html"
     },
     {
@@ -1513,8 +1529,6 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "47NEWS",
@@ -1526,6 +1540,8 @@
       "coverageCount": 2,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/87d78a9f6172d1e2e1.html"
     },
     {
@@ -1541,12 +1557,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 98,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/072d32198f745358de.html"
     },
     {
@@ -1562,8 +1578,6 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "47NEWS",
@@ -1575,6 +1589,8 @@
       "coverageCount": 2,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/23078e3228a73d368b.html"
     },
     {
@@ -1761,6 +1777,10 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 29,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1772,6 +1792,7 @@
       "eventEnd": "2026-09-12",
       "eventDateLabel": "9月12日",
       "isWeekendEvent": true,
+      "detailPath": "news/80b6d2590c90b7a188.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -1780,12 +1801,7 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 29,
-      "isBreaking": false,
-      "detailPath": "news/80b6d2590c90b7a188.html"
+      "isLongRunningEvent": false
     },
     {
       "id": "579337c9d8efe1e1af",
@@ -1799,7 +1815,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-13T04:20:27+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:13+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -1845,6 +1861,10 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 29,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1856,6 +1876,7 @@
       "eventEnd": "2026-09-12",
       "eventDateLabel": "9月12日",
       "isWeekendEvent": true,
+      "detailPath": "news/5fd6a9489abbe8f57d.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -1864,12 +1885,7 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 29,
-      "isBreaking": false,
-      "detailPath": "news/5fd6a9489abbe8f57d.html"
+      "isLongRunningEvent": false
     },
     {
       "id": "ac2601ff6dd07415c4",
@@ -1884,8 +1900,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "47NEWS",
@@ -1897,6 +1911,8 @@
       "coverageCount": 2,
       "priorityScore": 38,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ac2601ff6dd07415c4.html"
     },
     {
@@ -1912,12 +1928,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/9adfa49cf5817f9416.html"
     },
     {
@@ -1945,7 +1961,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52384",
       "eventDateEvidence": "道の駅いわき・ら・ら・ミュウ「道の駅開業1周年記念 大感謝祭」 開催期間：2026年9月12日(土)・13日(日) 道の駅開業1周年！感謝を込めて、2日間限定の特別イベントを開催！ 道の駅いわき・ら・ら・ミュウは、道の駅としての開業1周年を迎えます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -1977,12 +1993,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/1eaeb8c43f84ee22e9.html"
     },
     {
@@ -1998,12 +2014,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/710ebf4b112f6166cd.html"
     },
     {
@@ -2019,8 +2035,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "47NEWS",
@@ -2032,6 +2046,8 @@
       "coverageCount": 2,
       "priorityScore": 58,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/261fd33368253cde41.html"
     },
     {
@@ -2121,12 +2137,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/86a675414275975b94.html"
     },
     {
@@ -2142,12 +2158,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/c86413d7acf52f1a05.html"
     },
     {
@@ -2254,7 +2270,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52381",
       "eventDateEvidence": "松本陽子 宵の明星を見た日 開催期間：2026年9月12日(土)～11月1日(日) いわき市立美術館企画展 9月12日(土)～11月1日(日)まで開催！ 9月12日(土)～11月1日(日)までの期間中、いわき市立美術館にて企画展「松本陽子 宵の明星を見た日」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2285,6 +2301,10 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 33,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -2296,10 +2316,6 @@
       "eventEnd": "2026-09-18",
       "eventDateLabel": "9月18日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 33,
-      "isBreaking": false,
       "detailPath": "news/a8522d1407db0b600e.html"
     },
     {
@@ -2315,12 +2331,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ec5767014a7e85a625.html"
     },
     {
@@ -2378,8 +2394,6 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "FTV 福島テレビ",
@@ -2391,6 +2405,8 @@
       "coverageCount": 2,
       "priorityScore": 75,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/13ce6d729e80e8c6f8.html"
     },
     {
@@ -2406,8 +2422,6 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "TBS NEWS DIG",
@@ -2419,6 +2433,8 @@
       "coverageCount": 2,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/074128c04b7ac5be41.html"
     },
     {
@@ -2434,12 +2450,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 27,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/7570b422d8fad8e89d.html"
     },
     {
@@ -2455,12 +2471,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/1c028cb6009a12e58f.html"
     },
     {
@@ -2476,6 +2492,10 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 29,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -2487,10 +2507,6 @@
       "eventEnd": "2026-09-10",
       "eventDateLabel": "9月10日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 29,
-      "isBreaking": false,
       "detailPath": "news/96537c2516eaa97b6b.html"
     },
     {
@@ -2530,7 +2546,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1786601763566/index.html",
       "eventDateEvidence": "第５回「遠野和紙あかり展 」の開催について 開催日： 2026年9月12日、2026年9月13日、2026年9月19日、2026年9月20日、2026年9月26日、2026年9月27日、2026年10月3日、2026年10月4日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:08+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2574,7 +2590,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1690776258274/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月29日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:07+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2618,6 +2634,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 70,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -2629,10 +2649,6 @@
       "eventEnd": "2026-09-10",
       "eventDateLabel": "9月10日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 70,
-      "isBreaking": false,
       "detailPath": "news/b6410115424de79022.html"
     },
     {
@@ -2648,6 +2664,10 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 40,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -2659,6 +2679,7 @@
       "eventEnd": "2026-09-13",
       "eventDateLabel": "9月13日",
       "isWeekendEvent": true,
+      "detailPath": "news/767f0e70bf438e2365.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -2667,32 +2688,27 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 40,
-      "isBreaking": false,
-      "detailPath": "news/767f0e70bf438e2365.html"
+      "isLongRunningEvent": false
     },
     {
       "id": "c92ccbc38886beccfc",
       "title": "【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ",
-      "summary": "iwakifc.comが「【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-10T16:34:55+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYRGg0b1Uxa2pmV1ZGeF81S2tUd04yTnZNVk1ocThWdndFdmtPeURKc1ZGbERMUWRuM2Z6OUJNQnoxeTg5b1puZGNSQ3pGQW96Q2VINTRnYw?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/c92ccbc38886beccfc.html"
     },
     {
@@ -2720,7 +2736,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52428",
       "eventDateEvidence": "小さな企画展「令和5年台風13号」 開催期間：2026年9月12日(土)～10月25日(日) いわき市立草野心平記念文学館にて 防災企画 防災企画の最終回となる第三弾は、いわき市に初めて発生した線状降水帯を取り上げます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2751,12 +2767,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/9126cf8780df3d4b44.html"
     },
     {
@@ -2814,8 +2830,6 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "日テレNEWS NNN",
@@ -2827,27 +2841,29 @@
       "coverageCount": 2,
       "priorityScore": 34,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/bfbb4381ff30a20c82.html"
     },
     {
       "id": "f0e0467c4812f7c950",
       "title": "いわき市「2026年度 健康なカラダづくりプログラム」募集開始のお知らせ - いわきFC Official Site",
-      "summary": "iwakifc.comが「いわき市「2026年度 健康なカラダづくりプログラム」募集開始のお知らせ - いわきFC Official Site」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「いわき市「2026年度 健康なカラダづくりプログラム」募集開始のお知らせ - いわきFC Official Site」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-10T11:17:05+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB1Yy1jQnNzVmdMRXRCRjhUM0RjLUlyXzY1NW1mb2JsSDJyMDBsWGIzdzd5WmlrUW5NYmZ4U1E2ZWZ4RnU3ai1nOE9KXzhUdFkwNG1mLQ?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/f0e0467c4812f7c950.html"
     },
     {
@@ -2863,12 +2879,12 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 70,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/1c24d081b9ca0a0198.html"
     },
     {
@@ -2912,12 +2928,12 @@
       "sourceGroup": "経済",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 98,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/8a1f05cc779ead4f65.html"
     },
     {
@@ -2993,6 +3009,10 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 19,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3004,6 +3024,7 @@
       "eventEnd": "2026-09-12",
       "eventDateLabel": "9月12日",
       "isWeekendEvent": true,
+      "detailPath": "news/11c19dff84d253ebb9.html",
       "weekendRankScore": 132,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -3012,12 +3033,7 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 19,
-      "isBreaking": false,
-      "detailPath": "news/11c19dff84d253ebb9.html"
+      "isLongRunningEvent": false
     },
     {
       "id": "b7d6d3b881babebfba",
@@ -3052,12 +3068,12 @@
       "sourceGroup": "開店・閉店",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": true,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 33,
       "isBreaking": false,
+      "isOpeningClosing": true,
+      "isWeekendEvent": false,
       "detailPath": "news/5cd452224ddb565bc9.html"
     },
     {
@@ -3073,6 +3089,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 28,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3084,10 +3104,6 @@
       "eventEnd": "2026-09-10",
       "eventDateLabel": "9月10日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 33,
-      "isBreaking": false,
       "detailPath": "news/35d70d1ba8e0a24453.html"
     },
     {
@@ -3103,8 +3119,6 @@
       "sourceGroup": "イベント",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "福島民報デジタル",
@@ -3114,8 +3128,10 @@
         }
       ],
       "coverageCount": 2,
-      "priorityScore": 45,
+      "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/629d2d1a7e3e35f4d7.html"
     },
     {
@@ -3130,7 +3146,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-13T04:20:28+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:15+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -3234,12 +3250,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/0cbc4897bbabb231c3.html"
     },
     {
@@ -3276,12 +3292,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/5ee5f665a5a362a891.html"
     },
     {
@@ -3346,12 +3362,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 76,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/6e74dc0c36b92c473a.html"
     },
     {
@@ -3379,7 +3395,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52357",
       "eventDateEvidence": "企画展「サンマの学校」 開催期間：2026年7月15日(水)～2027年1月11日(月・祝) 【世界唯一】生きたサンマを展示するアクアマリンふくしまが贈る“世界一サンマづくし”の夏！7月15日開校！ 7月15日(水)～2027年1月11日(月・祝)までの期間中、アクアマリンふくしまにて、日本の食卓でおなじみの“サンマ”をテーマにした企画展「サンマの学校」を開",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 31,
@@ -3421,7 +3437,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52282",
       "eventDateEvidence": "いわきデザインマンホールフォトラリー2026 第2弾 開催期間：2026年8月1日(土)～2027年2月28日(日) 【いわき市市制施行60周年記念事業】見つけて、撮って、応募して 思い出に残そう！！ 8月1日(土)～2027年2月28日(日)までの期間中、「いわきデザインマンホールフォトラリー2026 第2弾」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3471,12 +3487,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/7f7860a2e834d5290e.html"
     },
     {
@@ -3492,6 +3508,10 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 24,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3503,10 +3523,6 @@
       "eventEnd": "2026-08-30",
       "eventDateLabel": "8月30日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 24,
-      "isBreaking": false,
       "detailPath": "news/2ac9324504f38c0273.html"
     },
     {
@@ -3522,12 +3538,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/194886c5f7dd242bb0.html"
     },
     {
@@ -3571,8 +3587,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "朝日新聞",
@@ -3590,6 +3604,8 @@
       "coverageCount": 3,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/09c4ab5b8d9cbd0411.html"
     },
     {
@@ -3613,26 +3629,36 @@
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhZEdyR1IwUFR5YUpsMnFxMnZPcVVOZVE3ejRvaFBsT3JnMWdZaWM2a3hBN010RmZIQWZrMF9rVlVYU3UxaGtYaGFEVEQ2c0hINk9XVW8wTQ?oc=5",
           "publishedAt": "2026-09-09T14:28:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhZEdyR1IwUFR5YUpsMnFxMnZPcVVOZVE3ejRvaFBsT3JnMWdZaWM2a3hBN010RmZIQWZrMF9rVlVYU3UxaGtYaGFEVEQ2c0hINk9XVW8wTQ?oc=5",
+          "publishedAt": "2026-09-09T14:28:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 2,
-      "priorityScore": 53,
+      "coverageCount": 3,
+      "priorityScore": 58,
       "isBreaking": false,
       "detailPath": "news/8db8c9ed0447f863af.html"
     },
     {
       "id": "acb4809daccf699436",
       "title": "【いわきFCスポーツサイエンスラボ】9/20(日) オンラインシセミナー「高校野球スカウティング戦略～パフォーマンス構造に基づく分析～」",
-      "summary": "iwakifc.comが「【いわきFCスポーツサイエンスラボ】9/20(日) オンラインシセミナー「高校野球スカウティング戦略～パフォーマンス構造に基づく分析～」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわきFC Official Siteが「【いわきFCスポーツサイエンスラボ】9/20(日) オンラインシセミナー「高校野球スカウティング戦略～パフォーマンス構造に基づく分析～」」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "教育・子育て",
       "area": "全市",
       "publishedAt": "2026-09-09T14:19:10+09:00",
-      "source": "iwakifc.com",
+      "source": "いわきFC Official Site",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyWldkU2F0WTZRMXlXdVNJVXpjdmQ2dEFuYWM2LWc3R1YzODlWMEMyM1YySUhTVWU3ZUFJdVM5WFM5bWsxRF8xdlhnYXBFTEJDU2g0Y2FCZXJtMzg?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 35,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3644,11 +3670,28 @@
       "eventEnd": "2026-09-20",
       "eventDateLabel": "9月20日",
       "isWeekendEvent": false,
+      "detailPath": "news/acb4809daccf699436.html"
+    },
+    {
+      "id": "2ea235e5d2803568f5",
+      "title": "軽自動車が対向車線にはみ出し…乗用車と正面衝突、77歳男性死亡 福島・いわき市",
+      "summary": "TBS NEWS DIGが「軽自動車が対向車線にはみ出し…乗用車と正面衝突、77歳男性死亡 福島・いわき市」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-09-09T14:13:00+09:00",
+      "source": "TBS NEWS DIG",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBMSFBzTVdGV3hxQzBqVDRkYlk5LThtMHYwVFNVVGdfZHNGanBidms2MmxjdUN0eE1KdlJGNmxhLTdUdmtMSEtQWkwwdkJOV1NaSFc0OEt1NA?oc=5",
+      "sourceHome": "https://newsdig.tbs.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 35,
+      "priorityScore": 28,
       "isBreaking": false,
-      "detailPath": "news/acb4809daccf699436.html"
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/2ea235e5d2803568f5.html"
     },
     {
       "id": "f10e19737bf1a14612",
@@ -3743,6 +3786,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 28,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3754,10 +3801,6 @@
       "eventEnd": "2026-09-09",
       "eventDateLabel": "9月9日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 28,
-      "isBreaking": false,
       "detailPath": "news/1de5d2b08b59b72cc0.html"
     },
     {
@@ -3842,12 +3885,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/3804303b320c928664.html"
     },
     {
@@ -3919,12 +3962,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 14,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/986290c4b17b0c652a.html"
     },
     {
@@ -3967,6 +4010,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 93,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -3978,10 +4025,6 @@
       "eventEnd": "2026-09-08",
       "eventDateLabel": "9月8日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 93,
-      "isBreaking": false,
       "detailPath": "news/3bbe6ab10961296c7c.html"
     },
     {
@@ -4059,8 +4102,6 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "prtimes.jp",
@@ -4072,6 +4113,8 @@
       "coverageCount": 2,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/bf2e30390da78c241d.html"
     },
     {
@@ -4087,12 +4130,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/c0059592ed7e9775e0.html"
     },
     {
@@ -4136,12 +4179,12 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/e6817a889ef22052db.html"
     },
     {
@@ -4197,12 +4240,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/cbc0fd361b98670b07.html"
     },
     {
@@ -4218,12 +4261,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/f79f29167b8ae32894.html"
     },
     {
@@ -4260,12 +4303,12 @@
       "sourceGroup": "開店・閉店",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": true,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 32,
       "isBreaking": false,
+      "isOpeningClosing": true,
+      "isWeekendEvent": false,
       "detailPath": "news/4e5bdbd678e9d70e2c.html"
     },
     {
@@ -4281,12 +4324,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 65,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/109b9bf88946395651.html"
     },
     {
@@ -4374,7 +4417,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52352",
       "eventDateEvidence": "本濃研太 ダンボール彫刻展 僕たちが、いる 開催期間：7月4日(土)～9月23日(水・祝) いわき市立草野心平記念文学館企画展 本濃研太ダンボール彫刻展 開催 7月4日(土)～9月23日(水・祝)までの期間中、いわき市立草野心平記念文学館にて「本濃研太 ダンボール彫刻展 僕たちが、いる」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4416,7 +4459,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52362",
       "eventDateEvidence": "令和8年度第1回企画展「いわきの民俗芸能」 開催期間：2026年6月27日(土)～9月27日(日) いわき市暮らしの伝承郷企画展 受け継がれる伝統、響き続ける郷土の鼓動 6月27日(土)～9月27日(日)までの期間中、いわき市暮らしの伝承郷にて、第1回企画展「いわきの民俗芸能」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4459,7 +4502,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51257",
       "eventDateEvidence": "森の休憩所ピコブルーベリー農園 ブルーベリー狩り 開催期間：2026年6月14日(日)～9月上旬(予定) ブルーベリー摘み取りとカフェ＜体験・アクティビティ＞ 2026年6月14日よりブルーベリー摘み取り食べ放題開園しています",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4494,7 +4537,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52169",
       "eventDateEvidence": "いわき市立草野心平記念文学館 小さな企画展「心平が愛でた秋の花」 開催期間：2026年8月29日(土)～10月25日(日) 草野心平の作品に書かれた四季の植物たちをご紹介します 8月29日(土)～10月25日(日)までの期間中、いわき市立草野心平記念文学館にて、小さな企画展「心平が愛でた秋の花」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4536,7 +4579,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/50551",
       "eventDateEvidence": "競走馬用スイミングプールのプール見学 開催期間：2026年5月27日(水)～10月 JRA競走馬リハビリテーションセンタープールでリハビリする競走馬を見学できます！ JRA競走馬リハビリテーションセンターでは、5月27日(水)より10月まで、「競走馬用スイミングプールのプール見学」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4571,7 +4614,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/50554",
       "eventDateEvidence": "じゃぶじゃぶ・めぐりの海 開催期間：2026年4月29日(水・祝)～11月3日(火・祝) アクアマリンふくしま 屋外の自然体験エリアで、海や川に入って自然に触れよう！ 4月29日(水・祝)～11月3日(火・祝)にかけて、アクアマリンふくしまでは、海辺の環境を再現した「じゃぶじゃぶ・めぐりの海」が海開きします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4614,7 +4657,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52059",
       "eventDateEvidence": "令和8年度第2回企画展「いわきの弥生土器」 開催期間：2026年7月18日(土)～11月14日(土) いわき市考古資料館企画展 出土した土器が伝える、いわきの弥生時代 7月18日(土)～11月14日(土)までの期間中、いわき市考古資料館にて、第2回企画展「いわきの弥生土器」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4644,12 +4687,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/4ceb3494db7c2b41d3.html"
     },
     {
@@ -4677,7 +4720,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52360",
       "eventDateEvidence": "令和8年度企画展「奥州三古関～歴史と伝承のはざまから～」 開催期間：2026年7月11日(土)～11月15日(日) 【いわき市市制施行60周年記念事業】いわき市勿来関文学歴史館にて企画展開催！ 7月11日(土)～11月15日(日)までの期間中、いわき市勿来関文学歴史館では、令和8年度企画展「奥州三古関～歴史と伝承のはざまから～」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:25+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:10+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4719,7 +4762,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1768978069855/index.html",
       "eventDateEvidence": "いわき市市制施行60周年記念事業「いわきデザインマンホールフォトラリー2026-第２弾-」を実施します！ 開催日： 2026年8月1日 から 2027年2月28日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:08+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4762,7 +4805,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1718100977566/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月3日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:07+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4797,7 +4840,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1731914092115/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月20日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:07+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4832,7 +4875,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1659698136518/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月30日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-13T04:20:23+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:07+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4929,12 +4972,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/d269c4728f3fadd606.html"
     },
     {
@@ -4992,12 +5035,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/640fc3b248a180d8e4.html"
     },
     {
@@ -5013,12 +5056,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/0c8e05b8df408a733d.html"
     },
     {
@@ -5055,12 +5098,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 65,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/0d68740e06f4e95d33.html"
     },
     {
@@ -5076,12 +5119,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ea1fae95effbaf1516.html"
     },
     {
@@ -5101,6 +5144,12 @@
       "isWeekendEvent": false,
       "relatedSources": [
         {
+          "source": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPam5KcWRtZGxGbHZRb3hhZTNGb3RNMS1abFI0dXdGcmVOZEktT2tNNkpDYUVwakZQMC0zcHBURXM1ZWlTRU5nWVdCZ2lEN043ei1Vd0tWenpHN2puRTRiOXNVaGZ5VlBiNmhnQUpYMlV1bGlBdUFTeWJERzhkYkVsb040eEN0TkE3ZkVrSkdR?oc=5",
+          "publishedAt": "2026-09-08T18:31:30+09:00",
+          "via": "google-news"
+        },
+        {
           "source": "福島民報デジタル",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9KX2h2Y3lvMGNzOHNRdk5pU1NYRWVnSk9OUmVPWjE2Qk1lZi1EaDN6MFQ5ejByNkF1UzNFZXdYZ3hvVVduRnRHQ2VoUHRUdjg?oc=5",
           "publishedAt": "2026-09-08T18:25:00+09:00",
@@ -5113,10 +5162,31 @@
           "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 103,
+      "coverageCount": 4,
+      "priorityScore": 108,
       "isBreaking": false,
       "detailPath": "news/90518ea06a3a274fc0.html"
+    },
+    {
+      "id": "7b97949ff1d723973e",
+      "title": "いわき市アンダーパス事故受け 国交省が対策強化を求める文書",
+      "summary": "NHKニュースが「いわき市アンダーパス事故受け 国交省が対策強化を求める文書」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "防災・安全",
+      "area": "全市",
+      "publishedAt": "2026-09-08T17:32:00+09:00",
+      "source": "NHKニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zWWdDVXZxZTU0YmdNSXk2dzN1SmRtTll1WTU2WEhnWWs3T3ZDeWNvM3FhNUs1UGdCV3NSZVYzb2luckVHdUlsbHBXcTZXVC1SbmVkdTdXTFFVbVlxU2dB?oc=5",
+      "sourceHome": "https://news.web.nhk",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 65,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/7b97949ff1d723973e.html"
     },
     {
       "id": "593609fe592c92115a",
@@ -5149,22 +5219,22 @@
     {
       "id": "282ad22aba4a52b1cc",
       "title": "【公式】2026/27シーズンのアシスト総数いわきＦＣ:Ｊ２リーグの選手スタッツ",
-      "summary": "Ｊリーグ公式サイトが「【公式】2026/27シーズンのアシスト総数いわきＦＣ:Ｊ２リーグの選手スタッツ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "jleague.jpが「【公式】2026/27シーズンのアシスト総数いわきＦＣ:Ｊ２リーグの選手スタッツ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-09-08T16:00:00+09:00",
-      "source": "Ｊリーグ公式サイト",
+      "source": "jleague.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVVhiY3J4SXRFdjJwVENWd2s4WlpQWkd0YmVqZ3FwZ0p4NUJzallIOVlWNnJQRUlxU0tsN1FFNXlJQkc2WDNDMDdTaUJsTWFHbDY0WkhpVFd2QnVYczY0T0dPLV94ZTJYTkZTbTRrdDZISVh4Zzc4akVkbmg4c1hpeVEwcw?oc=5",
       "sourceHome": "https://www.jleague.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/282ad22aba4a52b1cc.html"
     },
     {
@@ -5262,12 +5332,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/47fcaee994d2a4487b.html"
     },
     {
@@ -5283,12 +5353,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/97adef9a39605aaa1c.html"
     },
     {
@@ -5304,6 +5374,10 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 103,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -5315,10 +5389,6 @@
       "eventEnd": "2026-09-07",
       "eventDateLabel": "9月7日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 103,
-      "isBreaking": false,
       "detailPath": "news/f8da6fac2d8215deef.html"
     },
     {
@@ -5342,10 +5412,16 @@
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE95NFNPVzc4MklFVHVtUEJ1ZEhyWU9UaURUZ09wRHUxQVlNTldLbkxySGRkZk15WDlESjZDVTc2TWtqSGI0YlZLY2NRcTZNMlBPVXlieWZtcw?oc=5",
           "publishedAt": "2026-09-08T10:58:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE95NFNPVzc4MklFVHVtUEJ1ZEhyWU9UaURUZ09wRHUxQVlNTldLbkxySGRkZk15WDlESjZDVTc2TWtqSGI0YlZLY2NRcTZNMlBPVXlieWZtcw?oc=5",
+          "publishedAt": "2026-09-08T10:58:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 2,
-      "priorityScore": 33,
+      "coverageCount": 3,
+      "priorityScore": 38,
       "isBreaking": false,
       "detailPath": "news/feeb2b430a3b5fd57e.html"
     },
@@ -5383,12 +5459,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/4b2eeefb68298e24b5.html"
     },
     {
@@ -5403,7 +5479,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-13T04:20:29+09:00",
+      "eventDateCheckedAt": "2026-09-13T06:40:16+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -5440,8 +5516,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "47NEWS",
@@ -5453,6 +5527,8 @@
       "coverageCount": 2,
       "priorityScore": 33,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/5f2cb727988cb3d72e.html"
     },
     {
@@ -5506,6 +5582,27 @@
       "detailPath": "news/d84839defb16dc237c.html"
     },
     {
+      "id": "ef330f65b5b0080fb8",
+      "title": "【クマ出没情報】いわき市小名浜で目撃 7日夜 福島",
+      "summary": "TBS NEWS DIGが「【クマ出没情報】いわき市小名浜で目撃 7日夜 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "防災・安全",
+      "area": "小名浜",
+      "publishedAt": "2026-09-08T07:48:00+09:00",
+      "source": "TBS NEWS DIG",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBoY29iR19yZ0dKUndrV1dBWHNZSXpWZXYtNUNEMmp5bmp2THQ1S0xIazhnTFQ3Rk9kTFotbHFpWHpneG5nVy1qWmxwczRmX0hXQlR3dmk1MA?oc=5",
+      "sourceHome": "https://newsdig.tbs.co.jp",
+      "sourceGroup": "地域",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 93,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/ef330f65b5b0080fb8.html"
+    },
+    {
       "id": "78bb6feb0e0fcd3754",
       "title": "いわきで土砂崩れや倒木 自動車学校では教習コース冠水 福島・浜通り大雨:福島ニュース",
       "summary": "福島民友新聞社が「いわきで土砂崩れや倒木 自動車学校では教習コース冠水 福島・浜通り大雨:福島ニュース」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -5518,12 +5615,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 75,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/78bb6feb0e0fcd3754.html"
     },
     {
@@ -5590,12 +5687,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/ce6fb50b330e69c619.html"
     },
     {
@@ -5611,17 +5708,6 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-06",
-          "end": "2026-09-06"
-        }
-      ],
-      "eventStart": "2026-09-06",
-      "eventEnd": "2026-09-06",
-      "eventDateLabel": "9月6日",
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "QAB 琉球朝日放送",
@@ -5657,6 +5743,17 @@
       "coverageCount": 6,
       "priorityScore": 85,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "eventDates": [
+        {
+          "start": "2026-09-06",
+          "end": "2026-09-06"
+        }
+      ],
+      "eventStart": "2026-09-06",
+      "eventEnd": "2026-09-06",
+      "eventDateLabel": "9月6日",
+      "isWeekendEvent": false,
       "detailPath": "news/888592bab3884f9052.html"
     },
     {
@@ -5736,29 +5833,27 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/f907078cc80ece6ab8.html"
     },
     {
       "id": "16c96223702554d111",
       "title": "「選手は最後まで頑張ってくれた」いわきFC、徳島に完封負け 厳しい4連敗【J2】",
-      "summary": "newsdig.tbs.co.jpが「「選手は最後まで頑張ってくれた」いわきFC、徳島に完封負け 厳しい4連敗【J2】」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "TBS NEWS DIGが「「選手は最後まで頑張ってくれた」いわきFC、徳島に完封負け 厳しい4連敗【J2】」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-08T01:13:59+09:00",
-      "source": "newsdig.tbs.co.jp",
+      "source": "TBS NEWS DIG",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ibzRZWXRKbVR4SlByQWs5ZG5rOVlwQlhGQ3hqblFTaldRYnNsUWl1bDZPUzB4aS0yYTNHSGROcnl6eWl3ejdGV1FpR210U0FpOS1iVkNVQlQwMk1FRjJN?oc=5",
       "sourceHome": "https://newsdig.tbs.co.jp",
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "Yahoo!ニュース",
@@ -5770,6 +5865,8 @@
       "coverageCount": 2,
       "priorityScore": 29,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/16c96223702554d111.html"
     },
     {
@@ -5883,6 +5980,82 @@
       "detailPath": "news/dd3618c5767a8653bf.html"
     },
     {
+      "id": "5d5f18bc913bdb69f3",
+      "title": "いわき市のアンダーパス冠水、車水没し女性死亡",
+      "summary": "スマートニュースが「いわき市のアンダーパス冠水、車水没し女性死亡」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-09-07T20:41:00+09:00",
+      "source": "スマートニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxPNHI2UXZFWHFoTDlVbGxsNHl2Tm91QXo4QXJNNXpfTTNxYzNhY244bkNNNTZTeVF2NUZ4SUd4Q0pZQ2JYRUxJRTRDcXJpZ3JySTBPSHFITEgyYnVDMzVoN0pUWENtVGhraVp5TXZFTXZDMWNmc2NVblVqbVJTQm5Kd3N5VGtsZEhFSjBVSGFXQ3oybzhCYW54SHpCVTJvWWYtcm5CTmc4bnA1WGZpUzUyZk1LR3Y3dlBIa0tZb0ZlM2Nhcld3bEgya19vMU8ybVFIZk9rNjFtWW9mY3NsUHBIbi1yY2ZvSFJrNnZrQkpRQV9iU1dlQktoRGNJNE1lNlZDWWFTT3IwZUpIdnpIRUxhZjB0elVFYWg1eHBidG5hUHNRaHhQYzl6RGNQQXFMSi1PcDBqMERSMnFmaEpBWkJyMW9teTd6bm1KVW40MUVrREJSZUdZcFFPWXVvYmtNWmdCWmxfZGpMX19MMmNidDF5RGVyMA?oc=5",
+      "sourceHome": "https://www.smartnews.com",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [
+        {
+          "source": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOS0ZRN01xNnlEd1kxa0hOY195Y3BZNi1mQ0hVbGQxUmJIUEZNUmVsMHdGQ283Z0I0S29meklnakVlQ2x3cUxLNnVJcC1TbEdabnlOS2tCcjRIc0w1R2FWNUVVSGR1Rks1bXVKZWhMT3lRR29VOVc1SXpraHpGaEEtU3IzRVVBVHdiSF9GZGlCSXZSVzR5MDgtaWZfZ2thdjNFM0JvRUN6eDY2aXBodlN1UndhWFZJZ2JMeG0wTC1STW9sVnVxZDlERjRGVjVyNDBVakhWa0loeEtDOXNGSEJOUjJoMVN3a0xBb0QxRHNaYzEweExIRlE?oc=5",
+          "publishedAt": "2026-09-07T16:18:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "テレ朝NEWS",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FQmpyZWh0RG1uMk1KMXFycFlhSW95R1pmeVZsVGV3eU42QlN0M0pmUndQU2NfaEw3VkJ0WU41WUFYSW95NktUYmlzUkltTVQybEljOWRsTm9tUzZJYnRPSzFRY2xzM1dmcmVMSUlzRERldw?oc=5",
+          "publishedAt": "2026-09-07T13:41:14+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "QAB 琉球朝日放送",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40S2RvWUZkTGgzMG9MTFJWdVMybmRTUzl3VWlwaFFnN09HNU5peUs0bHBwSWw3R3JiaEpYdFVBWXQySmp2SjV3NmlSOTU4OENwZ3pXVmxkeEQ?oc=5",
+          "publishedAt": "2026-09-07T13:41:14+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "khb東日本放送",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZGhkb29GalptZUdkWDYtbDhSYlFnM2VjNGdSMUNDLVBtTnJSR3FLaElVdHI0REdHb0IzVkIzQV9GSl91Z21OZWRESnM2dG8?oc=5",
+          "publishedAt": "2026-09-07T13:41:14+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "HOME広島ホームテレビ",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PcDBqYUNaUkpBUm16enh3anJrVVlGQlo3V3BNamIzY3l0UE9SMW5QWGhydHlPOGpwZkJXX3lmRHlLU3VNRG1waE9PQlhfRktGWmVmd2RuV2s4VVhuZEx2VXJDd1c4akRr?oc=5",
+          "publishedAt": "2026-09-07T13:41:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNFU2M1lvNUNHcHM4VFc4aTFvZnQ2OEkyQXdWZ3JFRUFEZ0cxckxMMm56LVNJRC1GRnRaUWl5UzVZbmxSc0diQ3FvM1VCaGhuUW1fNG5vR2RVY1Nhb0JHeHRjdElmYkhjSW5NN2V6dVdxM2lJSkhLV1NJel8zblRkVnRpTUZ5ZTlleFJfMVNB?oc=5",
+          "publishedAt": "2026-09-07T13:21:24+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "福島民報デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQdUtuWk9NbXA1dG5wYXVWT1QyckRwMFFYSktNVHZpUlZLMmFiNE5hYUhJVjNLWUZDVVQ1NnlCOGVmamdQZnM4OEJnWkR6MTg?oc=5",
+          "publishedAt": "2026-09-07T12:30:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sWmtLUVVLd1VoVloxODFjTzZiV2oxUzJ3QXhrWF8tZGk1Z2RJYkd0NjlyU2hRWW5vczFFcEhuNDI0RXpaU2xZZTBQWQ?oc=5",
+          "publishedAt": "2026-09-07T12:30:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "newsdig.tbs.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtdVpwQVVYdmpfY01DWUFwTFZPMzlwSHB5YVVNMjFEMXdHbXVGYkdnb2V2OThaRHpFeXNlaGg3M0NYUkg0WERKNlIydnE0elRfSGlQU196M1hyLXdwZjJB?oc=5",
+          "publishedAt": "2026-09-07T10:07:00+09:00",
+          "via": "google-news"
+        }
+      ],
+      "coverageCount": 10,
+      "priorityScore": 48,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/5d5f18bc913bdb69f3.html"
+    },
+    {
       "id": "d3fbf62c2a31cea161",
       "title": "「ドア開けられず…」当時の状況語る アンダーパスで車水没 福島・いわき市",
       "summary": "FNNプライムオンラインが「「ドア開けられず…」当時の状況語る アンダーパスで車水没 福島・いわき市」に関する情報を公開しています。詳細は出典元でご確認ください。",
@@ -5895,12 +6068,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/d3fbf62c2a31cea161.html"
     },
     {
@@ -6000,12 +6173,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/b6389b26c6f3be8bf2.html"
     },
     {
@@ -6049,8 +6222,6 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "Yahoo!ニュース",
@@ -6059,7 +6230,7 @@
           "via": "google-news"
         },
         {
-          "source": "newsdig.tbs.co.jp",
+          "source": "TBS NEWS DIG",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1EWkpOZi02UndzNHZqOURQRXhQbkdrcTJnemZxcmxza2hBaXRJMldTM1dUcE9kMk11Q1lIY3duLTE3UF91VlJlaThfeHM2QnA4OUo5Y2hkMA?oc=5",
           "publishedAt": "2026-09-07T17:49:00+09:00",
           "via": "google-news"
@@ -6068,6 +6239,8 @@
       "coverageCount": 3,
       "priorityScore": 38,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/b26ed9c2bf00dc4262.html"
     },
     {
@@ -6083,12 +6256,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/00ed2abfd075cf54e3.html"
     },
     {
@@ -6196,12 +6369,12 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/32c640fef14620a4db.html"
     },
     {
@@ -6217,38 +6390,27 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 93,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/a631f219ca9e6eb9c3.html"
     },
     {
       "id": "05916503878449828b",
       "title": "アンダーパスで車2台水没 60代女性が死亡 当時1時間40ミリの激しい雨 福島・いわき市",
-      "summary": "newsdig.tbs.co.jpが「アンダーパスで車2台水没 60代女性が死亡 当時1時間40ミリの激しい雨 福島・いわき市」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "TBS NEWS DIGが「アンダーパスで車2台水没 60代女性が死亡 当時1時間40ミリの激しい雨 福島・いわき市」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-09-07T16:30:57+09:00",
-      "source": "newsdig.tbs.co.jp",
+      "source": "TBS NEWS DIG",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93WmJFenlaeVlIaTVHZHJ5dWNtTnl1NFByMlJFNFExOFhZWmtnd0dmWTVqcUJQQXN1Zy1YTFlPM240eHF5ODJWaTF6TTZvOWVuZ2NoaVNpNA?oc=5",
       "sourceHome": "https://newsdig.tbs.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-06",
-          "end": "2026-09-06"
-        }
-      ],
-      "eventStart": "2026-09-06",
-      "eventEnd": "2026-09-06",
-      "eventDateLabel": "9月6日",
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "nikkei.com",
@@ -6260,77 +6422,18 @@
       "coverageCount": 2,
       "priorityScore": 33,
       "isBreaking": false,
-      "detailPath": "news/05916503878449828b.html"
-    },
-    {
-      "id": "7c5600ec6484145574",
-      "title": "【続報】いわき市のアンダーパスで車水没 60代女性が死亡 福島",
-      "summary": "TBS NEWS DIGが「【続報】いわき市のアンダーパスで車水没 60代女性が死亡 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-09-07T16:18:00+09:00",
-      "source": "TBS NEWS DIG",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOS0ZRN01xNnlEd1kxa0hOY195Y3BZNi1mQ0hVbGQxUmJIUEZNUmVsMHdGQ283Z0I0S29meklnakVlQ2x3cUxLNnVJcC1TbEdabnlOS2tCcjRIc0w1R2FWNUVVSGR1Rks1bXVKZWhMT3lRR29VOVc1SXpraHpGaEEtU3IzRVVBVHdiSF9GZGlCSXZSVzR5MDgtaWZfZ2thdjNFM0JvRUN6eDY2aXBodlN1UndhWFZJZ2JMeG0wTC1STW9sVnVxZDlERjRGVjVyNDBVakhWa0loeEtDOXNGSEJOUjJoMVN3a0xBb0QxRHNaYzEweExIRlE?oc=5",
-      "sourceHome": "https://newsdig.tbs.co.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [
+      "eventDates": [
         {
-          "source": "テレ朝NEWS",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FQmpyZWh0RG1uMk1KMXFycFlhSW95R1pmeVZsVGV3eU42QlN0M0pmUndQU2NfaEw3VkJ0WU41WUFYSW95NktUYmlzUkltTVQybEljOWRsTm9tUzZJYnRPSzFRY2xzM1dmcmVMSUlzRERldw?oc=5",
-          "publishedAt": "2026-09-07T13:41:14+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "QAB 琉球朝日放送",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40S2RvWUZkTGgzMG9MTFJWdVMybmRTUzl3VWlwaFFnN09HNU5peUs0bHBwSWw3R3JiaEpYdFVBWXQySmp2SjV3NmlSOTU4OENwZ3pXVmxkeEQ?oc=5",
-          "publishedAt": "2026-09-07T13:41:14+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "khb東日本放送",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE80ZGhkb29GalptZUdkWDYtbDhSYlFnM2VjNGdSMUNDLVBtTnJSR3FLaElVdHI0REdHb0IzVkIzQV9GSl91Z21OZWRESnM2dG8?oc=5",
-          "publishedAt": "2026-09-07T13:41:14+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "HOME広島ホームテレビ",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PcDBqYUNaUkpBUm16enh3anJrVVlGQlo3V3BNamIzY3l0UE9SMW5QWGhydHlPOGpwZkJXX3lmRHlLU3VNRG1waE9PQlhfRktGWmVmd2RuV2s4VVhuZEx2VXJDd1c4akRr?oc=5",
-          "publishedAt": "2026-09-07T13:41:00+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNFU2M1lvNUNHcHM4VFc4aTFvZnQ2OEkyQXdWZ3JFRUFEZ0cxckxMMm56LVNJRC1GRnRaUWl5UzVZbmxSc0diQ3FvM1VCaGhuUW1fNG5vR2RVY1Nhb0JHeHRjdElmYkhjSW5NN2V6dVdxM2lJSkhLV1NJel8zblRkVnRpTUZ5ZTlleFJfMVNB?oc=5",
-          "publishedAt": "2026-09-07T13:21:24+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "福島民報デジタル",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQdUtuWk9NbXA1dG5wYXVWT1QyckRwMFFYSktNVHZpUlZLMmFiNE5hYUhJVjNLWUZDVVQ1NnlCOGVmamdQZnM4OEJnWkR6MTg?oc=5",
-          "publishedAt": "2026-09-07T12:30:00+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sWmtLUVVLd1VoVloxODFjTzZiV2oxUzJ3QXhrWF8tZGk1Z2RJYkd0NjlyU2hRWW5vczFFcEhuNDI0RXpaU2xZZTBQWQ?oc=5",
-          "publishedAt": "2026-09-07T12:30:00+09:00",
-          "via": "google-news"
-        },
-        {
-          "source": "newsdig.tbs.co.jp",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtdVpwQVVYdmpfY01DWUFwTFZPMzlwSHB5YVVNMjFEMXdHbXVGYkdnb2V2OThaRHpFeXNlaGg3M0NYUkg0WERKNlIydnE0elRfSGlQU196M1hyLXdwZjJB?oc=5",
-          "publishedAt": "2026-09-07T10:07:00+09:00",
-          "via": "google-news"
+          "start": "2026-09-06",
+          "end": "2026-09-06"
         }
       ],
-      "coverageCount": 9,
-      "priorityScore": 48,
-      "isBreaking": false,
-      "detailPath": "news/7c5600ec6484145574.html"
+      "eventStart": "2026-09-06",
+      "eventEnd": "2026-09-06",
+      "eventDateLabel": "9月6日",
+      "isWeekendEvent": false,
+      "detailPath": "news/05916503878449828b.html"
     },
     {
       "id": "bf5c6e14aac07f6045",
@@ -6584,17 +6687,6 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-06",
-          "end": "2026-09-06"
-        }
-      ],
-      "eventStart": "2026-09-06",
-      "eventEnd": "2026-09-06",
-      "eventDateLabel": "9月6日",
-      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "日本経済新聞",
@@ -6606,6 +6698,17 @@
       "coverageCount": 2,
       "priorityScore": 33,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "eventDates": [
+        {
+          "start": "2026-09-06",
+          "end": "2026-09-06"
+        }
+      ],
+      "eventStart": "2026-09-06",
+      "eventEnd": "2026-09-06",
+      "eventDateLabel": "9月6日",
+      "isWeekendEvent": false,
       "detailPath": "news/0d0ba80c31ac1b71b6.html"
     },
     {
@@ -6658,12 +6761,12 @@
       "sourceGroup": "スポーツ",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/792e7be4101e6a9b7d.html"
     },
     {
@@ -6776,113 +6879,15 @@
       "priorityScore": 33,
       "isBreaking": false,
       "detailPath": "news/7e1cbd9d92ff4a2978.html"
-    },
-    {
-      "id": "ebf5581221eb46fddf",
-      "title": "【常磐道 交通情報】常磐道 福島県内で大雨 通行止め いわき四倉IC＝広野IC 南相馬IC＝相馬IC「現地の様子が明らかに」渋滞状況は？…（News Quick Up）",
-      "summary": "t.coが「【常磐道 交通情報】常磐道 福島県内で大雨 通行止め いわき四倉IC＝広野IC 南相馬IC＝相馬IC「現地の様子が明らかに」渋滞状況は？…（News Quick Up）」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "防災・安全",
-      "area": "四倉",
-      "publishedAt": "2026-09-07T12:52:23+09:00",
-      "source": "t.co",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBwLXB2SmNEQzdVM1ItSGxlTzNLaG9zcWoyMzNibTNITzRpQlFSMTE2ZzV2LUhyVVpxazg0?oc=5",
-      "sourceHome": "https://t.co",
-      "sourceGroup": "地域",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 93,
-      "isBreaking": false,
-      "detailPath": "news/ebf5581221eb46fddf.html"
-    },
-    {
-      "id": "d98658ddc45f857a6b",
-      "title": "水没した車から1人搬送 いわき市鹿島町でアンダーパスが冠水 1時間32ミリの激しい雨《福島県》",
-      "summary": "FNNプライムオンラインが「水没した車から1人搬送 いわき市鹿島町でアンダーパスが冠水 1時間32ミリの激しい雨《福島県》」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "小名浜",
-      "publishedAt": "2026-09-07T12:46:00+09:00",
-      "source": "FNNプライムオンライン",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8zN08wTWhyYlptaTcyYW9fOVpEWlotNTJVZFpkUS1KX1Bjd2VxTlVqdDlzdHVLWjZER2ZEeC1fTDBGM3Z6LXZiYnlGS3hsUQ?oc=5",
-      "sourceHome": "https://www.fnn.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [
-        {
-          "source": "FTV 福島テレビ",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE02NmJ6TVNHMXBPRjE0R2NFTWZpbVNJSHo5UDZaUzlVOXo4c0NmNHpyM1kwTVNPVUNlRURhTW43VVFkLU5RUlA3UFdhSkM5V05VdmZuY2dyVVJXZDE1M3hSaEMzeHRSY3FqT3Q3UGRJeENMb3NaVnVwekJR?oc=5",
-          "publishedAt": "2026-09-07T12:46:00+09:00",
-          "via": "google-news"
-        }
-      ],
-      "coverageCount": 2,
-      "priorityScore": 33,
-      "isBreaking": false,
-      "detailPath": "news/d98658ddc45f857a6b.html"
-    },
-    {
-      "id": "fb526145992378c856",
-      "title": "仙台フィル＜ニューイヤーコンサート2027＞いわき公演｜レッツエンジョイ東京",
-      "summary": "レッツエンジョイ東京が「仙台フィル＜ニューイヤーコンサート2027＞いわき公演｜レッツエンジョイ東京」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "イベント",
-      "area": "全市",
-      "publishedAt": "2026-09-07T12:40:44+09:00",
-      "source": "レッツエンジョイ東京",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VZ1hyYlFUaTRIZDNCdzRrRzgxOURYQjFMOGs4SnprNkItcVlLR25oQ3BMLUdHY1M2QUc4cERKelVaZXBuWjcxT3hZYlNQWjI4NEE?oc=5",
-      "sourceHome": "https://www.enjoytokyo.jp",
-      "sourceGroup": "イベント",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 14,
-      "isBreaking": false,
-      "detailPath": "news/fb526145992378c856.html"
-    },
-    {
-      "id": "06ab30d1181528e499",
-      "title": "＜更新＞いわき市鹿島町のアンダーパスで車浸水 意識不明の60代女性死亡",
-      "summary": "福島民報デジタルが「＜更新＞いわき市鹿島町のアンダーパスで車浸水 意識不明の60代女性死亡」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "小名浜",
-      "publishedAt": "2026-09-07T12:30:00+09:00",
-      "source": "福島民報デジタル",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQdUtuWk9NbXA1dG5wYXVWT1QyckRwMFFYSktNVHZpUlZLMmFiNE5hYUhJVjNLWUZDVVQ1NnlCOGVmamdQZnM4OEJnWkR6MTg?oc=5",
-      "sourceHome": "https://www.minpo.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [
-        {
-          "source": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sWmtLUVVLd1VoVloxODFjTzZiV2oxUzJ3QXhrWF8tZGk1Z2RJYkd0NjlyU2hRWW5vczFFcEhuNDI0RXpaU2xZZTBQWQ?oc=5",
-          "publishedAt": "2026-09-07T12:30:00+09:00",
-          "via": "google-news"
-        }
-      ],
-      "coverageCount": 2,
-      "priorityScore": 33,
-      "isBreaking": false,
-      "detailPath": "news/06ab30d1181528e499.html"
     }
   ],
   "cleanup": {
-    "cleanedAt": "2026-09-13T04:20:46+09:00",
+    "cleanedAt": "2026-09-13T06:40:31+09:00",
     "removedCount": 0,
     "removedTitles": []
   },
   "weekendRanking": {
-    "rankedAt": "2026-09-12T19:20:46+00:00",
+    "rankedAt": "2026-09-12T21:40:31+00:00",
     "ruleVersion": "1.0",
     "weekendPicks": 20,
     "longRunning": 9
