@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T22:01:40+09:00",
+  "generatedAt": "2026-09-26T02:57:40+09:00",
   "collectorVersion": "5.1",
   "weekend": {
     "start": "2026-09-26",
@@ -12,7 +12,7 @@
     "weekendPicks": 16,
     "longRunningWeekendEvents": 9
   },
-  "sourceCount": 54,
+  "sourceCount": 56,
   "sources": [
     "47NEWS",
     "47news.jp",
@@ -33,19 +33,19 @@
     "excite.co.jp",
     "iwaki-alios.jp",
     "iwaki-marathon.jp",
-    "iwakicci.or.jp",
+    "iwakifc.com",
     "kfb.co.jp",
     "mainichi.jp",
     "minpo.jp",
     "news.nicovideo.jp",
+    "news.ntv.co.jp",
     "news.yahoo.co.jp",
     "prtimes.jp",
-    "sagan-tosu.net",
     "tenki.jp",
-    "vk.sportsbull.jp",
     "voix.jp",
     "いわきFC Official Site",
     "いわきサンシャインマラソン",
+    "いわき商工会議所",
     "いわき市",
     "いわき市イベントカレンダー",
     "いわき市観光サイト",
@@ -53,8 +53,10 @@
     "いわき民報社",
     "いわき芸術文化交流館",
     "イザ！",
+    "サガン鳥栖",
     "ニコニコニュース",
     "ニュースメディアVOIX",
+    "バーチャル高校野球",
     "フーズチャネル",
     "ライブドアニュース",
     "佐賀新聞",
@@ -97,8 +99,9 @@
     {
       "name": "いわき民報",
       "group": "報道",
-      "ok": true,
-      "items": 12
+      "ok": false,
+      "items": 0,
+      "error": "<urlopen error timed out>"
     },
     {
       "name": "いわき総合ニュース",
@@ -110,7 +113,7 @@
       "name": "13地域ニュース",
       "group": "地域",
       "ok": true,
-      "items": 47
+      "items": 48
     },
     {
       "name": "いわきFC",
@@ -146,7 +149,7 @@
       "name": "いわき週末イベント",
       "group": "イベント",
       "ok": true,
-      "items": 64
+      "items": 63
     },
     {
       "name": "いわき市イベントカレンダー 2026/09",
@@ -170,8 +173,8 @@
       "name": "イベント記事本文の日程確認",
       "group": "イベント",
       "ok": true,
-      "items": 4,
-      "checked": 5
+      "items": 3,
+      "checked": 3
     }
   ],
   "news": [
@@ -281,13 +284,74 @@
       "detailPath": "news/7c3e6e4d59e891041b.html"
     },
     {
+      "id": "0c152d296bb0c9d59e",
+      "title": "【いわきFC】いわきFC U-18 伊師虎ノ助、トップチーム登録（2種）のお知らせ",
+      "summary": "ニコニコニュースが「【いわきFC】いわきFC U-18 伊師虎ノ助、トップチーム登録（2種）のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-09-26T01:18:55+09:00",
+      "source": "ニコニコニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Wck1pMmJZeDhYNUo4b3hwTzZla0tMWWI4dHRhUlFyUTVPVlJaQ3VXdDV1TTZkV2pYVU5oNWtYbkdXSDU2UHplTHlwakpwd1h3S3VOUXFMQnJKa05VREVlczZUWTBGQjBYRnFUSS1jTUVmLXFZSGdEMHg0QQ?oc=5",
+      "sourceHome": "https://news.nicovideo.jp",
+      "sourceGroup": "経済",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [
+        {
+          "source": "excite.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5LWERiTVhQVmZFam9MOWxoQV83U3ZYazhQVk13SFRBem9IM0xVd3QwZkdxdUV0T1ctNUlzWTJQRlNTRldLY01hNmZkdkhZa0x5dm9wRTEtUjMzYTN4Ylo1TENmcmJtUlFxQmxkSDB4ckNad3Rk?oc=5",
+          "publishedAt": "2026-09-25T17:15:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "いわきFC Official Site",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zNWhibkJ2N2ZleFlJR0R1Tm1YWkRfT3dBYncwdnVuRnVRNTFIeUxnOXZORll5RVdmcEJ6ZWJMUzZzdmVSVXVoYWxGZDhrYk9RWHExbzVkbGRSYnlSbldSbTEzTzBhY09nd3M3QkhVNA?oc=5",
+          "publishedAt": "2026-09-25T15:02:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "iwakifc.com",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zNWhibkJ2N2ZleFlJR0R1Tm1YWkRfT3dBYncwdnVuRnVRNTFIeUxnOXZORll5RVdmcEJ6ZWJMUzZzdmVSVXVoYWxGZDhrYk9RWHExbzVkbGRSYnlSbldSbTEzTzBhY09nd3M3QkhVNA?oc=5",
+          "publishedAt": "2026-09-25T15:02:00+09:00",
+          "via": "google-news"
+        }
+      ],
+      "coverageCount": 4,
+      "priorityScore": 59,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/0c152d296bb0c9d59e.html"
+    },
+    {
+      "id": "378e3dc89db67a72c2",
+      "title": "有毒の白いキノコに注意を いわき市の公園で「オオシロカラカサタケ」",
+      "summary": "いわき民報社が「有毒の白いキノコに注意を いわき市の公園で「オオシロカラカサタケ」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "暮らし",
+      "area": "全市",
+      "publishedAt": "2026-09-25T23:49:08+09:00",
+      "source": "いわき民報社",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9UbGUxLWM2dnRCcVRUVDYzWmtVQTRUSGhtdjdlVlAybEdTbU5WcG5Hbnh3UGZ4b3Q3NkZBb0ZGWmdONk01ZnRXMlByZDdYdVNxeXFkS0NNd0lsQQ?oc=5",
+      "sourceHome": "https://iwaki-minpo.co.jp",
+      "sourceGroup": "報道",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 48,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/378e3dc89db67a72c2.html"
+    },
+    {
       "id": "03f39c360f4adc5d6f",
       "title": "いわきアリオス演劇部Plus 舞台・照明・音響スタッフ参加者募集",
-      "summary": "iwaki-alios.jpが「いわきアリオス演劇部Plus 舞台・照明・音響スタッフ参加者募集」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「いわきアリオス演劇部Plus 舞台・照明・音響スタッフ参加者募集」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-25T19:37:31+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83Q1VXTkgtN05jM081SUFBRExodG1rS0VpYUc3c1pBU2JsNldoNVNJU1pWT0k5emhkZkNHRFR3ajlUX011OE95MjRBdFVqZFlpTlQ4VHJidHpiclk?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -295,11 +359,32 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 34,
+      "priorityScore": 26,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
       "detailPath": "news/03f39c360f4adc5d6f.html"
+    },
+    {
+      "id": "beac435b56b5867553",
+      "title": "激突！東北ダービー！ 連勝で勢いに乗るいわきFC・田坂監督が語る 仙台攻略のキーポイント「魂際」",
+      "summary": "FNNプライムオンラインが「激突！東北ダービー！ 連勝で勢いに乗るいわきFC・田坂監督が語る 仙台攻略のキーポイント「魂際」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "スポーツ",
+      "area": "全市",
+      "publishedAt": "2026-09-25T19:35:00+09:00",
+      "source": "FNNプライムオンライン",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1HaXZyX09Jck1CZEE3c0M4bzRkOGlPZ1piemZ2Ul9sY2FHV3VpZ3pTRXlBZFM1dlNtLUdBbGhCVXZuR1R4emQ4NDRRTXA1Zw?oc=5",
+      "sourceHome": "https://www.fnn.jp",
+      "sourceGroup": "スポーツ",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 36,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/beac435b56b5867553.html"
     },
     {
       "id": "b26e71f79c642bcd7c",
@@ -315,39 +400,11 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 55,
+      "priorityScore": 47,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
       "detailPath": "news/b26e71f79c642bcd7c.html"
-    },
-    {
-      "id": "909655e3a6d18ee84b",
-      "title": "【いわきFC】いわきFC U-18 伊師虎ノ助、トップチーム登録（2種）のお知らせ",
-      "summary": "excite.co.jpが「【いわきFC】いわきFC U-18 伊師虎ノ助、トップチーム登録（2種）のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-09-25T17:15:00+09:00",
-      "source": "excite.co.jp",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5LWERiTVhQVmZFam9MOWxoQV83U3ZYazhQVk13SFRBem9IM0xVd3QwZkdxdUV0T1ctNUlzWTJQRlNTRldLY01hNmZkdkhZa0x5dm9wRTEtUjMzYTN4Ylo1TENmcmJtUlFxQmxkSDB4ckNad3Rk?oc=5",
-      "sourceHome": "http://www.excite.co.jp",
-      "sourceGroup": "経済",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "relatedSources": [
-        {
-          "source": "いわきFC Official Site",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zNWhibkJ2N2ZleFlJR0R1Tm1YWkRfT3dBYncwdnVuRnVRNTFIeUxnOXZORll5RVdmcEJ6ZWJMUzZzdmVSVXVoYWxGZDhrYk9RWHExbzVkbGRSYnlSbldSbTEzTzBhY09nd3M3QkhVNA?oc=5",
-          "publishedAt": "2026-09-25T15:02:00+09:00",
-          "via": "google-news"
-        }
-      ],
-      "coverageCount": 2,
-      "priorityScore": 49,
-      "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "detailPath": "news/909655e3a6d18ee84b.html"
     },
     {
       "id": "eacb3b8cac9970e729",
@@ -362,12 +419,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 44,
-      "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 36,
+      "isBreaking": false,
       "detailPath": "news/eacb3b8cac9970e729.html"
     },
     {
@@ -385,7 +442,7 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 58,
+      "priorityScore": 50,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
@@ -394,22 +451,22 @@
     {
       "id": "9f43dac59d4c6919ca",
       "title": "【速報】福島・いわきの学校、30人の採点表紛失 漏えいは確認されず（福島民友新聞）",
-      "summary": "news.yahoo.co.jpが「【速報】福島・いわきの学校、30人の採点表紛失 漏えいは確認されず（福島民友新聞）」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "Yahoo!ニュースが「【速報】福島・いわきの学校、30人の採点表紛失 漏えいは確認されず（福島民友新聞）」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "教育・子育て",
       "area": "全市",
       "publishedAt": "2026-09-25T15:47:38+09:00",
-      "source": "news.yahoo.co.jp",
+      "source": "Yahoo!ニュース",
       "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KNGFUWGUtV2x5dkhHckZiZTZKS21VTlpES1FEV0JQSTBEMjFoR3JwSnNfYm9NV0xNSW9YY1hhTVZuUlM0X2p4YnZ6a3IxMTFqX0gyTUJjaUgxckhpTVhic2plXzl5NlREdEVMUDVlMVQ5Q01jaHY2VkszYTJGY0E?oc=5",
       "sourceHome": "https://news.yahoo.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 47,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/9f43dac59d4c6919ca.html"
     },
     {
@@ -651,12 +708,28 @@
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 105,
-      "isBreaking": true,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
+      "relatedSources": [
+        {
+          "source": "news.ntv.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX3ZGcVFPYlV6NVVlZVh1LUktalY4Q0I5UnpCUjFtZl84cFZDR2dWY3ZYNkhtZTJCelc2Ymx1RlZ5OG1uQlljTEp3eU9aZlBpWVpKdFhYUThEd042elJSWXlUa21TUURlYmNHZDZRTk1aZ19ndk9JbDBPbHNVaHlxR21mWFBBQUk?oc=5",
+          "publishedAt": "2026-09-25T11:41:00+09:00",
+          "via": "google-news"
+        }
+      ],
+      "coverageCount": 2,
+      "priorityScore": 110,
+      "isBreaking": true,
+      "eventDates": [
+        {
+          "start": "2026-09-24",
+          "end": "2026-09-24"
+        }
+      ],
+      "eventStart": "2026-09-24",
+      "eventEnd": "2026-09-24",
+      "eventDateLabel": "9月24日",
       "detailPath": "news/0dc827f3f687747528.html"
     },
     {
@@ -699,33 +772,31 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 105,
       "isBreaking": true,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/16231ce9ea18b14512.html"
     },
     {
-      "id": "5040e9cde08a314b6e",
-      "title": "市政60周年の福島・いわき市、デザインマンホールをキーホルダーに [福島県]",
-      "summary": "asahi.comが「市政60周年の福島・いわき市、デザインマンホールをキーホルダーに [福島県]」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "id": "b649c2fe4d15a82879",
+      "title": "市政60周年の福島・いわき市、デザインマンホールをキーホルダーに (朝日新聞)",
+      "summary": "Yahoo!ニュースが「市政60周年の福島・いわき市、デザインマンホールをキーホルダーに (朝日新聞)」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "市政",
       "area": "全市",
-      "publishedAt": "2026-09-25T10:00:01+09:00",
-      "source": "asahi.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNlBGejFzNkJZLWxreDFsS2pJZTg3WXh0R0hTWDBrczBDajZBMmJSUzExaWhudlo3b2pHMXlxc1Y1LTVWRHYxeW5aTVVYREotaTIxaXM2VEs2ZGV2NTlXUEhVR0p2b3VwRFRGb0tJMzE2YUpwSjdEQ2dsRGRPaHpXa0RNNzBFdw?oc=5",
-      "sourceHome": "https://www.asahi.com",
+      "publishedAt": "2026-09-25T10:52:48+09:00",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeUliZnhLZ09ZRnlZRG5BejZoQW15UkJPaXMxNHU3RmtzLURtQ29UNXVETERIc0VheVU2Ymd5anpSNjlQNTZ2QnM3UzU3UFQ5TFJoNjgwanVZaGlCc3FEQW1BNHRKR0pSdk4wRW9PVDVHS1lXVC01VWd6Y2MtaVZmY05XbGNlTWp5RFhHYkRB?oc=5",
+      "sourceHome": "https://news.yahoo.co.jp",
       "sourceGroup": "報道",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [
         {
-          "source": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lOTk2SGlqZ2F3bjdXWndhYXFlX21WcUdMekl0VFoyV1FEOW44NXVlSTdMUTZZWFRfTjlPdEpLSzRLRnF5a3A0VExVR0RodmJVeVlOeHpwZndLbTU5MU91NElXQUJzZWJYb19GdWJCdE5MT2tWVjhfVi12MFpNQzg?oc=5",
+          "source": "asahi.com",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNlBGejFzNkJZLWxreDFsS2pJZTg3WXh0R0hTWDBrczBDajZBMmJSUzExaWhudlo3b2pHMXlxc1Y1LTVWRHYxeW5aTVVYREotaTIxaXM2VEs2ZGV2NTlXUEhVR0p2b3VwRFRGb0tJMzE2YUpwSjdEQ2dsRGRPaHpXa0RNNzBFdw?oc=5",
           "publishedAt": "2026-09-25T10:00:01+09:00",
           "via": "google-news"
         },
@@ -739,7 +810,9 @@
       "coverageCount": 3,
       "priorityScore": 60,
       "isBreaking": false,
-      "detailPath": "news/5040e9cde08a314b6e.html"
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/b649c2fe4d15a82879.html"
     },
     {
       "id": "7ee0bab03a60637e87",
@@ -753,7 +826,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-25T22:01:24+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:25+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -884,13 +957,13 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [
         {
-          "source": "Excite エキサイト",
+          "source": "excite.co.jp",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qMnFrdGtJV3NCbGlpNTBKck82X3JfM1JLbHZqUXdxVlU2TExOenBjcjFoaGN0azNyckRPR1hHR2JJMEpOVkhqSUlRWFdaN1B1anBlSUo4QmRVUjhfX3Q0QWltMDZFOUxzZ2J5Zmpn?oc=5",
           "publishedAt": "2026-09-25T08:21:00+09:00",
           "via": "google-news"
         },
         {
-          "source": "excite.co.jp",
+          "source": "Excite エキサイト",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qMnFrdGtJV3NCbGlpNTBKck82X3JfM1JLbHZqUXdxVlU2TExOenBjcjFoaGN0azNyckRPR1hHR2JJMEpOVkhqSUlRWFdaN1B1anBlSUo4QmRVUjhfX3Q0QWltMDZFOUxzZ2J5Zmpn?oc=5",
           "publishedAt": "2026-09-25T08:21:00+09:00",
           "via": "google-news"
@@ -951,7 +1024,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-25T22:01:24+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:27+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -1161,7 +1234,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52170",
       "eventDateEvidence": "子ども映画会 開催期間：2026年9月12日(土)、19日(土)、20日(日)、21日(月・祝)、22日(火・祝)、23日(水・祝)、26日(土) 10月10日(土)、24日(土)、31日(土)、11月21日(土)、28日(土) いわき市立草野心平記念文学館にて 子ども映画会が開催 9月～11月の期間中、いわき市立草野心平記念文学館にて「子ども映画会」が開催",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 33,
@@ -1276,7 +1349,7 @@
         }
       ],
       "coverageCount": 3,
-      "priorityScore": 46,
+      "priorityScore": 39,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
@@ -1296,7 +1369,7 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 47,
+      "priorityScore": 40,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
@@ -1323,6 +1396,8 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "いわき民報社",
@@ -1332,10 +1407,8 @@
         }
       ],
       "coverageCount": 2,
-      "priorityScore": 45,
+      "priorityScore": 38,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/4e911bdd845f9c38eb.html"
     },
     {
@@ -1350,6 +1423,8 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "いわき民報社",
@@ -1359,10 +1434,8 @@
         }
       ],
       "coverageCount": 2,
-      "priorityScore": 45,
+      "priorityScore": 38,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/5e5d4a4f5b87f879df.html"
     },
     {
@@ -1377,12 +1450,12 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 40,
-      "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 33,
+      "isBreaking": false,
       "detailPath": "news/05c9ed35a084a5980d.html"
     },
     {
@@ -1397,10 +1470,6 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 40,
-      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1412,6 +1481,10 @@
       "eventEnd": "2026-09-24",
       "eventDateLabel": "9月23日〜24日",
       "isWeekendEvent": false,
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 33,
+      "isBreaking": false,
       "detailPath": "news/31a3027e2fc2b78853.html"
     },
     {
@@ -1426,10 +1499,6 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 40,
-      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -1441,6 +1510,10 @@
       "eventEnd": "2026-09-24",
       "eventDateLabel": "9月23日〜24日",
       "isWeekendEvent": false,
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 33,
+      "isBreaking": false,
       "detailPath": "news/1a4504d3527b18133d.html"
     },
     {
@@ -1518,20 +1591,14 @@
       "isWeekendEvent": false,
       "relatedSources": [
         {
-          "source": "news.yahoo.co.jp",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NY0RtV20tb0tuRWFoZXJxWl9UanNlWnk0N093eVpZdjlMRGp6TXNrWG9mTGRHcGQwVXluY1FXTkpZa1V0d2lpdHplVy1FWlhnMkdaTVU2UV9NV1dYUXpDLWJ2c29Fd2dyQzRPMG1ZaFdHWFRrLWIxYmZacFRaa2s?oc=5",
-          "publishedAt": "2026-09-24T18:43:00+09:00",
-          "via": "google-news"
-        },
-        {
           "source": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NY0RtV20tb0tuRWFoZXJxWl9UanNlWnk0N093eVpZdjlMRGp6TXNrWG9mTGRHcGQwVXluY1FXTkpZa1V0d2lpdHplVy1FWlhnMkdaTVU2UV9NV1dYUXpDLWJ2c29Fd2dyQzRPMG1ZaFdHWFRrLWIxYmZacFRaa2s?oc=5",
           "publishedAt": "2026-09-24T18:43:00+09:00",
           "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 40,
+      "coverageCount": 2,
+      "priorityScore": 35,
       "isBreaking": false,
       "detailPath": "news/be925c4e1918ab1e9a.html"
     },
@@ -1556,20 +1623,14 @@
           "via": "google-news"
         },
         {
-          "source": "minpo.jp",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4dmZrVTJSanc5MFZGQnNpSWNBbDlLTzlvLUFSU3YtZExBWEZ6YXR5aXlPWmkxQVFsNS1JR0M4SndrRVI4WUthczJMRHdVeDQ?oc=5",
-          "publishedAt": "2026-09-23T21:16:00+09:00",
-          "via": "google-news"
-        },
-        {
           "source": "福島民報デジタル",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4dmZrVTJSanc5MFZGQnNpSWNBbDlLTzlvLUFSU3YtZExBWEZ6YXR5aXlPWmkxQVFsNS1JR0M4SndrRVI4WUthczJMRHdVeDQ?oc=5",
           "publishedAt": "2026-09-23T21:16:00+09:00",
           "via": "google-news"
         }
       ],
-      "coverageCount": 4,
-      "priorityScore": 45,
+      "coverageCount": 3,
+      "priorityScore": 40,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
@@ -1678,12 +1739,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 40,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/90871c83e9f19a8c89.html"
     },
     {
@@ -1732,7 +1793,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52381",
       "eventDateEvidence": "松本陽子 宵の明星を見た日 開催期間：2026年9月12日(土)～11月1日(日) いわき市立美術館企画展 9月12日(土)～11月1日(日)まで開催！ 9月12日(土)～11月1日(日)までの期間中、いわき市立美術館にて企画展「松本陽子 宵の明星を見た日」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -1762,12 +1823,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/5eb0400e13f68ec214.html"
     },
     {
@@ -1808,13 +1869,34 @@
       "detailPath": "news/f91df5cdfdc9a62f3c.html"
     },
     {
+      "id": "29bb4d9ac2d54a19e7",
+      "title": "2026年10月のいわき商工会議所での出張相談窓口は下記の日時です",
+      "summary": "いわき商工会議所が「2026年10月のいわき商工会議所での出張相談窓口は下記の日時です」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "経済",
+      "area": "全市",
+      "publishedAt": "2026-09-24T11:00:48+09:00",
+      "source": "いわき商工会議所",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE45YmRVeEN5MkM2b29GS0NCTE81bWRxblhia0NJMTNLaHVsN3V3aXp1amdPcnhDRlE0WndFNll3NUpNWTBteklZTVBCa21zLTRjMTlKRVFScEtkeDQ?oc=5",
+      "sourceHome": "http://www.iwakicci.or.jp",
+      "sourceGroup": "地域団体",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 27,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
+      "detailPath": "news/29bb4d9ac2d54a19e7.html"
+    },
+    {
       "id": "b8b81249099d863330",
       "title": "【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ",
-      "summary": "いわきFC Official Siteが「【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "iwakifc.comが「【NEW ITEMS】いわきFCオリジナルグッズ 新商品販売のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-24T10:03:53+09:00",
-      "source": "いわきFC Official Site",
+      "source": "iwakifc.com",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9PVGM1aEVkSjhBR0twd2VSWmNKSVo1bHpOXzYtTmFCbmVMMnBIeDJuUEhFbHF3OGVxZEgycW9UVXlyYk5oSThnZ29CX0k0RWh4ZmZiVmlaSQ?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -1947,7 +2029,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1786601763566/index.html",
       "eventDateEvidence": "第５回「遠野和紙あかり展 」の開催について 開催日： 2026年9月12日、2026年9月13日、2026年9月19日、2026年9月20日、2026年9月26日、2026年9月27日、2026年10月3日、2026年10月4日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:22+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2011,7 +2093,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1690776258274/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月29日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:21+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2076,7 +2158,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52428",
       "eventDateEvidence": "小さな企画展「令和5年台風13号」 開催期間：2026年9月12日(土)～10月25日(日) いわき市立草野心平記念文学館にて 防災企画 防災企画の最終回となる第三弾は、いわき市に初めて発生した線状降水帯を取り上げます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2118,7 +2200,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52404",
       "eventDateEvidence": "いわき湯本温泉「まちなみづくり社会実験」 開催期間：2026年9月26日(土)～10月2日(金) みんなの「あったらいいな」を、湯本のまちでためそう！ 9月26日(土)から10月2日(金)まで、いわき湯本温泉で「まちなみづくり社会実験」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2165,7 +2247,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51705",
       "eventDateEvidence": "フラのまちオンステージ フラ女将と仲間たち 開催期間：2026年9月26日(土)、10月24日(土) フラ女将と仲間たちが舞う！華麗な「フラ」をご覧ください！ ９月26日(土)、いわき湯本温泉の情緒あふれる「鶴のあし湯広場」を舞台に、南国の風を感じるイベント「フラのまちオンステージ」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2209,7 +2291,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51886",
       "eventDateEvidence": "第10回海風マルシェ 開催期間：2026年9月27日(日) 四倉諏訪神社で出会う、今年最後の海風マルシェ 9月27日(日)、四倉諏訪神社にて「第10回海風マルシェ」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2253,7 +2335,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51925",
       "eventDateEvidence": "動物愛護ふれあいフェスティバルinいわき2026 開催期間：2026年9月27日(日) 動物とのふれあい 大切ないのちを守るために 9月27日(日)、いわき市総合保健福祉センターで「動物愛護ふれあいフェスティバルinいわき2026」を開催します",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2297,7 +2379,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52403",
       "eventDateEvidence": "上三坂のヤッチキ踊り 開催期間：2026年9月27日(日) いわき市暮らしの伝承郷 民俗芸能実演のご案内 9月27日(日)、いわき市立中央台公民館にて、上三坂やっちき踊り保存会のみなさんによる「上三坂ヤッチキ踊り」が披露されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 26,
@@ -2369,22 +2451,22 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 29,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/b4377ae7bbfec48b09.html"
     },
     {
       "id": "d1e7968fc15a6fecee",
       "title": "2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」",
-      "summary": "いわきFC Official Siteが「2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "iwakifc.comが「2026/27 明治安田J2リーグ 第6節 vs 横浜FC「品川リフラプレゼンツマッチ 〜フラシティいわきDAY」」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-23T19:33:52+09:00",
-      "source": "いわきFC Official Site",
+      "source": "iwakifc.com",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaUJnNTF5eEdPV21jbHk3cjlXaF9rd29iQWNsT05uN2piNFpZT19uYXJBLTUyZTdkMllQQkJ0UTYtdHhUdEZRdDdGMW9PV3l1VXdsOUtUX2RrblYyYnpJbi1IV3I0TVJId2thNzhDVE1hSmdMUEJPbUVqT3M3ZFhxZFgtVkZ3OXZrd08wZ2VyaE94MW5xSEs2ckpYWTN2cHdhTTRkR1JqOTVWQmdKWlhqVGNMQ3JyRHpfN2N3T2VsQ0pDTmh5NjNOZUxzMnpzemctS3VpdWdKdGRWdzZHMWs0?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "スポーツ",
@@ -2392,7 +2474,7 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 29,
+      "priorityScore": 19,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
@@ -2438,6 +2520,8 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [
         {
           "source": "いわき民報社",
@@ -2449,8 +2533,6 @@
       "coverageCount": 2,
       "priorityScore": 35,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/79095d31d2cdf92fbf.html"
     },
     {
@@ -2484,13 +2566,13 @@
       "eventDateSourceUrl": "https://iwaki-minpo.co.jp/news/2026/09/314585/",
       "eventDateEvidence": "日本における抽象画の先駆者、松本陽子さん（１９３６～、東京都出身）の初期から最新作までを紹介する企画展「松本陽子 宵の明星を見た日」が市立美術館で開かれている。同展は東京・府中市美術館、市立美術館、神奈川県立近代美術館の３館を巡回する、松本さんの初となる大規模個展となる。会期は１１月１日まで。 これまでの歩みとして、東京芸術大在学中から明るい色彩による抽象表",
       "eventDateMethod": "article-body",
+      "isOpeningClosing": false,
+      "eventDateLabel": "10月12日・11月1日",
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 19,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "eventDateLabel": "10月12日・11月1日",
-      "isWeekendEvent": false,
       "detailPath": "news/40911aa1a38d28c287.html"
     },
     {
@@ -2507,12 +2589,12 @@
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
       "eventDateCheckedAt": "2026-09-25T22:01:26+09:00",
       "eventDateCheckOk": true,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 19,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/ca0b978a45d8f6d315.html"
     },
     {
@@ -2599,11 +2681,11 @@
     {
       "id": "cd1313b50b27d76f6d",
       "title": "いわき市平白銀町で電線燃える火事 約700戸で停電続く（午後1時30分現在） 福島",
-      "summary": "日テレNEWS NNNが「いわき市平白銀町で電線燃える火事 約700戸で停電続く（午後1時30分現在） 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "news.ntv.co.jpが「いわき市平白銀町で電線燃える火事 約700戸で停電続く（午後1時30分現在） 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-09-23T13:34:00+09:00",
-      "source": "日テレNEWS NNN",
+      "source": "news.ntv.co.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWmpoOEZiTUI5OGhxTlBxT09mcGF6M2ViUGdPQkZLVlBQWXRxZE95VWU2Q0tILU5CNGFoSTZrMzNReFR4RnQwSGRfTTVibGpPajNobWtMSEtEcWFwQndNOWV1WDk5eGh3eU1qTjZ2QjhhYkVqNUg3NmVFY0VHSXNVcjQ0NEwwcjg?oc=5",
       "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "報道",
@@ -2630,10 +2712,6 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 29,
-      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -2645,7 +2723,6 @@
       "eventEnd": "2026-09-26",
       "eventDateLabel": "9月26日",
       "isWeekendEvent": true,
-      "detailPath": "news/5e7436483581da39dc.html",
       "weekendRankScore": 122,
       "weekendEventGroup": "weekend-pick",
       "weekendRankLabel": "今週末まで",
@@ -2654,16 +2731,21 @@
         "今週末スタート",
         "今週末まで"
       ],
-      "isLongRunningEvent": false
+      "isLongRunningEvent": false,
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 29,
+      "isBreaking": false,
+      "detailPath": "news/5e7436483581da39dc.html"
     },
     {
       "id": "85d7395747b7b54763",
       "title": "FMいわき「いわきFC応援番組WALK TO THE DREAM」MF 木吹翔太 電話出演のお知らせ",
-      "summary": "いわきFC Official Siteが「FMいわき「いわきFC応援番組WALK TO THE DREAM」MF 木吹翔太 電話出演のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "iwakifc.comが「FMいわき「いわきFC応援番組WALK TO THE DREAM」MF 木吹翔太 電話出演のお知らせ」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-23T09:04:37+09:00",
-      "source": "いわきFC Official Site",
+      "source": "iwakifc.com",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsaTBxUkoxcEVFeVRYVnR2TzhQZlE0Tnplc0V0djY1VFdRek42R0Fsd0NDTzg3cndnaGUzeXY0UmRFZmFfaGd1ZjJRR2ZnMUxURnIxckJQZFhiQjA?oc=5",
       "sourceHome": "https://iwakifc.com",
       "sourceGroup": "地域団体",
@@ -2734,13 +2816,13 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [
         {
-          "source": "au Webポータル",
+          "source": "article.auone.jp",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tWVY2OGppTFBRX1dYR0g0LTJYWmUzUEp4dzdKeC0zR1pTVXpWcWJJZkp0dUVoclk2blRPbWZjclgzbWxSVW56aE1ScUVqelJ3UDdQWG14d3BjOUVrckVpc1lzam4wU0tzcDNDMWZB?oc=5",
           "publishedAt": "2026-09-23T07:00:00+09:00",
           "via": "google-news"
         },
         {
-          "source": "article.auone.jp",
+          "source": "au Webポータル",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tWVY2OGppTFBRX1dYR0g0LTJYWmUzUEp4dzdKeC0zR1pTVXpWcWJJZkp0dUVoclk2blRPbWZjclgzbWxSVW56aE1ScUVqelJ3UDdQWG14d3BjOUVrckVpc1lzam4wU0tzcDNDMWZB?oc=5",
           "publishedAt": "2026-09-23T07:00:00+09:00",
           "via": "google-news"
@@ -2778,7 +2860,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52357",
       "eventDateEvidence": "企画展「サンマの学校」 開催期間：2026年7月15日(水)～2027年1月11日(月・祝) 【世界唯一】生きたサンマを展示するアクアマリンふくしまが贈る“世界一サンマづくし”の夏！7月15日開校！ 7月15日(水)～2027年1月11日(月・祝)までの期間中、アクアマリンふくしまにて、日本の食卓でおなじみの“サンマ”をテーマにした企画展「サンマの学校」を開",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 36,
@@ -2847,7 +2929,7 @@
       "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 26,
+      "priorityScore": 21,
       "isBreaking": false,
       "detailPath": "news/21ace3efb103836980.html"
     },
@@ -2876,10 +2958,10 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52362",
       "eventDateEvidence": "令和8年度第1回企画展「いわきの民俗芸能」 開催期間：2026年6月27日(土)～9月27日(日) いわき市暮らしの伝承郷企画展 受け継がれる伝統、響き続ける郷土の鼓動 6月27日(土)～9月27日(日)までの期間中、いわき市暮らしの伝承郷にて、第1回企画展「いわきの民俗芸能」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 26,
+      "priorityScore": 21,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDateLabel": "6月27日〜9月27日",
@@ -2920,10 +3002,10 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52282",
       "eventDateEvidence": "いわきデザインマンホールフォトラリー2026 第2弾 開催期間：2026年8月1日(土)～2027年2月28日(日) 【いわき市市制施行60周年記念事業】見つけて、撮って、応募して 思い出に残そう！！ 8月1日(土)～2027年2月28日(日)までの期間中、「いわきデザインマンホールフォトラリー2026 第2弾」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 26,
+      "priorityScore": 21,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDateLabel": "2026年8月1日〜2027年2月28日",
@@ -2940,11 +3022,11 @@
     {
       "id": "660cf86bc12731939a",
       "title": "台風一過で各地で気温上昇 いわきでは真夏日に",
-      "summary": "article.auone.jpが「台風一過で各地で気温上昇 いわきでは真夏日に」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "au Webポータルが「台風一過で各地で気温上昇 いわきでは真夏日に」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-09-22T18:59:00+09:00",
-      "source": "article.auone.jp",
+      "source": "au Webポータル",
       "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ZZDZsLUV5VTRjd2luN0Z5c2NvZXNnRGVaRnA2QWRvVmQ5dWZRRWRydml2QVpKTWsxY1VmSEdKY2ZOZHlEblpqV0N4WHNfZTBnWVhJMTBqT1UydTFrd1Z4NENoVEl2dWF5RGVESlE0WkhIanl4WTBnRA?oc=5",
       "sourceHome": "https://article.auone.jp",
       "sourceGroup": "開店・閉店",
@@ -2970,12 +3052,12 @@
       "sourceGroup": "報道",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 25,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/1c0a2c6eb459eab243.html"
     },
     {
@@ -2992,12 +3074,6 @@
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [
-        {
-          "source": "minpo.jp",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hQ2VUT3hjekFHWDZucHVjVU5URG1oVTVmTTFhazhaN0hwdFUzN0hZdWdOMGlTLW5YS0EzTXFFZC1kb0ZxUUZWdVFQZ1ItZ1E?oc=5",
-          "publishedAt": "2026-09-22T14:23:27+09:00",
-          "via": "google-news"
-        },
         {
           "source": "福島民報デジタル",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hQ2VUT3hjekFHWDZucHVjVU5URG1oVTVmTTFhazhaN0hwdFUzN0hZdWdOMGlTLW5YS0EzTXFFZC1kb0ZxUUZWdVFQZ1ItZ1E?oc=5",
@@ -3018,6 +3094,12 @@
         },
         {
           "source": "article.auone.jp",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uN0ozN3E3UnpHSlZMUWRGcEVnaDcxTWZ4R2xmeHdva3ZHZUktNjB5MWRrUTVqczdBMzkxZ2xhamkxTk5JcGZtYlZjLUxuNU9jQ0E2eXphX2lORXhtRVYyMVdSZWo0N0loazBmcnFtaDg2Q3VmSVFicw?oc=5",
+          "publishedAt": "2026-09-22T10:43:00+09:00",
+          "via": "google-news"
+        },
+        {
+          "source": "au Webポータル",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uN0ozN3E3UnpHSlZMUWRGcEVnaDcxTWZ4R2xmeHdva3ZHZUktNjB5MWRrUTVqczdBMzkxZ2xhamkxTk5JcGZtYlZjLUxuNU9jQ0E2eXphX2lORXhtRVYyMVdSZWo0N0loazBmcnFtaDg2Q3VmSVFicw?oc=5",
           "publishedAt": "2026-09-22T10:43:00+09:00",
           "via": "google-news"
@@ -3043,12 +3125,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/2d09a2c8d5f030460d.html"
     },
     {
@@ -3408,7 +3490,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/51257",
       "eventDateEvidence": "森の休憩所ピコブルーベリー農園 ブルーベリー狩り 開催期間：2026年6月14日(日)～9月上旬(予定) ブルーベリー摘み取りとカフェ＜体験・アクティビティ＞ 2026年6月14日よりブルーベリー摘み取り食べ放題開園しています",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3443,7 +3525,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52169",
       "eventDateEvidence": "いわき市立草野心平記念文学館 小さな企画展「心平が愛でた秋の花」 開催期間：2026年8月29日(土)～10月25日(日) 草野心平の作品に書かれた四季の植物たちをご紹介します 8月29日(土)～10月25日(日)までの期間中、いわき市立草野心平記念文学館にて、小さな企画展「心平が愛でた秋の花」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3625,7 +3707,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/50551",
       "eventDateEvidence": "競走馬用スイミングプールのプール見学 開催期間：2026年5月27日(水)～10月 JRA競走馬リハビリテーションセンタープールでリハビリする競走馬を見学できます！ JRA競走馬リハビリテーションセンターでは、5月27日(水)より10月まで、「競走馬用スイミングプールのプール見学」が開催されます",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3660,7 +3742,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/50554",
       "eventDateEvidence": "じゃぶじゃぶ・めぐりの海 開催期間：2026年4月29日(水・祝)～11月3日(火・祝) アクアマリンふくしま 屋外の自然体験エリアで、海や川に入って自然に触れよう！ 4月29日(水・祝)～11月3日(火・祝)にかけて、アクアマリンふくしまでは、海辺の環境を再現した「じゃぶじゃぶ・めぐりの海」が海開きします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3703,7 +3785,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52059",
       "eventDateEvidence": "令和8年度第2回企画展「いわきの弥生土器」 開催期間：2026年7月18日(土)～11月14日(土) いわき市考古資料館企画展 出土した土器が伝える、いわきの弥生時代 7月18日(土)～11月14日(土)までの期間中、いわき市考古資料館にて、第2回企画展「いわきの弥生土器」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3745,7 +3827,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52360",
       "eventDateEvidence": "令和8年度企画展「奥州三古関～歴史と伝承のはざまから～」 開催期間：2026年7月11日(土)～11月15日(日) 【いわき市市制施行60周年記念事業】いわき市勿来関文学歴史館にて企画展開催！ 7月11日(土)～11月15日(日)までの期間中、いわき市勿来関文学歴史館では、令和8年度企画展「奥州三古関～歴史と伝承のはざまから～」を開催いたします",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3787,7 +3869,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1768978069855/index.html",
       "eventDateEvidence": "いわき市市制施行60周年記念事業「いわきデザインマンホールフォトラリー2026-第２弾-」を実施します！ 開催日： 2026年8月1日 から 2027年2月28日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:22+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3830,7 +3912,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1718100977566/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月3日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:21+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3865,7 +3947,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1731914092115/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月20日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:21+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3900,7 +3982,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1659698136518/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月30日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:21+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -3923,12 +4005,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/fd35378454983ed13a.html"
     },
     {
@@ -4054,7 +4136,7 @@
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-09-21T19:18:00+09:00",
-      "source": "minpo.jp",
+      "source": "福島民報デジタル",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8tdll5QzdHTFhCcUF3akVaVlBqank2b0lES0F3YVVQcUd6VVFFTVNxQ2gtczB1SjFyUzg2bjNhcVNUZlp1eF9nNmlHcEdBSnc?oc=5",
       "sourceHome": "https://www.minpo.jp",
       "sourceGroup": "報道",
@@ -4068,27 +4150,21 @@
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SSDlXMHRCNVB6emJRWlRBSmt6UURnRWx6b1MzQmJTUmNWQ09nVTZDTXNBbDUzaHROTldzeHFPUGNORmloRURZOUR6QQ?oc=5",
           "publishedAt": "2026-09-21T19:18:00+09:00",
           "via": "google-news"
-        },
-        {
-          "source": "福島民報デジタル",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8tdll5QzdHTFhCcUF3akVaVlBqank2b0lES0F3YVVQcUd6VVFFTVNxQ2gtczB1SjFyUzg2bjNhcVNUZlp1eF9nNmlHcEdBSnc?oc=5",
-          "publishedAt": "2026-09-21T19:18:00+09:00",
-          "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 103,
+      "coverageCount": 2,
+      "priorityScore": 98,
       "isBreaking": false,
       "detailPath": "news/ede623fecda51cbf9e.html"
     },
     {
       "id": "33215d2fe4a3a0a088",
       "title": "【台風25号】現場から中継 いわき市で大雨警戒 アンダーパス2か所を事前通行止め",
-      "summary": "日テレNEWS NNNが「【台風25号】現場から中継 いわき市で大雨警戒 アンダーパス2か所を事前通行止め」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "news.ntv.co.jpが「【台風25号】現場から中継 いわき市で大雨警戒 アンダーパス2か所を事前通行止め」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-09-21T17:40:00+09:00",
-      "source": "日テレNEWS NNN",
+      "source": "news.ntv.co.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWE84QkdxZmt5MVFJaU94MDh2NEZrWEpVanpZbjFkRThrNUpPWWh3R01GUG5DRVgzUjVIdHoyR0NEZVpoZ2wzSHA3WllIdzNjelJqQ0NRRE1VY3pORFA5a0E3c011b0xRRnNRdzRFWVk2ZGdHdGVVN0k5cnF5RlAyUEo3MVJPX00?oc=5",
       "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "報道",
@@ -4129,21 +4205,27 @@
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5aVTJHNmdvcmxpNDVEXzVqUEhsVFRWN2ZGQjFRSUN2SlBZbG1JM29vakVNSUJ2TWgzRFRmak5DeTM1azJNQTRQd0QyckJ1WlQtbXJHc1E0b2tEcFdDMS1KeVRZbG41TWFETW5wOXB30gFuQVVfeXFMTlpVMkc2Z29ybGk0NURfNWpQSGxUVFY3ZkZCMVFJQ3ZKUFlsbUkzb29qRU1JQnZNaDNEVGZqTkN5MzVrMk1BNFB3RDJyQnVaVC1tckdzUTRva0RwV0MxLUp5VFlsbjVNYURNbnA5cHc?oc=5",
           "publishedAt": "2026-09-21T17:15:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "news.ntv.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSTZiYnIwVWxZajREWGtreFRSWXQxWUtmNnZac0hRWUZUUjVyU0RoR1k5c2lkcUhqeTRxRUQ3WGpOVXc4MjhUWk9nUGs4bUQxcGZvSXJuOWJJdkJqWUQ2WHFhWHNHLXRUN0ZPcFMxRjRMSEtVTlZjYkFsSXFGLXBTNnROU1k0OUU?oc=5",
+          "publishedAt": "2026-09-21T17:15:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 66,
+      "coverageCount": 4,
+      "priorityScore": 71,
       "isBreaking": false,
       "detailPath": "news/92731ac67d7acea500.html"
     },
     {
       "id": "630ceddb7e9e31bced",
       "title": "【台風25号】避難した住民「氾濫したら怖い」いわき市全域に高齢者等避難（2026年9月21日掲載）｜中テレNEWS NNN",
-      "summary": "日テレNEWS NNNが「【台風25号】避難した住民「氾濫したら怖い」いわき市全域に高齢者等避難（2026年9月21日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "news.ntv.co.jpが「【台風25号】避難した住民「氾濫したら怖い」いわき市全域に高齢者等避難（2026年9月21日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "防災・安全",
       "area": "全市",
       "publishedAt": "2026-09-21T16:55:00+09:00",
-      "source": "日テレNEWS NNN",
+      "source": "news.ntv.co.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYl9RcFlUZmtHN2pCZ2VZUGhpQ1BOS2ZCN0VXUHllaHA5NF9lTzVxYnhQLVBtLTdtT0E0Uk84ZXd4YnNqckpBRU5lN2x2MUpYLURHMzcwSlRPMldmRXdlbmpKdEVzMTdqVFlTWFBhcEphWWo0T1BJem9kYjFhNmtpTjhSWUd3UFk?oc=5",
       "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "報道",
@@ -4179,12 +4261,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/79156953d122d7ba72.html"
     },
     {
@@ -4211,11 +4293,11 @@
     {
       "id": "af345d315aae71b2e3",
       "title": "【公演中止】令和8年度 セレブレーションコンサート - いわき芸術文化交流館",
-      "summary": "iwaki-alios.jpが「【公演中止】令和8年度 セレブレーションコンサート - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「【公演中止】令和8年度 セレブレーションコンサート - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-21T16:00:00+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBERE5GR3lGYll4YnM2cUQzYlB4cGZUcE5sOTRzYmNrMnAwc1VoSndnTmx2OXc0cWpBWEVrTVVQMVh4bi1jaHFVTnlGa0xLZENyODBvYlhOSWw5WHM?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -4248,10 +4330,16 @@
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOVZRd0x4SnRoUUl1STc1cHVHYl9IU0pSOFNfUU5LZGNZRllfTC1sd0xRRWZsVlNiRy1ZaVVIQ0pJRjgyTkQxSkxjTWxlVUNibzVhalpjeHJKUWo2c3BoS1FBc2UyN3QzMDZFdFZaNzd6ZDFJQ2Y1dk5ORUM0OTRsaDlYcVpCc3c?oc=5",
           "publishedAt": "2026-09-21T15:00:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "news.ntv.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOVZRd0x4SnRoUUl1STc1cHVHYl9IU0pSOFNfUU5LZGNZRllfTC1sd0xRRWZsVlNiRy1ZaVVIQ0pJRjgyTkQxSkxjTWxlVUNibzVhalpjeHJKUWo2c3BoS1FBc2UyN3QzMDZFdFZaNzd6ZDFJQ2Y1dk5ORUM0OTRsaDlYcVpCc3c?oc=5",
+          "publishedAt": "2026-09-21T15:00:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 2,
-      "priorityScore": 61,
+      "coverageCount": 3,
+      "priorityScore": 66,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
@@ -4324,10 +4412,16 @@
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oa2dNUEFqZE9JajQ3bnR6aHFvNFprbmpocDU2bXJuMHZ3ZU5yTDdtd1BCZzRsZWJ2TVhkX0Q2SGFDRlJaQ3NXcDM0bEU1dHp1RkFMVG9qWk4yVDhsaDJkQ0JQSDgwTVEzVjVpTVdROGxSSWRHRGY1ZklTX29mREE?oc=5",
           "publishedAt": "2026-09-21T15:08:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "news.ntv.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVWVmdmg4SDVybklTWDV0bktCSnFWT0t4NmI4WF9PQ0h3bG50MUt2ZTJPbHZJcVpOUkw1aGZCUFMtWlVOQWNGU2h1N2wwc3ZIVEtPN0RycXRJbnl6cG5GMEhEXzZWeGhKRXFTcHE0TGpEa1RKLW9QNkp6WnBfOHMxMUZLY0dPXzg?oc=5",
+          "publishedAt": "2026-09-21T15:08:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 2,
-      "priorityScore": 61,
+      "coverageCount": 3,
+      "priorityScore": 66,
       "isBreaking": false,
       "detailPath": "news/d12a9e71f7c4188a9c.html"
     },
@@ -4462,9 +4556,13 @@
       "source": "号外NET いわき市",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40d0hEQjdmTFJuT0pOM05FR19WX29Mc3QzZUFGbXNrLXJWNTl4SmUtZ0dvTzJReDBYb2k2U3c0ZWZwWGlfdENRRHZZMmdUVmtnZFJTcG83bHdzdw?oc=5",
       "sourceHome": "https://iwaki.goguynet.jp",
-      "sourceGroup": "地域",
+      "sourceGroup": "開店・閉店",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 14,
+      "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
         {
@@ -4476,10 +4574,6 @@
       "eventEnd": "2026-09-23",
       "eventDateLabel": "9月23日",
       "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 14,
-      "isBreaking": false,
       "detailPath": "news/d2b48115047e411ac3.html"
     },
     {
@@ -4752,7 +4846,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1788998027467/index.html",
       "eventDateEvidence": "常磐地区 第３回「フラのまちオンステージ2026」 開催！！ 開催日： 2026年9月26日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:22+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4783,7 +4877,7 @@
       "sourceGroup": "行政",
       "via": "direct-rss",
       "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "eventDateCheckedAt": "2026-09-25T22:01:28+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:28+09:00",
       "eventDateCheckOk": true,
       "eventDates": [
         {
@@ -4832,7 +4926,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52223",
       "eventDateEvidence": "小名浜国際環境芸術祭2026 開催期間：2026年9月19日(土)～11月27日(金) 小名浜生まれの大漁旗アート、金魚、柴犬、盆栽 水族館が「丸ごと美術館」になる72日間 9月19日(土)から11月29日(日)までの期間中、アクアマリンふくしまにて、地球環境の保全と海洋資源の大切さをアートで伝える「小名浜国際環境芸術祭2026」を開催します",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4875,7 +4969,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1473231332403/index.html",
       "eventDateEvidence": "動物愛護ふれあいフェスティバルinいわきを開催します！ 開催日： 2026年9月27日",
       "eventDateMethod": "city-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:22+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -4907,12 +5001,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/6bb584afc321ff3e84.html"
     },
     {
@@ -4976,12 +5070,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/1844564a3fe222ee21.html"
     },
     {
@@ -5018,22 +5112,22 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/6c60183650f8aa6ca7.html"
     },
     {
       "id": "79ebe64e6918a9bde7",
       "title": "第58回いわき市民文化祭 第37回いわき市民謡の会発表会 - いわき芸術文化交流館",
-      "summary": "iwaki-alios.jpが「第58回いわき市民文化祭 第37回いわき市民謡の会発表会 - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「第58回いわき市民文化祭 第37回いわき市民謡の会発表会 - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-20T18:09:39+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CeGtoNWNfSkp6ZGw4QzdScWZxSEd1SjY3RmVMSnhhREZjZ21BM0ctX0tQaG9kOThpOEJqN1NFbnlmNjhBcTU0ejJWMWFucUR3NWFWS2o2bHBZeVE?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -5081,12 +5175,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/b98467f53ef520e90f.html"
     },
     {
@@ -5102,12 +5196,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/788f781908603f1b6a.html"
     },
     {
@@ -5123,22 +5217,22 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/dd9c187c0b1155cf45.html"
     },
     {
       "id": "ef3f3783dbbd11adc3",
       "title": "いわきFCが今季初連勝 鳥栖に3対1で快勝 次節は東北ダービー（2026年9月19日掲載）｜中テレNEWS NNN",
-      "summary": "日テレNEWS NNNが「いわきFCが今季初連勝 鳥栖に3対1で快勝 次節は東北ダービー（2026年9月19日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "news.ntv.co.jpが「いわきFCが今季初連勝 鳥栖に3対1で快勝 次節は東北ダービー（2026年9月19日掲載）｜中テレNEWS NNN」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-20T15:41:00+09:00",
-      "source": "日テレNEWS NNN",
+      "source": "news.ntv.co.jp",
       "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQb2xhZ2RXRGtNMlVaZFZaelduRGhQVFpvbndaTXJYWTZhZ1NzcGxGN0ozaWZUalVFR016ZDZKNy1fc2w1dTJzYU1HYWs1SG5hM1l5TmpJZHVkWXdQblc4VG1iSEpfbEdpbWlMTTRRQksxT21aN0FfQkJKTFMzcU85V3lNQVVFZw?oc=5",
       "sourceHome": "https://news.ntv.co.jp",
       "sourceGroup": "スポーツ",
@@ -5146,20 +5240,14 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [
         {
-          "source": "news.yahoo.co.jp",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUtOYVVWcXFLeDlBa1F5eXY1X3IzbFJwdVdzeHhFNDVvOFRCZzhHeW9KZ0YxY2ZreTZxSlV1cTFoYzBwU3V1TEtLRHJxczh1NzJXWU5naEkxOWhqaW9qbThIcldwOGw1N2VkOTYzX3ItWXdXbDhJYTZSUGhNN01MaGswRklEN0R2aW5jV2ln?oc=5",
-          "publishedAt": "2026-09-20T15:41:00+09:00",
-          "via": "google-news"
-        },
-        {
           "source": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUtOYVVWcXFLeDlBa1F5eXY1X3IzbFJwdVdzeHhFNDVvOFRCZzhHeW9KZ0YxY2ZreTZxSlV1cTFoYzBwU3V1TEtLRHJxczh1NzJXWU5naEkxOWhqaW9qbThIcldwOGw1N2VkOTYzX3ItWXdXbDhJYTZSUGhNN01MaGswRklEN0R2aW5jV2ln?oc=5",
           "publishedAt": "2026-09-20T15:41:00+09:00",
           "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 34,
+      "coverageCount": 2,
+      "priorityScore": 29,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
@@ -5345,11 +5433,11 @@
     {
       "id": "f42d4c4924056e2473",
       "title": "いわきの集い歌謡ショー 丘みどりコンサート2026 －演魅Vol.7－ - いわき芸術文化交流館",
-      "summary": "iwaki-alios.jpが「いわきの集い歌謡ショー 丘みどりコンサート2026 －演魅Vol.7－ - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「いわきの集い歌謡ショー 丘みどりコンサート2026 －演魅Vol.7－ - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-20T02:12:39+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1DTVZxYzhxZzJrV0lSSkNGeUl4Vk04clYxSHowYjNOSGFEdnhtSlB5ZHFiVlhSNnhEMVBydlRJNG1FWkk3dEJucnRHY2hUMGZfZVk1SmNObkNXYWs?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -5633,11 +5721,11 @@
     {
       "id": "707e24123576c9d4a0",
       "title": "第58回いわき市民文化祭 アンサンブル・コンサート2026 - いわき芸術文化交流館",
-      "summary": "iwaki-alios.jpが「第58回いわき市民文化祭 アンサンブル・コンサート2026 - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「第58回いわき市民文化祭 アンサンブル・コンサート2026 - いわき芸術文化交流館」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-19T22:28:05+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01WGFFR1h4QmNBbzRFclFMamtxeHZqRUpSN19UR09qTmcyY2dMWFBEYkZYRmNudWUtUFpuLXIySnVycjBtUlNPNmtJTmZRNkNXQS02dkFPT0x4Wkk?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -5903,12 +5991,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 24,
       "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "detailPath": "news/b174bf5737bf592ddd.html"
     },
     {
@@ -5945,12 +6033,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 14,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/be707204b1f9302611.html"
     },
     {
@@ -5966,12 +6054,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/b6600658b13a7761a5.html"
     },
     {
@@ -5987,12 +6075,12 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 35,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/3a62a7618faff82062.html"
     },
     {
@@ -6008,13 +6096,43 @@
       "sourceGroup": "地域団体",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 28,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/7704ae8a610682ad4b.html"
+    },
+    {
+      "id": "dd50cc03fad665fc01",
+      "title": "【いわき市】本日（9/19）＆明日（9/20）限定！エスパル3階で家族写真の撮影会が開催中です。",
+      "summary": "号外NET いわき市が「【いわき市】本日（9/19）＆明日（9/20）限定！エスパル3階で家族写真の撮影会が開催中です。」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "イベント",
+      "area": "全市",
+      "publishedAt": "2026-09-19T12:00:32+09:00",
+      "source": "号外NET いわき市",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hbHNaX2N5a3Bpc1l2cDVLTDdROE9sMnZZcWxYZFNrY0dFUVF4a005N3ZxcjQzYkwzckJpNjMxZ0FpeE9BTXNERFhseHAzTUZhbEUxMjNkV1I4Q1ZkTEpxQQ?oc=5",
+      "sourceHome": "https://iwaki.goguynet.jp",
+      "sourceGroup": "開店・閉店",
+      "via": "google-news",
+      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
+      "relatedSources": [],
+      "coverageCount": 1,
+      "priorityScore": 14,
+      "isBreaking": false,
+      "isOpeningClosing": false,
+      "eventDates": [
+        {
+          "start": "2026-09-19",
+          "end": "2026-09-20"
+        }
+      ],
+      "eventStart": "2026-09-19",
+      "eventEnd": "2026-09-20",
+      "eventDateLabel": "9月19日〜20日",
+      "isWeekendEvent": false,
+      "detailPath": "news/dd50cc03fad665fc01.html"
     },
     {
       "id": "c3523568138ef95666",
@@ -6059,12 +6177,12 @@
       "sourceGroup": "地域",
       "via": "google-news",
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 25,
       "isBreaking": false,
+      "isOpeningClosing": false,
+      "isWeekendEvent": false,
       "detailPath": "news/4e6f527e6996b282a1.html"
     },
     {
@@ -6086,10 +6204,16 @@
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeGNybUJMNjhPanJLV3hfT3VZbWU3cUgxOVRVMU16N3RfZk5YOXllcS1tVlhBSjdSUU9LdTVicEVZN3BUY1hYQ0ZYSzlVeTFyTmY3d2UtZTlYVzdxRll5d1U4a3lBT2lZWjVxZ1ZhYmtBOTd2c2lmSWVLQzRabDhReWRQNlgtdWM?oc=5",
           "publishedAt": "2026-09-19T10:32:00+09:00",
           "via": "google-news"
+        },
+        {
+          "source": "news.ntv.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeGNybUJMNjhPanJLV3hfT3VZbWU3cUgxOVRVMU16N3RfZk5YOXllcS1tVlhBSjdSUU9LdTVicEVZN3BUY1hYQ0ZYSzlVeTFyTmY3d2UtZTlYVzdxRll5d1U4a3lBT2lZWjVxZ1ZhYmtBOTd2c2lmSWVLQzRabDhReWRQNlgtdWM?oc=5",
+          "publishedAt": "2026-09-19T10:32:00+09:00",
+          "via": "google-news"
         }
       ],
-      "coverageCount": 2,
-      "priorityScore": 98,
+      "coverageCount": 3,
+      "priorityScore": 103,
       "isBreaking": false,
       "isOpeningClosing": false,
       "eventDates": [
@@ -6149,11 +6273,11 @@
     {
       "id": "0f472bcf2b6564954a",
       "title": "【試合結果】いわき湯本―安積黎明（1回戦） - 秋季福島県大会",
-      "summary": "vk.sportsbull.jpが「【試合結果】いわき湯本―安積黎明（1回戦） - 秋季福島県大会」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "スポーツ",
+      "summary": "バーチャル高校野球が「【試合結果】いわき湯本―安積黎明（1回戦） - 秋季福島県大会」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "category": "教育・子育て",
       "area": "常磐",
       "publishedAt": "2026-09-19T07:44:10+09:00",
-      "source": "vk.sportsbull.jp",
+      "source": "バーチャル高校野球",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAyMzZwbzJtVkZfRjh2Q3pkUU9GMk85YTVqdF8wWFNRY2QyZWIzaG16Z05wN2RtdFNLbk13YU9MRG5LdWNxTW5mdG5VN1ZOaWZScE5PYk1hTnd2SFEwcVpONjlMOWI?oc=5",
       "sourceHome": "https://vk.sportsbull.jp",
       "sourceGroup": "地域",
@@ -6161,7 +6285,7 @@
       "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
       "relatedSources": [],
       "coverageCount": 1,
-      "priorityScore": 14,
+      "priorityScore": 25,
       "isBreaking": false,
       "isOpeningClosing": false,
       "isWeekendEvent": false,
@@ -6331,11 +6455,11 @@
     {
       "id": "48686090771ee1c6a7",
       "title": "いわきおやこ劇場 読み聞かせ会「絵本となかよし！語り伝える昔話」",
-      "summary": "iwaki-alios.jpが「いわきおやこ劇場 読み聞かせ会「絵本となかよし！語り伝える昔話」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき芸術文化交流館が「いわきおやこ劇場 読み聞かせ会「絵本となかよし！語り伝える昔話」」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "暮らし",
       "area": "全市",
       "publishedAt": "2026-09-19T03:04:04+09:00",
-      "source": "iwaki-alios.jp",
+      "source": "いわき芸術文化交流館",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QZ0JLRG1KUWJnOG9oZDdvZXVLcFEwOUFEYmYzUkpXNjd4b1hKVW1uSm4wQnl2S25WdWRscmdtUlFsR1RKM2VyVEd1QkpJdThkNTFLWFJzWl9mZEk?oc=5",
       "sourceHome": "https://iwaki-alios.jp",
       "sourceGroup": "地域団体",
@@ -6543,20 +6667,14 @@
       "isWeekendEvent": false,
       "relatedSources": [
         {
-          "source": "news.yahoo.co.jp",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kdFV0OWFncmhFYTg0Sm5Ra2lkT2FHbGljbUNidTVxbEx1NkstOXpVQURsYzlLeWE2WnQ5dW01WHBQVWpYd29zSEFaQ2JsUmRlZnFyeHhTVTlGYTFPVGh1RFQ0aVNLYkFKVERLYzNfa0Z1LTNMMDQ4MTRWRm91N3M?oc=5",
-          "publishedAt": "2026-09-18T21:23:00+09:00",
-          "via": "google-news"
-        },
-        {
           "source": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kdFV0OWFncmhFYTg0Sm5Ra2lkT2FHbGljbUNidTVxbEx1NkstOXpVQURsYzlLeWE2WnQ5dW01WHBQVWpYd29zSEFaQ2JsUmRlZnFyeHhTVTlGYTFPVGh1RFQ0aVNLYkFKVERLYzNfa0Z1LTNMMDQ4MTRWRm91N3M?oc=5",
           "publishedAt": "2026-09-18T21:23:00+09:00",
           "via": "google-news"
         }
       ],
-      "coverageCount": 3,
-      "priorityScore": 103,
+      "coverageCount": 2,
+      "priorityScore": 98,
       "isBreaking": false,
       "detailPath": "news/e487b4b3776c4101bc.html"
     },
@@ -6639,11 +6757,11 @@
     {
       "id": "5521c0b7dcdf8bb609",
       "title": "【重要】いわき商工会議所 議員会員交流ゴルフ大会「組み合わせ表のご案内」および「協賛品募集のお願い」",
-      "summary": "iwakicci.or.jpが「【重要】いわき商工会議所 議員会員交流ゴルフ大会「組み合わせ表のご案内」および「協賛品募集のお願い」」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "いわき商工会議所が「【重要】いわき商工会議所 議員会員交流ゴルフ大会「組み合わせ表のご案内」および「協賛品募集のお願い」」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "スポーツ",
       "area": "全市",
       "publishedAt": "2026-09-18T19:07:38+09:00",
-      "source": "iwakicci.or.jp",
+      "source": "いわき商工会議所",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxNXZJZGRRUjl0NlI2OWJPSDZWcUNaVmR0azNnYzNxRzBCd3BMRjBQLTh4YWNsNGZaQ3BORktzWTdCNy1HRVZhWDR4YThuMGdrTExfckstTk5FQkU?oc=5",
       "sourceHome": "http://www.iwakicci.or.jp",
       "sourceGroup": "地域団体",
@@ -6731,7 +6849,7 @@
       "eventDateSourceUrl": "https://kankou-iwaki.or.jp/event/52217",
       "eventDateEvidence": "第5回 遠野和紙あかり展《要事前申込》 開催期間：2026年9月12日(土)～10月3日(土)遠野和紙あかり展 ※期間中の土・日曜日等、指定日に開催 2026年10月4日(日)遠野和紙あかり展 プレミアムコンサート 遠野和紙の灯りに包まれる「あかり展」と音楽が響くプレミアムコンサート 9月12日(土)から10月3日(土)の指定日に、旧いわき市立入遠野中学校に",
       "eventDateMethod": "tourism-event-list",
-      "eventDateCheckedAt": "2026-09-25T22:01:23+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:24+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 31,
@@ -6774,7 +6892,7 @@
       "eventDateSourceUrl": "https://www.city.iwaki.lg.jp/www/contents/1783060725490/index.html",
       "eventDateEvidence": "いわき市イベントカレンダー 9月24日",
       "eventDateMethod": "city-calendar",
-      "eventDateCheckedAt": "2026-09-25T22:01:21+09:00",
+      "eventDateCheckedAt": "2026-09-26T02:57:21+09:00",
       "relatedSources": [],
       "coverageCount": 1,
       "priorityScore": 21,
@@ -6807,11 +6925,11 @@
     {
       "id": "09283add4d161611b3",
       "title": "【9/19(土)vsいわき】ホームゲーム開催に伴う駐車マナーについてのお願い",
-      "summary": "sagan-tosu.netが「【9/19(土)vsいわき】ホームゲーム開催に伴う駐車マナーについてのお願い」に関する情報を公開しています。詳細は出典元でご確認ください。",
+      "summary": "サガン鳥栖が「【9/19(土)vsいわき】ホームゲーム開催に伴う駐車マナーについてのお願い」に関する情報を公開しています。詳細は出典元でご確認ください。",
       "category": "イベント",
       "area": "全市",
       "publishedAt": "2026-09-18T18:35:08+09:00",
-      "source": "sagan-tosu.net",
+      "source": "サガン鳥栖",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB1RWJEeUItRi1pUlFicW12alAwOEwxcVlfeUZPZG9rbGFwemNLczBmM1NxRFJVR3NjMThna0FSc3ZwS0tYTldJSFlDVVIzTDZJRHc?oc=5",
       "sourceHome": "https://www.sagan-tosu.net",
       "sourceGroup": "開店・閉店",
@@ -6938,123 +7056,15 @@
       "priorityScore": 61,
       "isBreaking": false,
       "detailPath": "news/ec240a9496ac3afb08.html"
-    },
-    {
-      "id": "ae6d8ff01edce8ce23",
-      "title": "「ONAHAMA WINTER GLASS 2026」写真コンテスト 9月10日(木)より応募受付スタート！",
-      "summary": "いわき市観光サイトが「「ONAHAMA WINTER GLASS 2026」写真コンテスト 9月10日(木)より応募受付スタート！」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "暮らし",
-      "area": "全市",
-      "publishedAt": "2026-09-18T16:22:28+09:00",
-      "source": "いわき市観光サイト",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9uMnhjOU0zQS1LSHZoZjNDSDJNWFJyUTZKb2hrSmZSS0hzR2V3Z3Yyd0w1dzd5WkZOU2M5a2t3MjBnd3Y5eGxvckZuZw?oc=5",
-      "sourceHome": "https://kankou-iwaki.or.jp",
-      "sourceGroup": "地域団体",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-10",
-          "end": "2026-09-10"
-        }
-      ],
-      "eventStart": "2026-09-10",
-      "eventEnd": "2026-09-10",
-      "eventDateLabel": "9月10日",
-      "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 35,
-      "isBreaking": false,
-      "detailPath": "news/ae6d8ff01edce8ce23.html"
-    },
-    {
-      "id": "9bc9f73151be7f126e",
-      "title": "スポーツの日・スポーツフェスティバルの開催について",
-      "summary": "いわき市から「スポーツの日・スポーツフェスティバルの開催について」に関する新着情報が公開されました。詳しくは公式情報をご確認ください。",
-      "category": "スポーツ",
-      "area": "全市",
-      "publishedAt": "2026-09-18T15:30:00+09:00",
-      "source": "いわき市",
-      "sourceUrl": "https://www.city.iwaki.lg.jp//www/contents/1789631890236/index.html",
-      "sourceGroup": "行政",
-      "via": "direct-rss",
-      "note": "公開RSSから自動取得。内容は必ず出典元で確認してください。",
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 21,
-      "isBreaking": false,
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "detailPath": "news/9bc9f73151be7f126e.html"
-    },
-    {
-      "id": "001e21d7a79c058839",
-      "title": "安積黎明×いわき湯本 ２０２６秋季高校野球福島県大会 １回戦（９月１８日）",
-      "summary": "福島民報デジタルが「安積黎明×いわき湯本 ２０２６秋季高校野球福島県大会 １回戦（９月１８日）」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "教育・子育て",
-      "area": "常磐",
-      "publishedAt": "2026-09-18T15:24:51+09:00",
-      "source": "福島民報デジタル",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwenUzaG9kTkZ4SmJzYWJZamdNa21GdEU0OEV6c2hnbHBPRDVwcXpmaUdYSC0zTGR3cG12WXhwRFItQjBQWkhfT2RjZGZUT2M?oc=5",
-      "sourceHome": "https://www.minpo.jp",
-      "sourceGroup": "地域",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "eventDates": [
-        {
-          "start": "2026-09-18",
-          "end": "2026-09-18"
-        }
-      ],
-      "eventStart": "2026-09-18",
-      "eventEnd": "2026-09-18",
-      "eventDateLabel": "9月18日",
-      "isWeekendEvent": false,
-      "relatedSources": [],
-      "coverageCount": 1,
-      "priorityScore": 25,
-      "isBreaking": false,
-      "detailPath": "news/001e21d7a79c058839.html"
-    },
-    {
-      "id": "0526a3e752fd8db79a",
-      "title": "いわき市の住宅火災、約4時間後に鎮火 10代男性を搬送 意識あり 福島",
-      "summary": "TBS NEWS DIGが「いわき市の住宅火災、約4時間後に鎮火 10代男性を搬送 意識あり 福島」に関する情報を公開しています。詳細は出典元でご確認ください。",
-      "category": "防災・安全",
-      "area": "全市",
-      "publishedAt": "2026-09-18T15:12:18+09:00",
-      "source": "news.yahoo.co.jp",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zcWdFZVRUVkhaNUw5UGJERU44Q1l4VC1mWUstYUhKc202ZnFFdnNTRVdvNTFzb0VMbnVIVHdLTG9vMjRRTHJjN2s0MXd5M1BBeGtVaF9OS3U5ZVppT3AwTE9CdzFhMjA2R2huOHZNM1BLU2I1M1hxTXFaNVpBY2M?oc=5",
-      "sourceHome": "https://newsdig.tbs.co.jp",
-      "sourceGroup": "報道",
-      "via": "google-news",
-      "note": "Google News検索RSSから見出しを自動取得。リンク先の原媒体で内容をご確認ください。",
-      "isOpeningClosing": false,
-      "isWeekendEvent": false,
-      "relatedSources": [
-        {
-          "source": "TBS NEWS DIG",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UMzRfcGZQSmw4dkhXNXg1N0hOSkxyaXFGOE9PbDBWZElTbFVWM3dWS1puS1YxQ0dvQnYyVXl0Z2Etb3RNRzB3eW5OSWxvbGk1UGNwT0dobklhQ3VEX052QQ?oc=5",
-          "publishedAt": "2026-09-18T15:09:00+09:00",
-          "via": "google-news"
-        }
-      ],
-      "coverageCount": 2,
-      "priorityScore": 98,
-      "isBreaking": false,
-      "detailPath": "news/0526a3e752fd8db79a.html"
     }
   ],
   "cleanup": {
-    "cleanedAt": "2026-09-25T22:01:40+09:00",
+    "cleanedAt": "2026-09-26T02:57:41+09:00",
     "removedCount": 0,
     "removedTitles": []
   },
   "weekendRanking": {
-    "rankedAt": "2026-09-25T13:01:40+00:00",
+    "rankedAt": "2026-09-25T17:57:41+00:00",
     "ruleVersion": "1.0",
     "weekendPicks": 16,
     "longRunning": 9
